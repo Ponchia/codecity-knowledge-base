@@ -344,58 +344,210 @@ statistics:
 **Example**: {optional concrete example}
 ```
 
-### Feature Card
+### Feature Card (Pattern Language Format)
 
-```markdown
+Feature cards follow the **Pattern Language** format (Christopher Alexander / Gang of Four), capturing not just WHAT a feature is, but WHY it exists, WHEN to use it, and what TRADE-OFFS it involves. This approach transforms feature cards from encyclopedia entries into actionable design patterns.
+
+#### Frontmatter Schema
+
+```yaml
 ---
 id: F###
 title: {Feature Name}
 category: {metaphor | mapping | layout | interaction | analysis | platform}
-status: {canonical | variant | experimental}
+status: {canonical | variant | experimental | deprecated}
+maturity: {established | emerging | research}
 introduced_by: CC###
 implementations: [{tool}, {tool}]
 related_features: [F###, F###]
+supersedes: [F###]              # If this replaces older approaches
+taxonomy:
+  granularity: [file, class, method, function]
+  visual_element: [building, district, street]
+  metric_category: [size, complexity, coupling]
+last_updated: YYYY-MM-DD
+updated_from: [CC###, CC###]
 ---
+```
 
+#### Body Structure (Pattern Language)
+
+```markdown
 # {Feature Name}
+
+## Problem & Motivation
+
+{WHY does this feature exist? What problem or challenge does it address?}
+
+- The pain point or challenge it solves
+- The insight or observation that led to this approach
+- What happens WITHOUT this feature (the negative scenario)
 
 ## Definition
 
-{1-3 sentences precisely defining what this feature is}
+{1-3 sentences precisely defining what this feature is — the WHAT}
 
-## Mechanism
+## Context & Applicability
 
-{Technical description of how it works}
+{WHEN should you use this feature?}
 
-**Input**: {what data/metrics are required}
+**Use when:**
+- {Condition or scenario 1}
+- {Condition or scenario 2}
 
-**Process**: {transformation or algorithm}
+**Avoid when:**
+- {Condition where this is NOT appropriate}
+- {Scenario where alternatives work better}
 
-**Output**: {visual or behavioral result}
+**Prerequisites:** {Required features, data sources, or conditions}
+
+**Alternatives:** [[{other-feature}]] for {scenario}; [[{other-feature}]] for {scenario}
+
+## Forces
+
+{What tensions or competing concerns does this feature balance?}
+
+| Force | Pull |
+|-------|------|
+| {Concern A} | {How it pulls toward one design choice} |
+| {Concern B} | {How it pulls toward another choice} |
+
+{Explanation of how this feature resolves or balances these forces}
+
+## Mechanism (Solution)
+
+{Technical description of HOW it works — the solution to the problem}
+
+**Input**: {What data, metrics, or structures are required}
+
+**Process**:
+1. {Step 1 of the algorithm/transformation}
+2. {Step 2}
+3. {Step 3}
+
+**Output**: {Visual or behavioral result}
+
+## Consequences & Trade-offs
+
+{What do you gain and lose by using this feature?}
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| {Advantage 1} | {Disadvantage 1} |
+| {Advantage 2} | {Disadvantage 2} |
+
+**Complexity**: {Low | Medium | High} — {brief justification}
+
+**Performance**: {Any performance implications}
+
+**Cognitive Load**: {How it affects user understanding}
 
 ## Variations
 
-{Notable differences across implementations}
+{Notable differences across implementations — the VARIANTS}
 
-| Implementation | Variation |
-|----------------|-----------|
-| {Tool A} | {how it differs} |
-| {Tool B} | {how it differs} |
+| Implementation | Variation | Notes |
+|----------------|-----------|-------|
+| {Tool A} | {How it differs} | {Source ref} |
+| {Tool B} | {How it differs} | {Source ref} |
+
+## Implementation Notes
+
+{Practical guidance for implementers}
+
+- **Key algorithms or libraries**: {What's needed to implement}
+- **Common pitfalls**: {What to avoid}
+- **Integration points**: {How this connects to other features}
+- **Recommended defaults**: {Sensible starting configuration}
 
 ## Evidence
 
-{Empirical findings if any, with source refs}
+{Empirical findings with effect sizes where available}
+
+- {Study 1}: {Finding with metrics, e.g., "24% improvement in task completion (p<.05)"}
+- {Study 2}: {Finding}
+
+## Known Limitations
+
+{What this feature does NOT handle well}
+
+- {Limitation 1}
+- {Limitation 2}
+- {Edge cases that break down}
+
+## Open Questions
+
+{Unresolved debates or areas needing research}
+
+- {Question 1 — e.g., "Optimal discretization bin count is not established"}
+- {Question 2}
 
 ## Sources
 
-- [CC###] {brief description of what this source says}
-- [CC###] {brief description}
+- [CC###] {Brief description of what this source contributes}
+- [CC###] {Brief description}
 
 ## See Also
 
-- [[{related-feature}]] — {relationship}
-- [[{related-feature}]] — {relationship}
+- [[{related-feature}]] — {Relationship: variant of, complementary to, depends on, conflicts with}
+- [[{related-feature}]] — {Relationship}
 ```
+
+#### Section Requirements by Feature Status
+
+| Section | canonical | variant | experimental |
+|---------|:---------:|:-------:|:------------:|
+| **Problem & Motivation** | ✅ Required | ✅ Required | ⚠️ Brief |
+| **Definition** | ✅ Required | ✅ Required | ✅ Required |
+| **Context & Applicability** | ✅ Required | ⚠️ Recommended | ⚠️ If known |
+| **Forces** | ✅ Required | ⚠️ If complex | ❌ Optional |
+| **Mechanism** | ✅ Required | ✅ Required | ✅ Required |
+| **Consequences & Trade-offs** | ✅ Required | ✅ Required | ⚠️ Preliminary |
+| **Variations** | ✅ If exist | ⚠️ Parent ref | ❌ N/A |
+| **Implementation Notes** | ✅ Required | ⚠️ Differences only | ❌ Optional |
+| **Evidence** | ✅ If available | ⚠️ If available | ❌ Usually N/A |
+| **Known Limitations** | ✅ Required | ⚠️ Recommended | ⚠️ If known |
+| **Open Questions** | ⚠️ If relevant | ❌ Optional | ✅ Required |
+| **Sources** | ✅ Required | ✅ Required | ✅ Required |
+| **See Also** | ✅ Required | ✅ Required | ✅ Required |
+
+#### Pattern Language Principles
+
+1. **Problem-first**: Always start with WHY. A pattern without a problem is just a description.
+2. **Context-sensitive**: Features aren't universally applicable. Document when to use AND when NOT to use.
+3. **Forces in tension**: Good patterns resolve competing concerns. Make the trade-offs explicit.
+4. **Consequences matter**: Every solution creates new problems. Document both benefits and liabilities.
+5. **Actionable**: A reader should be able to implement the pattern from the card alone.
+6. **Honest about limits**: Document what doesn't work, not just what does.
+
+#### Minimal vs Full Cards
+
+**Minimal card** (for `variant` or `experimental` status):
+```markdown
+# {Feature Name}
+
+## Problem & Motivation
+{1-2 sentences on why this variant exists}
+
+## Definition
+{What it is}
+
+## Mechanism
+{How it works}
+
+## Consequences & Trade-offs
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| {Pro} | {Con} |
+
+## Sources
+- [CC###] {Source}
+
+## See Also
+- [[{parent-feature}]] — variant of
+```
+
+**Full card** (for `canonical` status): All sections populated with multiple sources, evidence, and implementation guidance.
 
 ### Implementation Profile
 
@@ -609,56 +761,137 @@ features_described:
   - F006: Rectangle Packing Layout
 ```
 
-**Feature Card Created** (F004):
+**Feature Card Created** (F004 — Pattern Language Format):
 ```markdown
 ---
 id: F004
 title: Height Mapping
 category: mapping
 status: canonical
+maturity: established
 introduced_by: CC023
 implementations: [CodeCity, CodeCharta, GoCity, JSCity]
 related_features: [F005, F002]
+taxonomy:
+  granularity: [class, file, function]
+  visual_element: [building]
+  metric_category: [size, complexity]
+last_updated: 2026-01-05
+updated_from: [CC023, CC099]
 ---
 
 # Height Mapping
 
+## Problem & Motivation
+
+When visualizing software as a city, users need to quickly compare quantitative metrics across hundreds or thousands of code entities. Reading numeric values from labels doesn't scale—users need a visual encoding that enables rapid, pre-attentive comparison.
+
+- **Challenge**: How do you encode magnitude so users can spot outliers at a glance?
+- **Insight**: Humans are highly attuned to height differences (evolutionary advantage for navigation)
+- **Without this**: Users must read individual labels or hover for tooltips, breaking flow
+
 ## Definition
 
-The vertical dimension (height) of a building encodes a numeric metric of the
-represented software entity, creating a skyline where taller buildings indicate
-higher metric values.
+The vertical dimension (height) of a building encodes a numeric metric of the represented software entity, creating a skyline where taller buildings indicate higher metric values.
 
-## Mechanism
+## Context & Applicability
 
-**Input**: Numeric metric value (e.g., NOM, LOC, complexity)
+**Use when:**
+- The metric is always non-negative (height can't be negative)
+- Comparison of magnitude matters (e.g., finding the largest/smallest)
+- You want users to identify outliers quickly
 
-**Process**: Linear or logarithmic scaling to height range
+**Avoid when:**
+- The metric can be negative (use color instead)
+- Precision matters more than comparison (height is imprecise)
+- The metric range is very small (differences become imperceptible)
 
-**Output**: Building height proportional to metric value
+**Prerequisites:** Building-based visualization ([[city-metaphor]]), numeric metric source
+
+**Alternatives:** [[color-mapping]] for categorical or diverging data; [[base-mapping]] if horizontal comparison preferred
+
+## Forces
+
+| Force | Pull |
+|-------|------|
+| **Perceptual salience** | Height is immediately noticeable; creates memorable skyline |
+| **Occlusion** | Tall buildings can hide shorter ones behind them |
+| **Range compression** | Extreme outliers can dwarf everything else |
+| **Intuitiveness** | "Taller = more" is culturally universal |
+
+Height mapping resolves these forces by leveraging human spatial perception while accepting some occlusion trade-off. Logarithmic scaling can mitigate range compression.
+
+## Mechanism (Solution)
+
+**Input**: Numeric metric value (e.g., NOM, LOC, cyclomatic complexity)
+
+**Process**:
+1. Collect all metric values across entities
+2. Determine scaling strategy (linear, logarithmic, or discretized)
+3. Map value to height within configured min/max range
+4. Apply height to building geometry
+
+**Output**: Building height proportional to metric value; skyline enables rapid comparison
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Immediate visual comparison | Tall buildings occlude shorter ones |
+| Intuitive "taller = more" mapping | Extreme outliers dominate the view |
+| Creates memorable city skyline | Cannot represent negative values |
+| Works across cultures | Precise comparison is difficult |
+
+**Complexity**: Low — simple numeric scaling
+**Performance**: Negligible — O(n) scaling operation
+**Cognitive Load**: Low — highly intuitive mapping
 
 ## Variations
 
-| Implementation | Metric | Scaling |
-|----------------|--------|---------|
-| CodeCity (original) | NOM (number of methods) | Linear |
-| CodeCharta | Configurable (LOC default) | Linear |
-| GoCity | Number of functions | Linear |
+| Implementation | Metric | Scaling | Notes |
+|----------------|--------|---------|-------|
+| CodeCity (original) | NOM (number of methods) | Linear | CC023 |
+| CodeCharta | Configurable (LOC default) | Linear | User-selectable |
+| GoCity | Number of functions | Linear | Go-specific |
+| SoftVis3D | Configurable | Linear/Log/Exp | CC040 |
+
+## Implementation Notes
+
+- **Key algorithms**: Simple linear interpolation; optional log transform for outlier compression
+- **Common pitfalls**: Forgetting to handle zero values (log(0) is undefined); not clamping max height
+- **Integration points**: Combine with [[base-mapping]] for second metric; use [[color-mapping]] for third
+- **Recommended defaults**: Linear scaling; min height 1 unit; max height 100 units; LOC as default metric
 
 ## Evidence
 
-Wettel et al. (CC099) found height mapping intuitive for users, with 22% faster
-task completion compared to text-based tools.
+- Wettel et al. (CC099): Height mapping intuitive for users, with **22% faster task completion** compared to text-based tools in controlled experiment (n=41, p<.05)
+- User studies show height is the most salient visual variable in 3D city visualizations (CC015)
+
+## Known Limitations
+
+- Cannot represent negative values (e.g., delta metrics with decreases)
+- Occlusion in dense cities requires camera rotation to see all buildings
+- Very small metric differences are imperceptible
+- Extreme outliers (10,000 LOC file among 100 LOC files) require log scaling or clamping
+
+## Open Questions
+
+- Optimal scaling strategy (linear vs log vs discretized) not definitively established
+- Interaction between height and other visual variables (color, base) needs more study
+- Effectiveness in VR (where scale is more immersive) vs desktop not compared
 
 ## Sources
 
-- [CC023] Original introduction of height mapping for NOM
-- [CC099] Empirical validation in controlled experiment
+- [CC023] Original introduction of height mapping for NOM in CodeCity
+- [CC099] Empirical validation in controlled experiment (ICSE 2011)
+- [CC040] SoftVis3D scaling options (linear, logarithmic, exponential)
 
 ## See Also
 
-- [[F005]] Base Mapping — complementary dimension for attributes
-- [[F002]] Class-as-Building — the entity being sized
+- [[base-mapping]] — complementary dimension for second metric (NOA, footprint)
+- [[color-mapping]] — alternative/complementary encoding for categorical or third metric
+- [[class-as-building]] — the entity being sized
+- [[discretized-mapping]] — variant using bins instead of continuous scale
 ```
 
 ---

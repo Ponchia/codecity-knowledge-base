@@ -198,11 +198,19 @@ dimensions:
 
 ---
 
-## Layer 3: Feature Cards (Atomic Notes)
+## Layer 3: Feature Cards (Pattern Language)
 
-**Purpose**: One markdown file per distinct feature, heavily cross-linked.
+**Purpose**: One markdown file per distinct feature, following the **Pattern Language** format (Christopher Alexander / Gang of Four). This format captures not just WHAT a feature is, but WHY it exists, WHEN to use it, and what TRADE-OFFS it involves.
 
-### Schema
+### Design Philosophy
+
+Feature cards are **design patterns**, not encyclopedia entries. A good feature card enables an implementer to:
+1. Understand the problem being solved
+2. Decide whether this feature fits their context
+3. Implement the feature correctly
+4. Anticipate trade-offs and limitations
+
+### Frontmatter Schema
 
 ```yaml
 # features/<feature-slug>.md frontmatter
@@ -211,43 +219,133 @@ id: F###                        # Stable feature ID
 title: string                   # Human-readable name
 category: enum                  # metaphor | mapping | layout | interaction | analysis | platform
 status: enum                    # canonical | variant | experimental | deprecated
+maturity: enum                  # established | emerging | research
 introduced_by: CC###            # First source to describe
 implementations: [string]       # Tools that implement this
 related_features: [F###]        # Cross-links
+supersedes: [F###]              # If this replaces older approaches
 taxonomy:                       # Classification
   granularity: [enum]
   visual_element: [enum]
   metric_category: [enum]
+last_updated: YYYY-MM-DD
+updated_from: [CC###]           # Sources that contributed
 ---
 ```
 
-### Body Structure
+### Body Structure (Pattern Language)
 
 ```markdown
 # {title}
 
-## Definition
-1-3 sentences defining the feature precisely.
+## Problem & Motivation
+WHY does this feature exist? What problem does it solve?
+- The pain point or challenge it addresses
+- The insight that led to this approach
+- What happens WITHOUT this feature (negative scenario)
 
-## Mechanism
-How it works technically. Include:
-- Input (what data/metrics)
-- Transformation (algorithm/mapping)
-- Output (visual result)
+## Definition
+1-3 sentences defining the feature precisely (the WHAT).
+
+## Context & Applicability
+WHEN should you use this feature?
+
+**Use when:**
+- Condition 1
+- Condition 2
+
+**Avoid when:**
+- Condition 1
+- Condition 2
+
+**Prerequisites:** Required features, data sources, or conditions
+**Alternatives:** [[other-feature]] for specific scenarios
+
+## Forces
+What tensions does this feature balance?
+
+| Force | Pull |
+|-------|------|
+| Concern A | How it pulls one way |
+| Concern B | How it pulls another |
+
+How the feature resolves these competing forces.
+
+## Mechanism (Solution)
+How it works technically (the HOW).
+
+**Input**: What data/metrics are required
+**Process**: Step-by-step transformation
+**Output**: Visual or behavioral result
+
+## Consequences & Trade-offs
+What do you gain and lose?
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Advantage 1 | Disadvantage 1 |
+
+**Complexity**: Low | Medium | High
+**Performance**: Implications
+**Cognitive Load**: User impact
 
 ## Variations
 Notable variations across implementations.
 
+| Implementation | Variation | Notes |
+|----------------|-----------|-------|
+| Tool A | How it differs | Source |
+
+## Implementation Notes
+Practical guidance for implementers.
+- Key algorithms or libraries
+- Common pitfalls
+- Integration points
+- Recommended defaults
+
 ## Evidence
-Empirical findings (if any) from controlled experiments.
+Empirical findings with effect sizes where available.
+
+## Known Limitations
+What this feature does NOT handle well.
+
+## Open Questions
+Unresolved debates or research gaps.
 
 ## Sources
-- [CC###] Primary source
+- [CC###] Primary source description
 - [CC###] Additional sources
 
 ## See Also
-- [[related-feature]] — relationship description
+- [[related-feature]] — relationship (variant of, depends on, conflicts with)
 ```
+
+### Section Requirements by Status
+
+| Section | canonical | variant | experimental |
+|---------|:---------:|:-------:|:------------:|
+| Problem & Motivation | ✅ | ✅ | ⚠️ Brief |
+| Definition | ✅ | ✅ | ✅ |
+| Context & Applicability | ✅ | ⚠️ | ⚠️ |
+| Forces | ✅ | ⚠️ | ❌ |
+| Mechanism | ✅ | ✅ | ✅ |
+| Consequences | ✅ | ✅ | ⚠️ |
+| Variations | ✅ If exist | ⚠️ | ❌ |
+| Implementation Notes | ✅ | ⚠️ | ❌ |
+| Evidence | ✅ If available | ⚠️ | ❌ |
+| Known Limitations | ✅ | ⚠️ | ⚠️ |
+| Open Questions | ⚠️ | ❌ | ✅ |
+| Sources | ✅ | ✅ | ✅ |
+| See Also | ✅ | ✅ | ✅ |
+
+### Pattern Language Principles
+
+1. **Problem-first**: Always start with WHY
+2. **Context-sensitive**: Document when to use AND when NOT to use
+3. **Forces in tension**: Make competing concerns explicit
+4. **Consequences matter**: Document both benefits and liabilities
+5. **Actionable**: Enable implementation from the card alone
+6. **Honest about limits**: Document what doesn't work
 
 ### Initial Feature Set (extract from bibliography)
 
