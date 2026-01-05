@@ -93,7 +93,7 @@ BY PRIORITY:        BY STATUS:
 
 ## Layer 1: Glossary
 
-**Purpose**: Establish ubiquitous language for the domain.
+**Purpose**: Establish ubiquitous language for the domain (DDD: Ubiquitous Language).
 
 ### Schema
 
@@ -103,10 +103,28 @@ term:
   definition: string           # 1-2 sentence definition
   aliases: [string]            # Alternative names
   category: enum               # metaphor | metric | mapping | layout | interaction | analysis | platform
+  bounded_context: enum        # universal | city-metaphor | island-metaphor | landscape-metaphor | treemap-only
   source_refs: [CC###]         # First/authoritative sources
   related_terms: [string]      # Cross-references
   example: string              # Optional concrete example
 ```
+
+### Bounded Contexts (DDD Integration)
+
+Terms and features may only apply within certain visualization paradigms. The `bounded_context` field clarifies where a concept is valid:
+
+| Context | Description | Example Tools |
+|---------|-------------|---------------|
+| `universal` | Applies across all paradigms | metric mapping, filtering, navigation |
+| `city-metaphor` | 3D city with buildings/districts | CodeCity, CodeCharta, GoCity, JSCity |
+| `island-metaphor` | Landmasses in water | IslandViz, OSGi Islands |
+| `landscape-metaphor` | Terrain/topography features | ExplorViz (landscape view) |
+| `treemap-only` | 2D treemap without 3D city | Pure treemap tools |
+
+**Usage guidelines:**
+- Use `universal` when a concept applies to any software visualization
+- Use a specific context when a term only makes sense within that paradigm
+- A term like "district" is `city-metaphor` only; "height mapping" is `universal`
 
 ### Seed Terms (extract from bibliography)
 
@@ -220,6 +238,7 @@ title: string                   # Human-readable name
 category: enum                  # metaphor | mapping | layout | interaction | analysis | platform
 status: enum                    # canonical | variant | experimental | deprecated
 maturity: enum                  # established | emerging | research
+bounded_context: [enum]         # DDD: where this feature applies (see Layer 1)
 introduced_by: CC###            # First source to describe
 implementations: [string]       # Tools that implement this
 related_features: [F###]        # Cross-links
@@ -232,6 +251,10 @@ last_updated: YYYY-MM-DD
 updated_from: [CC###]           # Sources that contributed
 ---
 ```
+
+**Bounded context values**: `universal`, `city-metaphor`, `island-metaphor`, `landscape-metaphor`, `treemap-only`
+
+Use an array when a feature applies to multiple contexts (e.g., `[city-metaphor, island-metaphor]`).
 
 ### Body Structure (Pattern Language)
 

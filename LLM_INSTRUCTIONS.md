@@ -337,12 +337,30 @@ statistics:
 
 **Category**: {metaphor | metric | layout | interaction | platform | analysis}
 
+**Bounded Context**: {universal | city-metaphor | island-metaphor | landscape-metaphor | treemap-only}
+
 **Sources**: {CC###, CC###}
 
 **Related**: [[{related-term}]], [[{related-term}]]
 
 **Example**: {optional concrete example}
 ```
+
+#### Bounded Contexts (DDD)
+
+Terms and features may only apply within certain visualization paradigms. Use `bounded_context` to clarify applicability:
+
+| Context | Description | Example Tools |
+|---------|-------------|---------------|
+| `universal` | Applies across all paradigms | metric mapping, filtering, navigation |
+| `city-metaphor` | 3D city with buildings/districts | CodeCity, CodeCharta, GoCity, JSCity |
+| `island-metaphor` | Landmasses in water | IslandViz, OSGi Islands |
+| `landscape-metaphor` | Terrain/topography features | ExplorViz (landscape view) |
+| `treemap-only` | 2D treemap without 3D city | Pure treemap tools |
+
+**When to use:**
+- `universal`: Concept works in any software visualization
+- Specific context: Concept only makes sense within that metaphor (e.g., "district" only in city-metaphor)
 
 ### Feature Card (Pattern Language Format)
 
@@ -357,6 +375,7 @@ title: {Feature Name}
 category: {metaphor | mapping | layout | interaction | analysis | platform}
 status: {canonical | variant | experimental | deprecated}
 maturity: {established | emerging | research}
+bounded_context: [universal | city-metaphor | island-metaphor | landscape-metaphor | treemap-only]
 introduced_by: CC###
 implementations: [{tool}, {tool}]
 related_features: [F###, F###]
@@ -769,6 +788,7 @@ title: Height Mapping
 category: mapping
 status: canonical
 maturity: established
+bounded_context: [city-metaphor, island-metaphor]  # Works in any building-based viz
 introduced_by: CC023
 implementations: [CodeCity, CodeCharta, GoCity, JSCity]
 related_features: [F005, F002]
