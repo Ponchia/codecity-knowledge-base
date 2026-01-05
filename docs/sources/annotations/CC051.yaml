@@ -1,0 +1,24 @@
+id: CC051
+url: https://www.semanticscholar.org/paper/4312f4f38e16868e4c8c3647e4790a69b2f02b96
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Semantic Scholar metadata page for the CLEI 2023 paper “Software Visualization using the City Metaphor: Students' Perceptions and Experiences”. Full extraction is already captured from the primary source entry (CC021), so this is treated as a duplicate metadata listing.
+
+key_contributions: []
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Metadata-only page (abstract + citation graph). Prefer CC021 for the processed study extraction.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0
+

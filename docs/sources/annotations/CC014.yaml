@@ -1,0 +1,32 @@
+id: CC014
+url: https://codecharta.com
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Marketing/overview site for CodeCharta that explains the city metaphor (files as buildings, folders as districts) and
+  positions the tool for hotspot detection, change tracking, and communication of technical debt. It highlights 3D model
+  export for presentations, integration with other analysis tools (e.g., SonarQube), and a local-only processing posture.
+
+key_contributions:
+  - Confirms CodeCharta’s file-as-building and folder-as-district mapping in a concise public description
+  - Frames core user goals: hotspot detection and change tracking over time
+  - Emphasizes that processing/visualization stays local unless explicitly shared
+
+terms_introduced:
+  - code hotspot
+
+features_described: [F038, F039, F040]
+implementations_documented: [I015]
+
+quality_notes: |
+  This page is high-level and promotional; it does not specify algorithms or data formats beyond the city metaphor and
+  feature claims. Treat it as corroborating evidence rather than a primary technical reference.
+
+statistics:
+  features_extracted: 3
+  terms_extracted: 1
+  implementations_documented: 1

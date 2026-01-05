@@ -1,0 +1,44 @@
+id: CC116
+url: https://wettel.github.io/download/Wettel08d-wcre.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  WCRE 2008 paper presenting interactive 3D visualizations for understanding the structural evolution of large OO systems
+  using the city metaphor. It introduces three evolution techniques—age maps, time travel, and timelines—at both coarse
+  (class/package) and fine (method “bricks”) granularity. The authors apply the techniques to ArgoUML, JHotDraw, and
+  Jmol and report findings that were confirmed by developers.
+
+key_contributions:
+  - Introduces an evolution-focused visualization approach for code cities: age maps, time travel, and timelines
+  - Demonstrates both coarse-grained and fine-grained evolution views (class/package vs method-level bricks)
+  - Provides concrete case-study insights (e.g., long-lived duplications; major refactorings visible as births/deaths over time)
+
+terms_introduced: []
+
+features_described: [F015, F031, F032, F033]
+implementations_documented: [I003]
+
+empirical_evidence:
+  study_type: case_study
+  sample_size: 3 systems (ArgoUML, JHotDraw, Jmol)
+  dependent_variables: [qualitative evolution insights, developer confirmation of findings]
+  independent_variables: []
+  key_findings:
+    - Coarse-grained age maps can distinguish long-lived artifacts from recently introduced packages/classes, helping frame evolution questions.
+    - Time travel across ArgoUML versions makes large refactorings visible as “birth/death” events and geometry changes (e.g., a large facade class replaced by an interface and multiple implementors).
+    - Fine-grained timelines support method-level reasoning about when functionality appears/disappears across versions.
+  effect_size: not reported
+
+quality_notes: |
+  The paper reports illustrative case studies and developer confirmation rather than a controlled user study. Detailed
+  algorithms and broader context are expanded in the later thesis (CC035), but CC116 is the primary paper introducing
+  the age-map/time-travel/timeline triad in a compact form.
+
+statistics:
+  features_extracted: 4
+  terms_extracted: 0
+  implementations_documented: 1

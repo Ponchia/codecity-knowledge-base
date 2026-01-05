@@ -1,0 +1,46 @@
+id: CC015
+url: https://www.cs.nmt.edu/~jeffery/city-surv.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Survey of the “city metaphor” in software visualization, framing the metaphor as a
+  way to use familiar urban structure to make large codebases navigable and interpretable.
+  Compares 14 city-metaphor tools via a feature matrix (Table 1) spanning language support,
+  VR/AR usage, building granularity, static metrics, dynamic behavior, and instrumentation.
+  Concludes with research questions and opportunities focused on integrating dynamic execution
+  behavior, avoiding cognitive overload, and enabling shared/multi-user use.
+
+key_contributions:
+  - Comparative table of 14 city metaphor implementations (Table 1)
+  - Framing of two research questions centered on dynamic execution behavior integration
+  - Research opportunities for dynamic data depiction (entities/citizens, time scales, multi-user, multi-lingual)
+  - Explicit caution that “rapidly growing/shrinking buildings” can weaken the city metaphor
+
+research_questions:
+  - What fine-grained, dynamic program execution behaviors have been depicted using software cities?
+  - Is it possible to integrate both large-scale static and fine-grained dynamic information into the same software city visualization?
+
+terms_introduced:
+  - city metaphor
+  - churn
+  - software city
+
+features_described: [F001, F002, F003, F004, F005, F006, F007, F008, F009, F010, F011, F012, F013, F014, F015, F016]
+
+implementations_documented: [I001, I002, I003, I004, I005, I006, I007, I008, I009, I010, I011, I012, I013, I014]
+
+quality_notes: |
+  Re-processed on 2026-01-02 by gpt (an earlier 2025-01-02 pass left missing/incorrect artifacts).
+  Excellent survey paper with structured comparison table.
+  Focuses on identifying gaps rather than deep technical details.
+  Primary source for implementation comparison taxonomy.
+  Some implementation details are brief — need original papers for depth.
+
+statistics:
+  features_extracted: 16
+  terms_extracted: 25
+  implementations_documented: 14

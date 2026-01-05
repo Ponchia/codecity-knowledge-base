@@ -1,0 +1,45 @@
+id: CC086
+url: https://www.inf.usi.ch/lanza/Downloads/Wett2008b.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  Detailed tool paper for CodeCity describing its city-metaphor mappings, interaction model (navigation + contextual
+  menus + query mechanism), tool-chain integration (Moose/FAMIX, iPlasma, MSE), and modular architecture. It also
+  documents tunable visualizations via view configurations and a mapper hierarchy (linear, boxplot, threshold, etc.),
+  and reports build-time performance across multiple large systems.
+
+key_contributions:
+  - Official CodeCity overview including interaction via contextual menus and a query mechanism (absolute vs selection-relative queries)
+  - Tool-chain description: Moose/FAMIX modeling, iPlasma extraction for Java/C++, MSE exchange, Jun/OpenGL rendering, and Mondrian blueprints
+  - View configuration definition for tunable visualizations (visibility, glyphs, layouts, and visual mappers)
+  - Mapper hierarchy and mapping strategies (identity/linear/cluster/boxplot/threshold) with scriptable mappers
+  - Disharmony-map explanation inspired by disease maps (vivid colors for “harmony breakers”, neutral context for unaffected entities)
+  - Performance table reporting build/render time for multiple systems up to ~1M LOC scale
+
+terms_introduced: []
+
+features_described: [F001, F002, F005, F006, F007, F008, F017, F023, F026, F030, F034, F035, F036]
+implementations_documented: [I003]
+
+empirical_evidence:
+  study_type: benchmark
+  sample_size: 9 open-source systems (Table 1)
+  dependent_variables: [build_time_seconds]
+  independent_variables: [system_size_kLOC, packages_count, classes_count]
+  key_findings:
+    - Build+render time increases with system size and visualization granularity; class-level cities remain interactive even for thousands of buildings when using simple glyphs.
+  effect_size: (not reported)
+
+quality_notes: |
+  This is a tool/architecture paper with performance measurements and illustrative examples rather than a controlled
+  user study. Several core details overlap with CC020/CC024/CC035, but CC086 is useful as a consolidated technical
+  description (queries, mapper hierarchy, and view-configuration definition).
+
+statistics:
+  features_extracted: 13
+  terms_extracted: 0
+  implementations_documented: 1

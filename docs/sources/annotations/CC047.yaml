@@ -1,0 +1,24 @@
+id: CC047
+url: https://dl.acm.org/doi/10.1145/2635868.2635895
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  FSE 2014 paper reporting an empirical study on program comprehension comparing reactive programming to an object-oriented Observer-pattern style. It does not contribute software-city/city-metaphor visualization techniques, features, or implementations, so it is out of scope for this knowledge base.
+
+key_contributions: []
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  ACM DL “Basic Abstract” page text was available; full PDF access was not required for the scope decision.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0
+

@@ -1,0 +1,27 @@
+id: CC032
+url: https://folia.unifr.ch/global/documents/318214
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Folia (University of Fribourg) metadata page for Richard Wettel’s 2010 doctoral thesis “Software systems as cities”.
+  The thesis itself is already processed as CC035; this entry provides only catalog metadata and an abstract.
+
+key_contributions:
+  - None — duplicates CC035 (thesis full text and extracted content)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Useful as an alternate persistent catalog record (ARK/URN), but does not add technical content beyond CC035.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

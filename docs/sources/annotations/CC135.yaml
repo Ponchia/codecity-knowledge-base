@@ -1,0 +1,30 @@
+id: CC135
+url: https://github.com/modernizing/codecity
+type: repo
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Prototype “metaverse” code-city demo built with Three.js/TypeScript. It renders a treemap-based 3D city from a
+  bundled `data.json` (LOC and Git-change signals) and includes WebXR scaffolding (VRButton/controllers), but the repo
+  is positioned as an experimental/for-fun PoC rather than a documented software-city analysis tool.
+
+key_contributions:
+  - None — exploratory prototype; overlaps established WebXR/Three.js city implementations already covered elsewhere
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  The repository demonstrates a basic d3-treemap → 3D cuboid mapping and WebXR boilerplate, but does not provide
+  domain-specific analysis workflows or validated extraction-worthy features beyond what is already represented in the
+  corpus (e.g., BabiaXR/SoftVis3D/WebXR-based cities).
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

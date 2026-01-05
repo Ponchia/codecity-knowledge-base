@@ -1,0 +1,31 @@
+id: CC066
+url: https://drops.dagstuhl.de/storage/01oasics/oasics-vol027-vluds2012-irtg1131/OASIcs.VLUDS.2011.25/OASIcs.VLUDS.2011.25.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Survey-style “state of the art” discourse on software-architecture visualization techniques, covering hierarchy,
+  relationships, evolution, and quality views. It includes software-city work as part of evolution visualization and
+  summarizes an “evolving software cities” approach using streets/packages and building plots/classes, plus contour-line
+  evolution and modification-history maps.
+
+key_contributions:
+  - Provides a broad overview of architecture-visualization techniques (hierarchy, relationship, evolution, metrics) and common tradeoffs (scalability/clutter/navigation)
+  - Summarizes evolution-visualization approaches, including software-city techniques (CodeCity age maps/time travel/timelines) and “evolving cities” variants
+  - Highlights stakeholder needs and the importance of choosing metaphors and interactions appropriate to analysis goals
+
+terms_introduced: []
+features_described: [F015]
+implementations_documented: []
+
+quality_notes: |
+  This is a broad survey/discussion paper (not a systematic mapping). Several referenced techniques are described at a
+  high level; follow primary sources for implementation details.
+
+statistics:
+  features_extracted: 1
+  terms_extracted: 0
+  implementations_documented: 0

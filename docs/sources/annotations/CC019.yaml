@@ -1,0 +1,27 @@
+id: CC019
+url: https://ai.objectives.institute/blog/talk-to-the-city-an-open-source-ai-tool-to-scale-deliberation
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Blog post describing “Talk to the City”, an LLM-assisted platform for clustering and summarizing public consultation
+  input at scale. It is not a software visualization (and not a software-city/city-metaphor visualization) source.
+
+key_contributions:
+  - None — unrelated domain (LLM-assisted deliberation tooling)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Out of scope for this corpus.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

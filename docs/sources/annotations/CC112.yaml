@@ -1,0 +1,26 @@
+id: CC112
+url: https://dl.acm.org/doi/10.1145/3756681.3756939
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  ACM DL DOI entry for the SecCityVR EASE 2025 paper, with a locally mirrored PDF snapshot. The paper content is
+  already processed from the arXiv HTML full text (CC069).
+
+key_contributions:
+  - None - duplicates CC069 (SecCityVR full-text arXiv HTML)
+
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  CC112 is retained as an alternate access path (ACM DOI / mirrored PDF), but extraction is skipped in favor of CC069.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

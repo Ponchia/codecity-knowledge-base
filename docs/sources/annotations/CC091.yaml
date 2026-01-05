@@ -1,0 +1,36 @@
+id: CC091
+url: https://github.com/MaibornWolff/codecharta
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Open-source reference implementation (MaibornWolff) of a software “city/map” visualization pipeline.
+  Provides a CLI (`ccsh`) that produces `cc.json` maps from multiple sources (parsers/importers/filters) and a Web Studio
+  (web + Electron desktop) that renders file/folder hierarchies as interactive 3D treemaps/streets with configurable
+  metric mappings, delta comparison between two maps, and export options including 3D printing.
+
+key_contributions:
+  - End-to-end toolchain: analysis CLI + interactive 3D visualization (web + desktop) with local-only processing (no telemetry)
+  - File/folder city metaphor: files as buildings, folders as districts; user-selectable metric mappings (area/height/color)
+  - Multiple layout algorithms (squarified treemap, street-like layouts, hybrid variants)
+  - Evolution support via delta comparison view (compare two maps; default red=removed, green=added)
+  - Interchange format (`cc.json`) with schema evolution (nodes, optional edges, metric descriptors, optional fixed positions)
+  - Export capabilities including 3D model export for 3D printing (STL/3MF)
+
+terms_introduced:
+  - cc.json
+
+features_described: [F001, F005, F006, F007, F008, F009, F015, F017, F023, F025, F035, F037, F038, F039, F040]
+implementations_documented: [I015]
+
+quality_notes: |
+  Strong implementation-focused source (not a research publication). Repository docs cover both the data model (`cc.json`)
+  and the user-facing visualization features; some behavior is version-dependent (see changelogs and schema changelog).
+
+statistics:
+  features_extracted: 15
+  terms_extracted: 1
+  implementations_documented: 1

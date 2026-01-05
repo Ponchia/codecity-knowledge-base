@@ -1,0 +1,28 @@
+id: CC007
+url: https://dev.to/youssefibrahim/cities-as-codebases-2mj9
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  DEV Community blog post using a general “cities as codebases” analogy to discuss legacy code, technical debt, and
+  software maintainability. It is not a software-city visualization or a technical description of the CodeCity/city-metaphor
+  visualization approach.
+
+key_contributions:
+  - None — conceptual analogy post (no visualization technique/tool details)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Out of scope for this corpus (software-city visualization techniques and implementations).
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

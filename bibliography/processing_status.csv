@@ -1,0 +1,155 @@
+id,extraction_status,priority,relevance,notes,processed_date,features_extracted,terms_extracted,processor
+CC001,skip,low,low,Perplexity logo image - not relevant,2026-01-02,0,0,gpt
+CC002,complete,medium,high,Galois article on code cities,2026-01-04,1,0,gpt
+CC003,skip,low,medium,SSRN paper abstract,2026-01-04,0,0,gpt
+CC004,skip,medium,medium,Stack Overflow Norris Numbers article,2026-01-04,0,0,gpt
+CC005,complete,medium,high,PDViz CodeCity overview,2026-01-04,0,0,gpt
+CC006,complete,medium,medium,Early visualization paper 2003,2026-01-04,1,1,gpt
+CC007,skip,low,medium,Dev.to cities as codebases,2026-01-04,0,0,gpt
+CC008,skip,low,medium,Blog post on visualizing code,2026-01-04,0,0,gpt
+CC009,complete,high,high,USI Roma 2019 journal paper,2026-01-02,11,3,gpt
+CC010,skip,low,low,SharpMetrics city metaphor page,2026-01-04,0,0,gpt
+CC011,skip,low,low,Reddit discussion,2026-01-04,0,0,gpt
+CC012,skip,medium,medium,URJC digital repository,2026-01-04,0,0,gpt
+CC013,skip,low,low,HackerNews discussion,2026-01-04,0,0,gpt
+CC014,complete,high,high,CodeCharta website - reference implementation,2026-01-02,3,1,gpt
+CC015,complete,critical,critical,Jeffery survey - implementation comparison (re-processed by gpt; initial pass by claude),2026-01-02,16,25,gpt
+CC016,skip,low,medium,SoftwareMill blog post,2026-01-04,0,0,gpt
+CC017,complete,high,high,Wettel CodeCity homepage,2026-01-02,3,0,gpt
+CC018,complete,critical,critical,Moreno-Lumbreras 2024 systematic mapping (406 papers),2026-01-04,3,2,gpt
+CC019,skip,low,low,Talk to the City - unrelated AI tool,2026-01-04,0,0,gpt
+CC020,complete,high,high,ACM DL CodeCity ICSE 2008 tool demo,2026-01-02,11,3,gpt
+CC021,complete,medium,medium,IEEE paper,2026-01-04,0,0,gpt
+CC022,skip,high,high,Duplicate of CC023 (same VISSOFT 2007 paper/PDF),2026-01-02,0,0,gpt
+CC023,complete,critical,critical,VISSOFT 2007 - foundational city metaphor paper,2026-01-02,17,25,gpt
+CC024,complete,high,high,WASDeTT 2008 CodeCity paper,2026-01-02,15,4,gpt
+CC025,complete,critical,critical,ICSE 2011 controlled experiment,2026-01-02,6,4,gpt
+CC026,complete,medium,high,Code Arcades 2025 arXiv,2026-01-04,3,0,gpt
+CC027,skip,medium,medium,Wettel homepage,2026-01-04,0,0,gpt
+CC028,skip,medium,high,ScienceDirect IST paper,2026-01-04,0,0,gpt
+CC029,skip,low,low,Author-profile mirror (OpenAlex/DBLP) — metadata only; no software-city technique details,2026-01-05,0,0,gpt
+CC030,complete,medium,medium,Eurecom publication,2026-01-04,2,1,gpt
+CC031,skip,medium,medium,URJC bitstream,2026-01-04,0,0,gpt
+CC032,skip,medium,medium,Folia UniPR document,2026-01-04,0,0,gpt
+CC033,skip,low,low,Author-profile mirror (Semantic Scholar) — metadata only; no software-city technique details,2026-01-05,0,0,gpt
+CC034,complete,medium,medium,CEUR workshop paper,2026-01-04,4,0,gpt
+CC035,complete,critical,critical,Wettel PhD thesis - canonical reference,2026-01-02,28,44,gpt
+CC036,complete,high,high,JSCity arXiv paper,2026-01-02,7,4,gpt
+CC037,skip,low,low,GetProg profile,2026-01-04,0,0,gpt
+CC038,complete,high,high,SoftVis3D website,2026-01-03,10,5,gpt
+CC039,skip,low,low,"Out of scope: trace-visualization controlled experiment (Extravis), not software-city visualization",2026-01-05,0,0,gpt
+CC040,complete,high,high,SoftVis3D repo,2026-01-03,12,5,gpt
+CC041,complete,medium,medium,CodeVestimenta clothing metaphor (KES 2025),2026-01-05,3,3,gpt
+CC042,skip,medium,high,VariCity paper (ScienceDirect preview; duplicate of CC045),2026-01-04,0,0,gpt
+CC043,complete,high,high,SoftViz3D repo (deprecated; pre-SonarQube),2026-01-03,6,3,gpt
+CC044,skip,low,low,Reactive programming study - tangential,2026-01-04,0,0,gpt
+CC045,complete,medium,high,JSS 2023 visualization paper (HAL PDF mirror),2026-01-04,7,5,gpt
+CC046,skip,low,medium,SoftVis3D releases,2026-01-04,0,0,gpt
+CC047,skip,medium,medium,ACM DL paper (reactive programming comprehension; out of scope),2026-01-04,0,0,gpt
+CC048,skip,medium,medium,URJC portal metadata (duplicate of CC018),2026-01-04,0,0,gpt
+CC049,skip,low,medium,SoftVis WordPress blog,2026-01-04,0,0,gpt
+CC050,skip,low,low,XP16 sketching paper - tangential,2026-01-04,0,0,gpt
+CC051,skip,medium,medium,Semantic Scholar metadata (duplicate of CC021),2026-01-04,0,0,gpt
+CC052,skip,medium,high,VRS evolution visualization mapping (out of scope for software cities),2026-01-04,0,0,gpt
+CC053,complete,high,high,ExplorViz ScienceDirect paper,2026-01-02,5,2,gpt
+CC054,complete,medium,medium,EG digital library paper,2026-01-04,8,4,gpt
+CC055,complete,medium,medium,Code2City UniBas,2026-01-04,12,0,gpt
+CC056,skip,low,low,YouTube video,2026-01-04,0,0,gpt
+CC057,complete,medium,high,Maletic 2001 ICSE - early softvis,2026-01-04,4,2,gpt
+CC058,skip,low,low,StackOverflow Plotly question - tangential,2026-01-04,0,0,gpt
+CC059,complete,high,high,Evolving Software Cities 2020,2026-01-03,16,3,gpt
+CC060,skip,medium,medium,CodeMR documents,2026-01-04,0,0,gpt
+CC061,skip,medium,medium,IEEE VR City paper,2026-01-04,0,0,gpt
+CC062,skip,low,medium,JetBrains CodeMR plugin,2026-01-04,0,0,gpt
+CC063,skip,medium,medium,CSIC publication,2026-01-04,0,0,gpt
+CC064,complete,medium,high,IST 2019 paper,2026-01-04,9,0,gpt
+CC065,skip,low,low,Observable forum - tangential,2026-01-04,0,0,gpt
+CC066,complete,medium,medium,Dagstuhl paper,2026-01-04,1,0,gpt
+CC067,skip,low,low,Highcharts sunburst demo - tangential,2026-01-04,0,0,gpt
+CC068,skip,medium,high,Langelier ASE 2005,2026-01-04,0,0,gpt
+CC069,complete,high,high,SecCityVR arXiv HTML,2026-01-04,10,1,gpt
+CC070,complete,medium,medium,Core.ac.uk paper,2026-01-04,5,1,gpt
+CC071,complete,high,high,Heat map overlays arXiv,2026-01-04,2,0,gpt
+CC072,skip,medium,medium,Duplicate OA PDF of CC064 (IST 2019 VR vs screen vs Eclipse),2026-01-04,0,0,gpt
+CC073,skip,high,high,ExplorViz Soton eprint (duplicate of CC053),2026-01-03,0,0,gpt
+CC074,complete,medium,high,DLR IslandViz page,2026-01-04,3,0,gpt
+CC075,complete,high,high,Langelier ASE 2005 PDF,2026-01-03,8,9,gpt
+CC076,complete,medium,medium,MuC 2019 IslandViz demo (ACM DL mirror),2026-01-04,2,0,gpt
+CC077,complete,high,high,ExplorViz about page,2026-01-04,5,2,gpt
+CC078,complete,medium,high,TH Koeln IslandViz,2026-01-04,3,0,gpt
+CC079,complete,high,high,Minelli 2021 paper,2026-01-03,5,5,gpt
+CC080,complete,high,high,ExplorViz archive repo,2026-01-03,5,0,gpt
+CC081,skip,low,low,YouTube video,2026-01-04,0,0,gpt
+CC082,skip,medium,medium,Duplicate IEEE Xplore page for CC071 (heat-map overlays),2026-01-04,0,0,gpt
+CC083,complete,medium,high,IslandViz Semantic Scholar,2026-01-04,2,0,gpt
+CC084,complete,medium,medium,Kiel dissertation,2026-01-04,4,1,gpt
+CC085,complete,high,high,Wettel 2007a ICPC paper,2026-01-04,13,2,gpt
+CC086,complete,high,high,Wettel 2008b paper,2026-01-03,13,0,gpt
+CC087,skip,critical,critical,Duplicate of CC025 (same ICSE 2011 controlled experiment PDF),2026-01-02,0,0,gpt
+CC088,skip,low,low,USI software-visualization page removed; faculty/REVEAL pages are biographical only,2026-01-05,0,0,gpt
+CC089,skip,low,low,Duplicate of CC088; biographical/metadata-only content,2026-01-05,0,0,gpt
+CC090,skip,skip,high,Duplicate of CC014 (CodeCharta website; trailing slash),2026-01-04,0,0,gpt
+CC091,complete,critical,critical,CodeCharta repo - reference implementation,2026-01-02,15,1,gpt
+CC092,complete,high,high,GoCity website,2026-01-03,1,0,gpt
+CC093,complete,high,high,GoCity repo,2026-01-03,7,0,gpt
+CC094,complete,high,high,JSCity repo,2026-01-02,4,1,gpt
+CC095,skip,medium,high,JSCity Medium article (secondary; overlaps CC036/CC094),2026-01-04,0,0,gpt
+CC096,complete,high,high,Minelli Lanza 2022 IST paper,2026-01-04,9,2,gpt
+CC097,skip,high,high,Duplicate/condensed CodeCity tool-demo (see CC020/CC086),2026-01-04,0,0,gpt
+CC098,complete,high,high,Wettel 2008e tech report,2026-01-04,3,0,gpt
+CC099,skip,critical,critical,Duplicate of CC025 (same ICSE 2011 controlled experiment PDF),2026-01-02,0,0,gpt
+CC100,complete,medium,high,SOFTVIS 2010: development history in software cities (ACM DL mirror),2026-01-04,1,0,gpt
+CC101,complete,high,high,Steinbrückner dissertation — EvoStreets consistent software cities + landscapes,2026-01-05,3,3,gpt
+CC102,complete,high,high,CodeMetropolis paper,2026-01-04,9,3,gpt
+CC103,complete,high,high,CodeMetropolis 2015 paper,2026-01-04,4,0,gpt
+CC104,complete,high,high,GoCity SANER 2019 paper,2026-01-03,9,0,gpt
+CC105,skip,medium,medium,Duplicate arXiv PDF of CC036 (JSCity paper),2026-01-04,0,0,gpt
+CC106,complete,high,high,VR City QRS 2017,2026-01-03,10,6,gpt
+CC107,complete,medium,medium,ACM searching VR paper,2026-01-04,0,0,gpt
+CC108,complete,high,high,ExplorViz VISSOFT 2013 preprint,2026-01-04,2,0,gpt
+CC109,skip,medium,high,Heat maps arXiv abstract,2026-01-04,0,0,gpt
+CC110,skip,high,high,Duplicate of CC096 (same CodeCity on-screen vs VR paper),2026-01-04,0,0,gpt
+CC111,skip,high,high,Duplicate metadata page for SecCityVR (see CC069),2026-01-04,0,0,gpt
+CC112,skip,high,high,Duplicate SecCityVR PDF/DOI entry (full text in CC069),2026-01-04,0,0,gpt
+CC113,skip,medium,high,SoftVis3D website (trailing slash),2026-01-04,0,0,gpt
+CC114,complete,medium,medium,DiVA thesis portal,2026-01-04,4,2,gpt
+CC115,skip,critical,critical,Duplicate/alternate PDF of CC035 (same PhD thesis),2026-01-02,0,0,gpt
+CC116,complete,high,high,Wettel WCRE 2008,2026-01-04,4,0,gpt
+CC117,complete,high,high,Wettel SoftVis 2008 disharmony maps,2026-01-04,1,0,gpt
+CC118,skip,high,high,Duplicate of CC085 (ICPC 2007 habitability paper),2026-01-04,0,0,gpt
+CC119,skip,high,high,Duplicate CodeCity tool-demo PDF (see CC020/CC086),2026-01-04,0,0,gpt
+CC120,complete,medium,medium,Wettel FAMOOSr 2008,2026-01-04,2,0,gpt
+CC121,complete,medium,medium,CodeCity download page,2026-01-04,0,0,gpt
+CC122,skip,medium,medium,Wettel publications page,2026-01-04,0,0,gpt
+CC123,skip,medium,medium,Wettel homepage,2026-01-04,0,0,gpt
+CC124,skip,low,low,"Duplicate of CC096 (CodeCity on-screen vs VR, IST 2023)",2026-01-04,0,0,gpt
+CC125,skip,low,low,Duplicate/low-signal IEEE Xplore landing page for CC106 (VR City),2026-01-04,0,0,gpt
+CC126,complete,medium,medium,Code Park (VISSOFT 2017) — class-as-room metaphor with code wallpaper; user studies vs IDE,2026-01-04,2,0,gpt
+CC127,skip,low,low,Duplicate arXiv landing page for CC026 (Code Arcades),2026-01-04,0,0,gpt
+CC128,complete,medium,medium,codecity-visualizer repo — district + evostreet layout library (SoftVis3D engine),2026-01-04,2,0,gpt
+CC129,complete,medium,medium,SoftVis3D Sonar plugin repo — dependency view + Graphviz layout + dependency aggregation,2026-01-04,3,0,gpt
+CC130,complete,medium,medium,CodeMetropolis repo — Java toolchain pipeline + mapping XML + “danger” hazard encoding,2026-01-04,4,6,gpt
+CC131,complete,medium,medium,Getaviz repo — multi-language city variants (floors/bricks) + dynamic/evolution + VR,2026-01-04,8,0,gpt
+CC132,skip,low,low,ExplorViz GitHub org page (repository index; overlaps CC053/CC077/CC080),2026-01-04,0,0,gpt
+CC133,complete,medium,medium,DynaCity repo — Unity dynamic city with ElasticSearch span overlays and time buckets,2026-01-04,8,0,gpt
+CC134,complete,medium,medium,"BabiaXR repo — A-Frame components for software cities (treemap/spiral), evolution playback, and multi-user demos",2026-01-04,8,0,gpt
+CC135,skip,low,low,Prototype WebXR/Three.js code-city demo repo (low-signal; overlaps established implementations),2026-01-04,0,0,gpt
+CC136,complete,medium,medium,CoderCity repo — code ownership in a code city via git-blame hunk segments colored by author,2026-01-04,1,1,gpt
+CC137,complete,medium,medium,Holoware software-city repo — Unity layered layout (LSM/levelized) + trace overlays + evaluation spreadsheets,2026-01-04,5,1,gpt
+CC138,skip,low,low,Duplicate/low-signal GoCity landing page (use CC092/CC093/CC104),2026-01-04,0,0,gpt
+CC139,skip,low,low,Low-signal demo page for CC135 (modernizing/codecity),2026-01-04,0,0,gpt
+CC140,complete,medium,medium,CodeMetropolis website — “In a nutshell” overview and toolchain stages,2026-01-04,0,0,gpt
+CC141,skip,low,low,Duplicate of CC077 (ExplorViz “About” page; redirected mirror),2026-01-04,0,0,gpt
+CC142,skip,low,low,Non-technical marketing page for a commercial “immersive development environment”,2026-01-04,0,0,gpt
+CC143,complete,medium,medium,"BabiaXR documentation site — toolset overview, tutorials, and license pointer",2026-01-04,0,0,gpt
+CC144,skip,low,low,Secondary JSCity blog post (DEV) overlapping CC036/CC094,2026-01-04,0,0,gpt
+CC145,skip,low,low,Secondary “how to use CodeCity” blog post (MSE/iPlasma pipeline; no new technical detail),2026-01-04,0,0,gpt
+CC146,skip,low,low,Secondary JSCity write-up (I-Programmer) overlapping CC036/CC094,2026-01-04,0,0,gpt
+CC147,complete,medium,medium,City Blocks (Medium) — open-source 3D “repo city” showing LOC + churn with stacked directory blocks,2026-01-04,0,0,gpt
+CC148,complete,medium,medium,Viseagull (Medium) — coupling-based “cities + roads” visualization (logical/semantic coupling; t-SNE layout),2026-01-04,1,2,gpt
+CC149,skip,low,low,Secondary Medium overview of software visualization (brief city-metaphor mention; no new technical detail),2026-01-04,0,0,gpt
+CC150,skip,low,low,DBLP author profile (metadata-only; no extractable technique/tool content),2026-01-04,0,0,gpt
+CC151,skip,low,low,OpenAlex author profile mirror — metadata only; no software-city technique details,2026-01-05,0,0,gpt
+CC152,skip,low,low,Secondary metadata page (Semantic Scholar) for CodeCity ICSE Companion 2008 demo paper,2026-01-04,0,0,gpt
+CC153,skip,low,low,VS Code “CodeViz” extension listing (diagram/maps + LLM search; not software-city visualization),2026-01-04,0,0,gpt
+CC154,skip,low,low,VS Code “Code Visualizer” extension (call-hierarchy flowcharts; not software-city visualization),2026-01-04,0,0,gpt

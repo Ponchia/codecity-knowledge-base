@@ -1,0 +1,33 @@
+id: CC052
+url: https://dsp.tecnalia.com/bitstream/handle/11556/1432/1-s2.0-S0950584922001938-main.pdf?sequence=1&isAllowed=y
+type: pdf
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Information and Software Technology (2023) systematic mapping study on visualization approaches for the evolution of Variant-Rich Systems (VRS), reporting 41 approaches and classifying them by analysis scenario, visualization type, and research maturity. It does not contribute software-city/city-metaphor visualization techniques or implementations directly, so it is treated as out of scope for this CodeCity-focused knowledge base.
+
+key_contributions: []
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+secondary_study:
+  study_type: systematic_mapping
+  corpus_size: 234
+  included_studies: 41
+  key_findings:
+    - Feature identification/location is the most common VRS evolution scenario; node-link visualizations dominate.
+    - Nearly half of studies are solution proposals, with few proof-of-value evaluations.
+  data_availability: not specified in extracted text
+
+quality_notes: |
+  While the paper is about software visualization, its focus is VRS evolution rather than software cities; it only references city-metaphor work in related-work citations.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0
+

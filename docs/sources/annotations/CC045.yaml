@@ -1,0 +1,39 @@
+id: CC045
+url: https://dl.acm.org/doi/10.1016/j.jss.2023.111876
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Full-text HAL PDF preprint (JSS “in press”, DOI 10.1016/j.jss.2023.111876) describing VariCity, a configurable 3D software-city visualization for comprehending implemented OO variability. VariCity encodes method- and constructor-level variability (via height/width) and renders usage and inheritance relationships as different street types, while VariMetrics overlays software-quality metrics (from SonarCloud/SonarQube) using configurable color/texture strategies to highlight technical-debt-critical zones. The paper reports evaluations on multiple variability-rich Java systems and a controlled experiment (24 vs 25 subjects) showing improved performance on several variability-comprehension tasks, and provides replication artifacts and a Zenodo reproduction package.
+
+key_contributions:
+  - VariCity: city-metaphor visualization for OO variability comprehension, encoding method vs constructor overload density via building dimensions
+  - Relationship-as-streets design: plan/underground usage streets and aerial inheritance streets (with additional links shown on hover)
+  - VariMetrics extension: overlays OO quality metrics using configurable strategies (red↔green, saturation, crackled texture) to surface variability debt/technical-debt-critical zones
+  - Empirical evaluation on real systems plus a controlled experiment vs IDE+CSV baseline, with replication materials and reproduction package
+
+terms_introduced: [software variability, technical debt, variability debt, variation point, variant]
+features_described: [F001, F002, F006, F016, F035, F037, F065]
+implementations_documented: [I030]
+
+empirical_evidence:
+  study_type: controlled_experiment
+  sample_size: 49
+  dependent_variables: [correctness, task duration, perceived difficulty]
+  independent_variables: [tool (VariCity vs IDE + CSV)]
+  key_findings:
+    - VariCity users gave statistically more correct answers on 6/11 tasks, especially for tasks involving complex variability structures (e.g., design patterns and hotspots).
+    - VariCity was faster on tasks 3, 6, 7, and 8 (and the IDE + CSV baseline was faster on task 2).
+    - Perceived difficulty favored VariCity on tasks focused on design patterns/hotspots/distance between classes (tasks 6–9).
+  effect_size: not reported
+
+quality_notes: |
+  This is a HAL “in press” PDF preprint mirrored from hal-04247907v2. It contains full method/results details and URLs for replication materials and a Zenodo reproduction package; the canonical publisher page requires access.
+
+statistics:
+  features_extracted: 7
+  terms_extracted: 5
+  implementations_documented: 1

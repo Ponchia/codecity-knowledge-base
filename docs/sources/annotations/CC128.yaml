@@ -1,0 +1,33 @@
+id: CC128
+url: https://github.com/yvo-niedrich/codecity-visualizer
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  TypeScript/ES2015 library for building “code city” visualizations with configurable layout and packing strategies.
+  It implements both a district-based CodeCity-style layout and an EvoStreet-style street layout, and documents an
+  evolution-aware model representation for consistent software cities. The repository is used as a layout engine by
+  SoftVis3D.
+
+key_contributions:
+  - Reusable code-city layout/geometry library (TypeScript) used by SoftVis3D
+  - Documents an evolution-model representation as a 5-tuple (G, T, R, fe, A) suitable for consistent city layouts across versions
+  - Implements District and Evostreet illustrators with configurable containers and placement options (e.g., strip-treemap/grid and lightmap packing)
+
+terms_introduced: []
+
+features_described: [F009, F032]
+implementations_documented: [I019]
+
+quality_notes: |
+  Repo snapshot at commit 74954f737516f54e58fd04908c2304eb1dac35d8 (2017-05-14); package version 0.4.6.
+  The model documentation references Frank Steinbrückner’s “Consistent Software Cities” (tracked separately as CC101,
+  currently marked suspect/corrupt in this corpus).
+
+statistics:
+  features_extracted: 2
+  terms_extracted: 0
+  implementations_documented: 1

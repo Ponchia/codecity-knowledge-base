@@ -1,0 +1,24 @@
+id: CC001
+url: https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  PNG logo image (not domain-relevant content for software city visualization).
+
+key_contributions: []
+
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  This source is not a document/paper/repo; it is an image asset.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

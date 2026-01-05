@@ -1,0 +1,27 @@
+id: CC115
+url: https://wettel.github.io/download/Wettel10b-PhDThesis.pdf
+type: pdf
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Alternate PDF for the same PhD thesis “Software Systems as Cities” processed as CC035.
+  Skipped to avoid duplicating extracted knowledge.
+
+key_contributions:
+  - None — duplicate of CC035
+
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  This source appears to be the same thesis as CC035 (title/authors/content). Prefer CC035 as the
+  canonical extracted source.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

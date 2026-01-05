@@ -1,0 +1,27 @@
+id: CC113
+url: https://softvis3d.com/
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  SoftVis3D website (GitHub Pages) accessed via a trailing-slash URL. This is a duplicate of CC038 (same content at
+  https://softvis3d.com), so no additional extraction is needed.
+
+key_contributions:
+  - None — duplicates CC038 (same SoftVis3D website)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Use CC038/CC040 for SoftVis3D feature and implementation extraction.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

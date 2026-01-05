@@ -1,0 +1,28 @@
+id: CC062
+url: https://plugins.jetbrains.com/plugin/10811-codemr/features/visualization
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  JetBrains Marketplace page for CodeMR (IntelliJ plugin) describing metric/quality visualizations such as treemap and
+  sunburst charts, dependency, and graph views. It does not document a software-city/city-metaphor visualization and is
+  out of scope for this knowledge base.
+
+key_contributions: []
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Overlaps the already-skipped CodeMR documentation source (CC060); this source is a marketplace listing rather than a
+  primary technical paper/tool write-up for software cities.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

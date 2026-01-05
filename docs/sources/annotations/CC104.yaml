@@ -1,0 +1,45 @@
+id: CC104
+url: https://homepages.dcc.ufmg.br/~mtov/pub/2019-saner-gocity.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  SANER 2019 paper introducing GoCity, a web-based Code City implementation for Go. It adapts the
+  city metaphor to Go’s structs/files, specifies metric encodings (methods/attributes/LOC), and
+  documents the tool architecture (processing + front-end modules). The paper also reports a user
+  feedback survey (12 responses) and usage scenarios on popular Go projects.
+
+key_contributions:
+  - Adapts the city metaphor to Go (files as buildings, structs stacked on file buildings, folders as districts)
+  - Defines GoCity metric encodings (attributes/fields → base size, methods → height, LOC → color intensity)
+  - Describes GoCity’s two-module architecture (processing services, frontend validation/3D/navigation)
+  - Reports user feedback from 12 Go developers on design/modularization insights and maintenance support
+  - Provides usage scenarios and hover-based metric inspection plus GitHub linking
+
+terms_introduced: []
+
+features_described: [F001, F017, F038, F043, F005, F006, F007, F013, F037]
+implementations_documented: [I023]
+
+empirical_evidence:
+  study_type: user_study
+  sample_size: 12
+  dependent_variables: [perceived design insights, perceived maintenance usefulness]
+  independent_variables: []
+  key_findings:
+    - 73% of respondents reported useful insights about design/architecture (modularization or design problems).
+    - 60% reported GoCity can help in maintenance/evolution tasks.
+    - Reported themes include code comprehension (67%) and refactoring candidate identification (33%).
+  effect_size: not reported
+
+quality_notes: |
+  Survey responses are limited to 12 developers (20% response rate from 60 contacted). The paper notes
+  tool usage metrics as of November 2018 (23K unique users and ~1.3K GitHub stars).
+
+statistics:
+  features_extracted: 9
+  terms_extracted: 0
+  implementations_documented: 1

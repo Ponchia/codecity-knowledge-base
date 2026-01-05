@@ -1,0 +1,28 @@
+id: CC081
+url: https://www.youtube.com/watch?v=nHu8xCFVhJM
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  YouTube demo video titled “IslandViz: Immersive Exploration of OSGi-based Software Systems in Virtual Reality”. It is a
+  secondary demonstration of IslandViz and does not provide additional technical detail beyond the primary IslandViz
+  publications already captured in this corpus (e.g., CC070, CC078).
+
+key_contributions:
+  - None — demo video (secondary; no new extractable technique details)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  YouTube pages are dynamically rendered; video identity verified via YouTube oEmbed.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

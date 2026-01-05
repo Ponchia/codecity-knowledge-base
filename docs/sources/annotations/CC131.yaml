@@ -1,0 +1,37 @@
+id: CC131
+url: https://github.com/softvis-research/Getaviz
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Getaviz is an open-source research platform for generating and exploring software visualizations in 2D, 3D, and VR,
+  including multiple city-metaphor variants (“City”, “City Floors”, “City Bricks”). It supports multiple languages
+  (Java, Ruby, PHP, C#) and can enrich structural views with behavioral (dynamic) and evolutionary information (git/svn),
+  aiming at tasks like antipattern refactoring, runtime bottleneck localization, software quality assessment, and
+  multi-version change tracking.
+
+key_contributions:
+  - Multi-view visualization platform spanning browser-based 3D and VR (HTC Vive, Oculus Rift)
+  - City-metaphor variants that explicitly expose method-level detail (floors and bricks)
+  - Generator pipeline consumes structural (FAMIX) and optionally dynamic and/or Hismo models
+  - Multi-language support via extractors (Java, Ruby, PHP, C#)
+  - Open-source distribution with Docker images for major components (generator2, UI, evaluation server)
+
+terms_introduced: []
+
+features_described: [F001, F002, F017, F027, F045, F011, F014, F015]
+implementations_documented: [I027]
+
+quality_notes: |
+  Repo snapshot at commit 4df62116f1932e4dd6ce7f2b9cd693cda026c5d9 (2023-02-09). The legacy `generator` component is
+  marked deprecated in favor of `generator2`. The UI documentation mentions X3DOM, while bundled example outputs in
+  `ui/data/*/model/model.html` use A-Frame HTML scenes plus `metaData.json` keyed by FAMIX IDs.
+
+statistics:
+  features_extracted: 8
+  terms_extracted: 0
+  implementations_documented: 1
+

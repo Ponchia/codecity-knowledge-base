@@ -1,0 +1,29 @@
+id: CC132
+url: https://github.com/ExplorViz
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  GitHub organization page for ExplorViz with a short README-style description and links to repositories (frontend,
+  deployment, collaboration-service, span-service, etc.). The description overlaps existing ExplorViz sources and does
+  not add technical detail beyond the already-processed ExplorViz publication pages and repos.
+
+key_contributions:
+  - None — organization/index page for repositories
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Prefer CC053/CC077 for official tool positioning and CC080/CC108/CC084 for technical details. This org page is
+  useful for discovering repos but is not itself a primary extraction source.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

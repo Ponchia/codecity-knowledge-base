@@ -1,0 +1,25 @@
+id: CC088
+url: https://www.inf.usi.ch/lanza/software-visualization.html
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-05
+
+summary: |
+  The original USI software-visualization page was removed; the current Lanza faculty/REVEAL pages are accessible
+  but provide only high-level biographical context, so this source is skipped.
+
+key_contributions: []
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  The accessible USI pages are metadata/biographical and do not add extractable software-city details beyond the
+  already processed primary papers.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

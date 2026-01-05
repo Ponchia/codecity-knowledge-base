@@ -1,0 +1,35 @@
+id: CC148
+url: https://medium.com/@charlesgery/exploring-the-hidden-architecture-of-your-codebase-964a76ea17d5
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Medium post presenting Viseagull, an open-source “ludic design” repository-exploration tool that visualizes files as
+  buildings clustered into “cities” based on logical coupling (co-change) or semantic coupling (lexical similarity), and
+  links clusters with roads based on shared-commit activity. It describes the underlying coupling computations (Jaccard
+  distance for co-change; tf-idf + cosine similarity for lexicon), the layout approach (t-SNE + spring-like overlap
+  removal), and interactive controls (hover, zoom/scroll, road-thresholding, commit highlighting, date-based coloring).
+
+key_contributions:
+  - Defines and applies logical coupling (co-change) and semantic coupling (lexicon similarity) to cluster files
+  - Describes a coupling-driven layout using t-SNE positions plus a spring-layout-like overlap-avoidance step
+  - Documents an interactive “cities + roads” visualization of coupling relationships and history-derived signals
+
+terms_introduced:
+  - logical coupling
+  - semantic coupling
+
+features_described: [F010]
+implementations_documented: [I036]
+
+quality_notes: |
+  This is a blog post; the linked GitHub repository is the primary technical artifact but is not separately indexed in
+  the bibliography (should be ingested as its own source for deeper technical validation and reproducibility details).
+
+statistics:
+  features_extracted: 1
+  terms_extracted: 2
+  implementations_documented: 1

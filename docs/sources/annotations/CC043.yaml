@@ -1,0 +1,38 @@
+id: CC043
+url: https://github.com/stefanrinderle/SoftViz3D
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  SoftViz3D is a deprecated web-based tool (master-thesis project) for 3D visualization of software structures and
+  dependencies. It renders hierarchical structure layers and a dependency view in the browser using X3DOM, relies on
+  GraphViz for layout and edge routing (dot/neato), and includes a hierarchy-aware dependency expansion mechanism that
+  aggregates dependencies into weighted path edges to keep large graphs readable.
+
+key_contributions:
+  - Documents an X3DOM-based web approach for 3D structure/dependency visualization (no native plugins)
+  - Implements a dedicated dependency view with weighted edges (thickness encodes dependency counts)
+  - Provides a hierarchy-aware dependency expansion that introduces interface nodes and “path” edges for aggregation
+  - Shows interactive layer visibility control (show/remove/expand-all) to manage complexity in the 3D scene
+  - Records deprecation rationale and migration path to a SonarQube-based successor (SoftVis3D)
+
+terms_introduced:
+  - X3DOM
+  - GraphViz
+  - Goanna
+
+features_described: [F005, F007, F022, F030, F047, F048]
+implementations_documented: [I020]
+
+quality_notes: |
+  The repo README marks the project as deprecated; it depends on older web/analysis components (Yii/PHP, X3DOM, PEAR
+  GraphViz bindings) and appears to be a shallow local snapshot (single commit present in the local clone:
+  aa6dd6d7b867b5ad7d4295569ff077c65b80a8a1, dated 2015-11-29).
+
+statistics:
+  features_extracted: 6
+  terms_extracted: 3
+  implementations_documented: 1

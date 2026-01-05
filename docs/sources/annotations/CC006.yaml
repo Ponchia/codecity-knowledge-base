@@ -1,0 +1,27 @@
+id: CC006
+url: https://nzjohng.github.io/publications/papers/iv2003.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Early (2003) research paper proposing a 3D “software city” for reverse-engineered systems and arguing that static/dynamic structure alone is insufficient for maintenance. It overlays production- and cost-related signals (e.g., work distribution, obsolete parts, hot execution spots, frequent modifications) to help stakeholders quickly spot high-cost areas.
+
+key_contributions:
+  - Proposes a production-cost-focused overlay on top of a 3D software city to support maintenance planning and early problem detection
+  - Enumerates concrete cost/operations indicators (work distribution, recycling/obsolete parts, hot execution, aspects, high modification cost) and corresponding visual encodings
+
+terms_introduced: [software production visualization]
+
+features_described: [F062]
+implementations_documented: []
+
+quality_notes: |
+  The paper is conceptual/prototype-oriented and does not report a formal evaluation. It describes example encodings and navigation ideas (e.g., fly-through) and notes the prototype was implemented in 3DStudio Max, with OpenGL4Java suggested for future testing.
+
+statistics:
+  features_extracted: 1
+  terms_extracted: 1
+  implementations_documented: 0

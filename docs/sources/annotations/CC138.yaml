@@ -1,0 +1,27 @@
+id: CC138
+url: https://go-city.github.io
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  GoCity website entry (landing page) for a 3D “code city” visualization of Go source code. The local snapshot contains
+  only a minimal title-level description and overlaps the already-processed GoCity website source (CC092).
+
+key_contributions:
+  - None — duplicate/low-signal variant of the GoCity website already captured in CC092
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Prefer CC104 (SANER 2019 paper) and CC092/CC093 (website/repo) for GoCity extraction.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

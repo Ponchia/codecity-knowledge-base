@@ -1,0 +1,54 @@
+id: CC024
+url: https://wettel.github.io/download/Wettel08b-wasdett.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Detailed WASDeTT 2008 paper describing CodeCity as a language-independent interactive 3D “software city”
+  visualization tool (classes/buildings, packages/districts). Goes beyond the initial city-metaphor introduction by
+  documenting the tool chain (Moose/FAMIX models, iPlasma extraction via MSE, Jun/OpenGL rendering), a modular
+  architecture, the mapper hierarchy for tunable metric→visual mappings, and user/programmer-level customization
+  via view configurations and scripting (inspired by Mondrian). Includes scalability/performance measurements across
+  multiple real systems.
+
+key_contributions:
+  - Describes CodeCity’s tool chain and language-independence: Moose/FAMIX model, iPlasma for Java/C++ export (MSE), Jun/OpenGL rendering, and Mondrian class blueprints
+  - Documents CodeCity’s module-level architecture (model/core/view management/rendering) and extensibility rationale
+  - Defines “view configurations” as tunable specs (visibility, glyphs, layouts, mappers) with preview and save/reuse workflow
+  - Presents the mapper class hierarchy (identity/linear/color/boxplot/threshold), including script-based persistence of configurations
+  - Reports scalability/performance data (build+render time across systems up to ≈1M LOC) and engineering lessons (reflection, unit testing)
+
+terms_introduced:
+  - view configuration
+  - MSE exchange format
+  - Mondrian
+  - class blueprint
+
+features_described: [F001, F002, F005, F006, F007, F008, F017, F018, F019, F020, F022, F023, F026, F035, F036]
+implementations_documented: [I003]
+
+empirical_evidence:
+  study_type: performance_measurement
+  sample_size: 9 systems (Java/C++/Smalltalk)
+  dependent_variables: [build_time_seconds]
+  independent_variables: [system_size, number_of_packages, number_of_classes]
+  key_findings:
+    - "Build+render times (class-level granularity) range from ~1.5s (CodeCity, 18 kLOC) to 260s (Azureus, 274 kLOC) on a 2.4GHz Core2Duo MacBook Pro."
+    - "Rendering/navigation remains fluid for thousands of simple cuboid glyphs (e.g., Azureus ~5,000 figures), but finer granularity and relationship rendering increase build cost."
+  effect_size: (not reported)
+
+quality_notes: |
+  Strong primary source for CodeCity’s architecture and configurability (mappers, view configurations, scripting).
+  Mentions evolution/disharmony visualization as supported but not detailed here; deeper coverage exists in CC035 and
+  related SoftVis publications.
+  CC024 also points to several primary sources that are not currently indexed as CC### entries (e.g., the MSE format
+  reference, Mondrian framework paper, and the “class blueprint” TSE 2005 paper), which may be worth ingesting
+  separately if we want deeper coverage of the supporting tool chain.
+
+statistics:
+  features_extracted: 15
+  terms_extracted: 4
+  implementations_documented: 1

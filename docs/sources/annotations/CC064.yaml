@@ -1,0 +1,44 @@
+id: CC064
+url: https://www.sciencedirect.com/science/article/abs/pii/S0950584919301405
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Information & Software Technology (2019) controlled experiment assessing the city metaphor on-screen vs in immersive
+  VR (Code2City vs Code2CityVR) and comparing both against Eclipse augmented with a “Metrics & Smells” plugin.
+  Across 42 participants in the experimental sessions, both city-metaphor tools significantly improved correctness vs
+  Eclipse, and the VR condition was significantly faster than the on-screen city while inducing common VR side effects.
+
+key_contributions:
+  - Controlled experiment (between-subjects; 42 participants in experimental sessions) comparing Eclipse vs Code2City vs Code2CityVR on program-comprehension tasks
+  - Reports significant correctness improvements for both city-metaphor treatments over Eclipse and significant time reductions for VR over both other treatments
+  - Documents tool support for the tasks, including viewfinder/gaze selection, name/caller search, and smell highlighting (brain/data/god classes) consistent across treatments
+  - Includes PANAS and post-questionnaire results and reports common VR side effects (headache, nausea, visual annoyance)
+
+terms_introduced: []
+features_described: [F001, F002, F005, F006, F007, F011, F022, F023, F034]
+implementations_documented: [I016, I017]
+
+empirical_evidence:
+  study_type: controlled_experiment
+  sample_size: 42
+  dependent_variables: [score (correctness), task completion time, positive affect score (PAS), negative affect score (NAS), post-questionnaire responses]
+  independent_variables: [tool (Eclipse vs Code2City vs Code2CityVR)]
+  key_findings:
+    - "Correctness (Score) differs significantly by tool (ANOVA p=0.005); both Code2City and Code2CityVR outperform Eclipse (Tukey HSD p=0.006 and p=0.035)."
+    - "Completion time differs significantly by tool (ANOVA p<0.001); Code2CityVR is faster than Code2City (p=0.001) and Eclipse (p<0.001)."
+    - "Mean Score: Eclipse 4.754 vs Code2City 6.183 vs Code2CityVR 5.788 (max=8). Mean Time (minutes): Eclipse 43.385 vs Code2City 38.167 vs Code2CityVR 27.294."
+    - "Only 3/17 Code2CityVR participants reported no side effects; headache, nausea, and visual annoyance were common."
+  effect_size: not reported
+
+quality_notes: |
+  The local artifact is a ScienceDirect landing page, but an author-accepted manuscript (AAM) PDF is available via an
+  open-access repository mirror and was used to extract full experimental details and results.
+
+statistics:
+  features_extracted: 9
+  terms_extracted: 0
+  implementations_documented: 2

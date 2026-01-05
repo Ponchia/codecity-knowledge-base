@@ -1,0 +1,29 @@
+id: CC072
+url: https://iris.unibas.it/retrieve/2a6c8660-3605-4dea-82f4-55cd414f7750/On%20the%20use%20of%20the%20virtual.pdf
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Open-access PDF of the IST 2019 paper “On the use of virtual reality in software visualization: The case of the city
+  metaphor” (Romano et al.). This is the same paper already processed in CC064 (publisher landing page + accessible
+  full-text mirror), so no additional extraction is needed here.
+
+key_contributions:
+  - None — duplicates CC064 (same paper)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  This repository mirror is useful for access to the author-accepted manuscript (AAM), but CC064 already captures the
+  extracted results, feature mappings, and experiment details for this work.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

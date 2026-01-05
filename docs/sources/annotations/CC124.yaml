@@ -1,0 +1,26 @@
+id: CC124
+url: https://dl.acm.org/doi/10.1016/j.infsof.2022.107064
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  DOI/landing-page entry (with mirrored PDF) for the Information and Software Technology paper “CodeCity: A comparison of on-screen and virtual reality”.
+  The paper has already been processed as CC096 (same study, implementation, and findings).
+
+key_contributions:
+  - None - duplicates CC096
+
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  CC124 is kept as an alternate access path (DOI / mirrored PDF), but extraction is skipped in favor of CC096.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

@@ -1,0 +1,28 @@
+id: CC028
+url: https://www.sciencedirect.com/science/article/pii/S0950584922001732
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  ScienceDirect landing page for the IST 2023 paper “CodeCity: A comparison of on-screen and virtual reality”.
+  This is a publisher-hosted version of the same work already processed from an accessible PDF (CC096).
+
+key_contributions:
+  - None — duplicates CC096 (same paper; CC028 provides only the publisher landing page/abstract)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  The ScienceDirect page mostly exposes the abstract/highlights and is behind publisher access controls for full text;
+  use CC096 for the extracted technical details, feature mapping, and study results.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

@@ -1,0 +1,29 @@
+id: CC092
+url: https://go-city.github.io/
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  GoCity website landing page (single-page app). The captured metadata positions GoCity as an
+  implementation of the Code City metaphor for visualizing Go source code in 3D, but the page
+  content itself is not present in the static HTML snapshot.
+
+key_contributions:
+  - Establishes GoCity as a Code City metaphor tool targeting Go source code and 3D visualization
+
+terms_introduced: []
+
+features_described: [F001]
+implementations_documented: [I023]
+
+quality_notes: |
+  The downloaded HTML is a JS-driven single-page app; only title and meta descriptions were
+  available in the static snapshot (no substantive on-page content).
+
+statistics:
+  features_extracted: 1
+  terms_extracted: 0
+  implementations_documented: 1

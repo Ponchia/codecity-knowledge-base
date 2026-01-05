@@ -1,0 +1,45 @@
+id: CC114
+url: https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A2017848
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Master’s thesis (Karlstad University, 2025) that integrates reflexion-model architectural analysis into a 3D
+  “code city” visualization by extending SoftVis3D. The prototype maps architecture modules to an island-based layout
+  and visualizes module and class dependencies as arrows, highlighting architectural violations and enabling drill-down
+  from module-level to class-level relations. A small remote task-based user study (n=5) evaluates usefulness and reports
+  perceived value for onboarding and architecture understanding (mean impact rating 4.2/5).
+
+key_contributions:
+  - Integrates reflexion-model architecture plans with a 3D code visualization (SoftVis3D) via an island-based module layout
+  - Visualizes architecture-conforming vs violating dependencies (module-to-module arrows) with drill-down to class-to-class arrows and class highlighting
+  - Reports a small user study (n=5) and documents observed usability issues/limitations plus replication repositories
+
+terms_introduced: [reflexion model, architectural erosion]
+
+features_described: [F025, F030, F068, F070]
+implementations_documented: [I019]
+
+empirical_evidence:
+  study_type: user_study
+  sample_size: 5
+  dependent_variables: [task completion, qualitative usefulness ratings]
+  independent_variables: [tasks (module navigation, dependency/violation identification)]
+  key_findings:
+    - "Participants recognized value for onboarding and understanding undocumented systems; mean reported impact was 4.2/5."
+    - "Violation filtering and dependency drill-down supported locating architecture problems, but arrow overlap/selection precision hindered detailed analysis."
+  effect_size: not reported
+
+quality_notes: |
+  The DiVA record provides an open-access PDF; extraction is based on the full thesis PDF. The prototype is system-specific:
+  architecture module mappings and ~7,000 class dependencies for Apache Lucene are hard-coded in the client, limiting
+  generalizability. The thesis references Murphy et al.’s reflexion models paper as the conceptual basis; that primary
+  source is not currently indexed in this bibliography.
+
+statistics:
+  features_extracted: 4
+  terms_extracted: 2
+  implementations_documented: 1

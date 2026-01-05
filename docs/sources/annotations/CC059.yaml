@@ -1,0 +1,46 @@
+id: CC059
+url: https://www.inf.usi.ch/lanza/Downloads/Pfah2020a.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  Introduces m3triCity, a web-based platform for visualizing Git repositories as evolving software cities. The paper
+  presents an evolution model inspired by Hismo (adapted to Git) and a history-resistant layout that keeps artifacts at
+  fixed positions across versions, enabling smoother time traversal and explicit visualization of structural refactorings
+  (moves/renames) as animated relocations.
+
+key_contributions:
+  - Treats evolution as a first-class concept for software cities, addressing “layout jumps” during time traversal
+  - Defines an advanced evolution model for Git (repository/package/class histories over versions)
+  - Introduces a history-resistant layout that pre-allocates final space for entities to keep placement stable over time
+  - Visualizes structural refactorings as explicit movements, using 3D edge bundling to draw relocation arcs
+  - Provides interactive evolution UX: timeline-based navigation, time bucketing, hover inspection, regex hiding, tagging/colorization, and elision
+
+terms_introduced:
+  - history-resistant layout
+  - time bucketing
+  - elision
+
+features_described: [F001, F002, F005, F007, F008, F015, F017, F022, F023, F025, F029, F032, F033, F035, F037, F049]
+implementations_documented: [I021]
+
+empirical_evidence:
+  study_type: case_study
+  sample_size: 1
+  dependent_variables: []
+  independent_variables: []
+  key_findings:
+    - "JetUML case study (2015–2018) demonstrates stable layout and explicit visualization of package/class move refactorings."
+    - "A JetUML maintainer reported the visualization perspective was consistent with his recollection and helped identify maturation events not obvious from release notes."
+
+quality_notes: |
+  The primary evidence is a single-system case study (JetUML) with qualitative maintainer feedback; no quantitative
+  performance or controlled user-study results are reported.
+
+statistics:
+  features_extracted: 16
+  terms_extracted: 3
+  implementations_documented: 1

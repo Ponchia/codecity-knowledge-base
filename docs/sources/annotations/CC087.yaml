@@ -1,0 +1,27 @@
+id: CC087
+url: https://www.inf.usi.ch/lanza/Downloads/Wett2011a.pdf
+type: pdf
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Duplicate PDF of the ICSE 2011 paper “Software Systems as Cities: A Controlled Experiment”.
+  Content overlaps with CC025 (ACM DL canonical entry), which is used as the extracted source.
+
+key_contributions:
+  - None — duplicate of CC025
+
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Skipped to avoid duplicating extracted knowledge. Use CC025 for the controlled experiment details
+  and results.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

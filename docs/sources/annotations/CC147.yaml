@@ -1,0 +1,32 @@
+id: CC147
+url: https://medium.com/@cjayawickrema/city-blocks-3d-visualizer-for-git-repos-33a96fb984c4
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Medium post introducing “City Blocks”, an open-source Three.js/WebGL-based 3D visualization of a Git repository that
+  maps directories to stacked blocks and files to buildings, encoding size (LOC) and churn/commit activity using
+  geometry and color. It gives a concise implementation sketch (CSV export + Node server + bin-packing placement) and
+  positions the project as a CodeCity-like visualization focused on repo churn/size.
+
+key_contributions:
+  - Documents a CodeCity-adjacent 3D “repo city” visualization focused on churn (commits) and size (LOC)
+  - Describes the concrete mapping rules (directories as stacked blocks; files as buildings; heat coloring by commit ratio)
+  - Provides a high-level implementation outline (stats → CSV → Three.js renderer; DFS + bin packing; glob-based exclusions)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: [I035]
+
+quality_notes: |
+  This source is a blog post; the linked GitHub repository is the primary technical artifact but is not separately indexed
+  in the bibliography (should be ingested as its own source for deeper technical validation).
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 1

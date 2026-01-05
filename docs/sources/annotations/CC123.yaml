@@ -1,0 +1,28 @@
+id: CC123
+url: https://wettel.github.io/
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Richard Wettel’s personal homepage (biographical). It provides background on CodeCity and points to publications and
+  the experiment replication page, but does not contain additional technical details suitable for feature extraction.
+
+key_contributions:
+  - None — biographical aggregation page
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Useful for locating related pages (publications, experiment replication), but not a primary technical source. Prefer
+  the actual papers and tool documentation already indexed (e.g., CC023/CC024/CC025/CC035/CC098/CC121).
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

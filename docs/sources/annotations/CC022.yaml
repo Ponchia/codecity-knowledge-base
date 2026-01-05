@@ -1,0 +1,27 @@
+id: CC022
+url: https://www.cs.kent.edu/~jmaletic/cs69995-PC/papers/Wettle07.pdf
+type: pdf
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Duplicate copy of the VISSOFT 2007 paper “Visualizing Software Systems as Cities”.
+  Content matches CC023, so CC023 is used as the canonical extracted source.
+
+key_contributions:
+  - None — duplicate of CC023
+
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  This PDF appears to be the same paper as CC023 (identical title/authors/text). Skipped to avoid
+  duplicating extracted knowledge.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

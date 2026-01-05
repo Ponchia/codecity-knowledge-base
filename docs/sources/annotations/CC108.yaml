@@ -1,0 +1,34 @@
+id: CC108
+url: https://oceanrep.geomar.de/21840/1/ExplorViz_VISSOFT2013_preprint.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  VISSOFT 2013 preprint introducing the ExplorViz approach for live trace visualization of large software landscapes.
+  It outlines a five-step pipeline (monitoring, preprocessing with trace reduction, aggregation, transformation, navigation)
+  and presents a two-perspective UI: a 2D landscape-level view (UML-deployment/activity inspired) and a 3D system-level
+  city view per application. Scalability is addressed via on-demand exploration, including aggregating similar entities and
+  expanding relationships when requested.
+
+key_contributions:
+  - Early end-to-end description of ExplorViz for live monitoring traces in large software landscapes (pipeline A1–A5)
+  - Defines the dual-perspective visualization (2D landscape view + 3D city per system) and linking between levels
+  - Details scalability strategy using trace reduction and on-demand expansion of aggregated entities/relations
+
+terms_introduced: []
+
+features_described: [F014, F041]
+implementations_documented: [I009]
+
+quality_notes: |
+  This is a preprint with concept descriptions and mockups; it does not report a controlled evaluation. Some technical
+  details overlap with later ExplorViz sources (CC053/CC080/CC071), but CC108 is useful for provenance of the original
+  trace-processing pipeline and landscape/system dual-view design.
+
+statistics:
+  features_extracted: 2
+  terms_extracted: 0
+  implementations_documented: 1

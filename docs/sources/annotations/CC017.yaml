@@ -1,0 +1,32 @@
+id: CC017
+url: http://www.rwettel.com/codecity.html
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  CodeCity’s homepage provides a concise overview of the tool’s city metaphor and implementation context: classes are
+  rendered as buildings, packages as districts, and visual properties encode software metrics in the spirit of
+  CodeCrawler’s polymetric views. It also notes the implementation platform (VisualWorks Smalltalk on Moose with
+  OpenGL rendering) and cross‑platform availability.
+
+key_contributions:
+  - Confirms the core CodeCity mappings (classes→buildings, packages→districts) in an official project description
+  - Cites the tool’s implementation stack: VisualWorks Smalltalk + Moose + OpenGL
+  - Provides context on the broader publication trail for the approach (ICPC/VISSOFT/SoftVis/WASDeTT/WCRE/FAMOOSr)
+
+terms_introduced: []
+
+features_described: [F001, F002, F017]
+implementations_documented: [I003]
+
+quality_notes: |
+  This is a high-level project page; it does not provide algorithmic details or evaluation evidence beyond pointing to
+  the publication list. Treat as authoritative for the mapping statement and implementation platform only.
+
+statistics:
+  features_extracted: 3
+  terms_extracted: 0
+  implementations_documented: 1

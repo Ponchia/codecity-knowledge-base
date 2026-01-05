@@ -1,0 +1,29 @@
+id: CC085
+url: https://www.inf.usi.ch/lanza/Downloads/Wett2007a.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  ICPC 2007 paper proposing “software habitability” and locality as key goals for program comprehension in 3D software visualization. It motivates and demonstrates CodeCity: a city-metaphor visualization where packages are districts and classes are buildings, with metrics mapped to height/footprint and package nesting indicated via tile coloration. The paper introduces discretized building archetypes and compares linear vs boxplot-based vs threshold-based mappings, and describes interactive exploration features (context menus, tagging via color/transparency, spawning isolated views, query-based selection, and eliding).
+
+key_contributions:
+  - Frames program-comprehension support in terms of habitability and locality, arguing for a “place-like” 3D visualization with orientation points and constrained navigation
+  - Specifies the core CodeCity mapping (packages→districts, classes→buildings; NOM→height; NOA→width/length; package nesting indicated via district/tile color saturation)
+  - Introduces a small set of building archetypes (house→mansion→apartment block→office building→skyscraper) and discusses three mapping strategies (linear, boxplot-based, threshold-based) and their tradeoffs
+  - Describes interactive operations used during exploration: popup context menus, visual marking via color/transparency, spawning district-only views, query-based selection (e.g., subclass hierarchies), and eliding
+
+terms_introduced: [habitability, locality]
+
+features_described: [F001, F017, F002, F005, F007, F006, F018, F019, F020, F023, F024, F025, F049]
+implementations_documented: [I003]
+
+quality_notes: |
+  The paper provides detailed motivation, mapping rationale, and illustrative walkthroughs on real systems, but does not report controlled-experiment statistics in this publication.
+
+statistics:
+  features_extracted: 13
+  terms_extracted: 2
+  implementations_documented: 1

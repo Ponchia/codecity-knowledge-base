@@ -1,0 +1,33 @@
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtualenvs / local tooling
+.env
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Generated ingestion artifacts (5.7GB): re-downloadable via build_codecity_library.py
+bibliography/sources/
+
+# Generated reports that can be rebuilt
+bibliography/reports/download_report.jsonl
+
+# Local backups (rebuildable)
+bibliography/_backup/
+
+# Temporary images or previews
+tmp_cc*.png
+*.pdf.png

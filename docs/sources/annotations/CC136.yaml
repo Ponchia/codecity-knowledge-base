@@ -1,0 +1,31 @@
+id: CC136
+url: https://github.com/INSO-World/CoderCity
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Open-source 3D code-city proof of concept focused on visualizing **code ownership** using version-control blame data.
+  Each file is rendered as a building (height = line count) within folder districts, and each building is subdivided into
+  segments derived from `git blame` hunks that are colored by author. The project provides a Dockerized Angular/NestJS
+  stack with a backend that scans local Git repositories for analysis input.
+
+key_contributions:
+  - Code-ownership visualization: per-file building segmentation by blame hunks with author-based coloring
+  - Concrete web implementation (Angular + Three.js frontend; NestJS backend using NodeGit) with Docker deployment
+
+terms_introduced: [code ownership]
+
+features_described: [F071]
+implementations_documented: [I034]
+
+quality_notes: |
+  Repository snapshot at commit d9012c8d91aecb74c1f86331c7d092d5f8f936f4 (2021-09-12). This is a proof-of-concept
+  tool without reported evaluation; extraction is based primarily on the README and core frontend rendering code.
+
+statistics:
+  features_extracted: 1
+  terms_extracted: 1
+  implementations_documented: 1

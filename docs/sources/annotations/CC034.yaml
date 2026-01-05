@@ -1,0 +1,33 @@
+id: CC034
+url: https://ceur-ws.org/Vol-2605/13.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Benelux 2019 workshop paper proposing a modern, web-based CodeCity implementation built on BabiaXR/A-Frame,
+  motivated by device accessibility and by adding explicit time evolution of the city. It describes generating CodeCity
+  JSON inputs from Git repositories (Graal/Perceval + ElasticSearch) and replaying snapshots while keeping building
+  positions stable via per-building identifiers.
+
+key_contributions:
+  - Early BabiaXR CodeCity prototype focused on time evolution in a browser (WebVR/A-Frame)
+  - Stable evolution approach: keep building positions fixed across snapshots and update only geometry (area/height) via unique IDs
+  - Provides a reproduction package link for replicating the workshop paper’s examples
+
+terms_introduced: []
+
+features_described: [F008, F011, F015, F032]
+implementations_documented: [I026]
+
+quality_notes: |
+  Proof-of-concept/work-in-progress paper; future work lists additional interaction ideas (e.g., small overview city vs
+  full-scale in-city navigation like driving/flying) and expanding beyond structural metrics. A reproduction package is
+  referenced in a footnote (GitLab link in the PDF text).
+
+statistics:
+  features_extracted: 4
+  terms_extracted: 0
+  implementations_documented: 1

@@ -1,0 +1,38 @@
+id: CC038
+url: https://softvis3d.com
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  SoftVis3D is a SonarQube-integrated WebGL “code city” visualization that maps folders/packages to districts and files
+  to buildings. The site documents layout options (including an “Evostreet” stable layout), profile presets for common
+  quality tasks, regex-based include/exclude filtering, and several color metrics including SCM blame-based author/commit
+  signals with explicit limitations (no SCM history).
+
+key_contributions:
+  - Documents a SonarQube extension that brings software-city visualization into an existing quality platform workflow
+  - Specifies default “profile” presets (risk / leak period / duplicated lines) and the metrics they select
+  - Clarifies limitations of SCM-derived metrics (authors/commits derived from current-line blame only)
+  - Provides shareable example links with an embedded `visualizationStatus` configuration (layout, metrics, filters)
+
+terms_introduced:
+  - bus factor
+  - leak period
+  - WebGL
+  - SonarQube
+  - SCM blame
+
+features_described: [F001, F005, F006, F007, F009, F015, F017, F023, F035, F038]
+implementations_documented: [I019]
+
+quality_notes: |
+  The page is primarily user-facing documentation/marketing; it does not describe layout algorithms in detail beyond the
+  city metaphor and high-level layout descriptions. Metric semantics are mostly delegated to SonarQube/SonarSource.
+
+statistics:
+  features_extracted: 10
+  terms_extracted: 5
+  implementations_documented: 1

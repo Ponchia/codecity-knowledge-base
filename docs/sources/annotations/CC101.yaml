@@ -1,0 +1,43 @@
+id: CC101
+url: https://opus4.kobv.de/opus4-btu/files/1681/Dissertation_Steinbrueckner_F.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+
+summary: |
+  PhD dissertation proposing “consistent software cities” for evolving software systems. Introduces the EvoStreets
+  layout approach that encodes evolution in the street structure while preserving spatial order across versions.
+  Defines a software model and data-collection pipeline (Software Cockpit), presents thematic evolution maps
+  (authorship, modification history, coupling), and extends the metaphor to software city landscapes representing
+  component architecture. Includes an empirical evaluation of layout consistency and multiple case studies.
+
+key_contributions:
+  - Defines the EvoStreets layout approach for consistent software cities that preserve spatial order during evolution.
+  - Presents a software model and Software Cockpit pipeline for collecting structure and evolution data.
+  - Demonstrates thematic evolution maps (authorship, modification history, coupling) on stable layouts.
+  - Introduces software city landscapes that combine multiple cities to represent component architectures.
+  - Empirically evaluates layout consistency and reports case-study findings across academic and industrial systems.
+
+terms_introduced: [EvoStreets, layout consistency, software city landscape]
+features_described: [F009, F015, F041]
+implementations_documented: [I038]
+
+empirical_evidence:
+  study_type: layout_evaluation
+  sample_size: unknown
+  dependent_variables: [layout_consistency, layout_compactness]
+  independent_variables: [layout_algorithm]
+  key_findings:
+    - EvoStreets layouts achieve higher consistency than common treemap/packing baselines, but can be less compact.
+  effect_size: unknown
+
+quality_notes: |
+  Dissertation spans software visualization broadly; only the software-city/evolution and landscape chapters were
+  extracted here. Some results are qualitative case studies rather than controlled user experiments.
+
+statistics:
+  features_extracted: 3
+  terms_extracted: 3
+  implementations_documented: 1

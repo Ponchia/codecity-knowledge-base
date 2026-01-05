@@ -1,0 +1,24 @@
+id: CC048
+url: https://portalcientifico.urjc.es/es/ipublic/item/9798006
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  URJC institutional portal metadata page for the JSS 2024 systematic mapping study “The influence of the city metaphor and its derivates in software visualization” (406 screened; 168 analyzed). Full extraction is already captured from the primary full-text/source entry (CC018), so this is treated as a duplicate metadata listing.
+
+key_contributions: []
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Metadata-only page (abstract + bibliometrics). Prefer CC018 for the processed systematic mapping extraction.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0
+

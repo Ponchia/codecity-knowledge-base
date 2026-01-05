@@ -1,0 +1,30 @@
+id: CC143
+url: https://babiaxr.gitlab.io
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  BabiaXR documentation site describing BabiaXR as a browser-based toolset for 3D/VR data visualization (WebXR/A-Frame).
+  The landing page links to component APIs, tutorials, examples, and publications, and indicates the project license (GPL-3.0).
+  This source complements the BabiaXR repository snapshot by providing user-facing documentation pointers.
+
+key_contributions:
+  - Public documentation hub for BabiaXR (get-started, component APIs, tutorials/examples, publications)
+  - Declares BabiaXR as a 3D/VR data-visualization toolset in the browser and indicates GPL-3.0 licensing
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: [I026]
+
+quality_notes: |
+  The captured content is the site landing page; detailed technical behavior remains best sourced from the BabiaXR repo
+  snapshot (CC134) and the primary BabiaXR-CodeCity papers (CC034/CC096).
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 1

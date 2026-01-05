@@ -1,0 +1,28 @@
+id: CC037
+url: https://www.getprog.ai/profile/11391106
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Prog.AI/GetProg profile page for Richard Wettel with biographical and employment information and a brief mention of
+  CodeCity/software cities. It is not a primary technical source and provides no extractable details about visualization
+  techniques, mappings, algorithms, or evaluations.
+
+key_contributions:
+  - None — biographical profile (no technical content)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Secondary bio/profile content; out of scope for technique/tool extraction.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

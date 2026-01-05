@@ -1,0 +1,29 @@
+id: CC152
+url: https://www.semanticscholar.org/paper/CodeCity:-3D-visualization-of-large-scale-software-Wettel-Lanza/2592cfed78d4c610b9055f4c45d71d2cfa020749
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Semantic Scholar metadata page for the ICSE Companion 2008 CodeCity demo paper (“CodeCity: 3D visualization of
+  large-scale software”). This is a secondary bibliographic/metadata source and does not add technical detail beyond
+  the already-processed primary sources for CodeCity (e.g., CC020 and related PDFs).
+
+key_contributions:
+  - None — secondary metadata/aggregation page
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Prefer CC020/CC023/CC035 for primary descriptions and evaluation. Semantic Scholar can be useful for discovering
+  related citations, but this page is not itself a technical extraction source.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

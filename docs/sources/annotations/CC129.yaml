@@ -1,0 +1,36 @@
+id: CC129
+url: https://github.com/stefanrinderle/sonar-softvis3d-plugin
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Deprecated SonarQube plugin implementing SoftVis3D’s “city” and “dependency” views. The plugin requires Graphviz
+  (dot) to compute layered layouts and renders dependencies as aggregated edges after a hierarchy-aware dependency
+  expansion step that inserts synthetic interface nodes. Dependency edges are weighted (e.g., thickness) by the number
+  of underlying dependencies merged into each aggregated path edge.
+
+key_contributions:
+  - City and dependency views integrated into SonarQube (“SoftVis3D Viewer”)
+  - Graphviz/dot-based layout generation for layered platforms and dependency routing
+  - Dependency-path expansion with synthetic interface nodes and aggregation counters
+  - Edge thickness mapping using Graphviz `penwidth` derived from aggregated dependency counts
+  - Documented deployment requirements (Graphviz path setting) and SonarQube compatibility matrix
+
+terms_introduced: []
+
+features_described: [F030, F047, F048]
+implementations_documented: [I019]
+
+quality_notes: |
+  Repo README marks the plugin as deprecated; development moved to the SoftVis3D wrapper project.
+  Snapshot at commit bdd18863aa334acfeefe88e37422ac1c29f586fa (2016-02-07). Evidence for dependency handling comes
+  primarily from code (e.g., `DependencyExpander`, `GrappaEdgeFactory`) rather than a paper-level description.
+
+statistics:
+  features_extracted: 3
+  terms_extracted: 0
+  implementations_documented: 1
+

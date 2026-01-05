@@ -1,0 +1,27 @@
+id: CC046
+url: https://github.com/stefanrinderle/softvis3d/releases
+type: repo
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Duplicate ingest of the SoftVis3D repository (same local snapshot/commit as CC040), indexed via the GitHub “releases”
+  URL. No additional release-note content was captured beyond what was extracted from the repo in CC040.
+
+key_contributions:
+  - None — duplicate of CC040 (SoftVis3D repo snapshot)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Local clone commit matches CC040: b1418e02d16b1eea238d4bed346fc46c005eeea9.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

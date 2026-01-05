@@ -1,0 +1,40 @@
+id: CC078
+url: https://cg.web.th-koeln.de/immersive-exploration-of-osgi-based-software-systems-in-virtual-reality/
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  TH Köln publication page for the IEEE VR 2018 work describing IslandViz, a VR visualization for OSGi-based software
+  systems using an island metaphor (modules as islands) rendered on a virtual table. The linked preprint/poster PDF
+  adds interaction details (translate/rotate/scale with zoom-as-LOD) and scale/performance notes from a case study.
+
+key_contributions:
+  - IslandViz in VR for OSGi: modules/bundles as islands, packages as regions, classes as buildings; dependencies shown via arced arrows
+  - Virtual-table interaction model (translation/rotation/scale), with zoom tied to transitions across island/region/building layers
+  - Reports a case-study scale (RCE subset) and performance notes (>90 Hz on HTC Vive) for interactive exploration
+
+terms_introduced: []
+
+features_described: [F011, F055, F068]
+implementations_documented: [I033]
+
+empirical_evidence:
+  study_type: case_study
+  sample_size: 1
+  dependent_variables: [rendering performance (Hz)]
+  independent_variables: []
+  key_findings:
+    - "Visualized an RCE subset (1700 classes, 500 packages, 160 bundles; 550 service and 1200 package dependencies) and sustained >90 Hz on HTC Vive."
+  effect_size: not reported
+
+quality_notes: |
+  The primary artifact is a publication page; the linked preprint is a short (2-page) poster-style PDF rather than a full
+  paper. CC070 provides a more complete design/implementation description across VR and AR.
+
+statistics:
+  features_extracted: 3
+  terms_extracted: 0
+  implementations_documented: 1

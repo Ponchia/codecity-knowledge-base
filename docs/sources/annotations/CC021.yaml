@@ -1,0 +1,43 @@
+id: CC021
+url: https://ieeexplore.ieee.org/document/10346099/
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  CLEI 2023 paper reporting an educational user study of a 3D software-city visualization. In a software engineering
+  course, 16 participants used the city to understand a web application’s structure and identify development/quality
+  best-practice issues; perceptions were measured using UEQ and TAM constructs, with generally positive results and
+  noted opportunities around ease of use and visualization comprehension.
+
+key_contributions:
+  - Empirical evidence (education setting) that a 3D city metaphor can support program comprehension and surface quality-related improvement opportunities
+  - Reports participant perceptions via UEQ and technology-acceptance constructs (ease of use, usefulness, intention to use)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+empirical_evidence:
+  study_type: user_study
+  sample_size: 16
+  dependent_variables: [user experience (UEQ), perceived usefulness (TAM), perceived ease of use (TAM), intention to use (TAM)]
+  independent_variables: []
+  key_findings:
+    - Participants generally evaluated acceptance and user-experience constructs positively in the course context.
+    - The visualization helped participants identify improvement opportunities in development and software-quality practices.
+    - The authors report opportunities for improvement around ease of use and visualization comprehension.
+  effect_size: not reported
+
+quality_notes: |
+  Full text/PDF could not be accessed in this environment (IEEE Xplore login wall / automated download protections);
+  extraction is based on the IEEE Xplore embedded metadata and abstract only, so tool implementation details and
+  study procedure specifics may be missing.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

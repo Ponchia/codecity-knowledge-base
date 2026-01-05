@@ -1,0 +1,42 @@
+id: CC054
+url: https://diglib.eg.org/bitstream/handle/10.2312/cgvc20151246/069-076.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Presents “trend maps”, a technique that extends interactive software maps (2.5D treemaps) to visualize software-metric
+  trends across a revision range in a single view. The approach computes per-entity time series from version control,
+  aggregates metrics bottom-up in the hierarchy, and maps trend categories to natural-phenomena-inspired visual effects
+  (surface materials and particle systems) implemented in Unreal Engine 4.
+
+key_contributions:
+  - Defines trend maps as an evolution visualization for software maps, based on metric time-series trends over a user-selected revision range
+  - Introduces a design space of item-based (material/surface) vs context-based (surrounding particle effects) natural-phenomena metaphors
+  - Describes an automatic effect parametrization pipeline (trend computation + discretization into five levels + mapping to effect parameter ranges)
+  - Reports performance characteristics on two real repositories, including expensive preprocessing but interactive rendering frame times
+
+terms_introduced: [software map, trend map, item-based metaphor, context-based metaphor]
+features_described: [F005, F006, F007, F008, F015, F016, F018, F066]
+implementations_documented: [I031]
+
+empirical_evidence:
+  study_type: benchmark
+  sample_size: 2
+  dependent_variables: [preprocessing time, aggregation time, frame time]
+  independent_variables: [dataset size (items/revisions), selected revision range]
+  key_findings:
+    - "Preprocessing (72 metrics across all revisions) was expensive (≈4h for libzeug; ≈48h for PocoProject), but rendering stayed interactive (≈16ms and ≈43ms frame times)."
+    - "Large revision ranges and large regions-of-interest can cause clutter/occlusion for context-based effects (e.g., fire)."
+  effect_size: not reported
+
+quality_notes: |
+  No controlled user study is reported (future work proposes one). The visualization shows trends for entities present in
+  a chosen revision x within the revision range; added/deleted entities within the range are not fully represented.
+
+statistics:
+  features_extracted: 8
+  terms_extracted: 4
+  implementations_documented: 1

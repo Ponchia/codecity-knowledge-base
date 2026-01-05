@@ -1,0 +1,55 @@
+id: CC075
+url: http://www.iro.umontreal.ca/~sahraouh/papers/langelier-ase2005.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  Proposes a visualization framework for large-scale software quality analysis using 3D class boxes and
+  metric-driven encodings (color, height, and twist). The approach adapts Treemap and Sunburst layouts to
+  discrete class glyphs, adds metric/structural filters, and reports an experiment comparing Treemap,
+  Sunburst, and a naive “Treeline” layout.
+
+key_contributions:
+  - Maps class metrics to visual properties: CBO→color, LCOM5→twist, WMC→height
+  - Adapts Treemap and Sunburst layouts to discrete 3D class boxes with package-aware separation
+  - Introduces metric-distribution filters and UML-relation filters for focused analysis
+  - Demonstrates design-principle violation detection, Blob anti-pattern identification, and evolution analysis
+  - Provides an experimental comparison of layout techniques (Treemap, Sunburst, Treeline)
+
+terms_introduced:
+  - coupling
+  - cohesion
+  - CBO
+  - LCOM5
+  - WMC
+  - DIT
+  - Blob
+  - sunburst
+  - treeline
+
+features_described: [F002, F005, F006, F008, F015, F023, F052, F053]
+implementations_documented: [I022]
+
+empirical_evidence:
+  study_type: controlled_experiment
+  sample_size: 15
+  dependent_variables: [task_completion_time]
+  independent_variables: [layout_technique]
+  key_findings:
+    - "Average time (sec): Treemap 36.38, Sunburst 50.13, Treeline 69.88 (20 tasks, 15 subjects)."
+    - "Median time (sec): Treemap 22.24, Sunburst 23.87, Treeline 41.24."
+    - "Best-time ranking: Treemap 55%, Sunburst 35%, Treeline 10%."
+    - "Subjective preference favored Sunburst (80% of subjects)."
+  effect_size: "Times reported; no standardized effect size."
+
+quality_notes: |
+  Experiment tasks cover class-characteristics and architecture questions on programs ranging from 72 to 1662 classes.
+  The study compares layouts rather than competing tools; results emphasize relative layout efficacy.
+
+statistics:
+  features_extracted: 8
+  terms_extracted: 9
+  implementations_documented: 1

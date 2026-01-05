@@ -1,0 +1,46 @@
+id: CC018
+url: https://www.sciencedirect.com/science/article/pii/S0164121224000281
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Systematic mapping study examining the influence of the software “city metaphor” across the software visualization literature.
+  The authors screen 406 publications citing the early city-metaphor/CodeCity papers and extract categorial information from 168,
+  reporting trends over time and tool adoption characteristics (including extended reality usage).
+
+key_contributions:
+  - Systematic mapping of city-metaphor influence: 406 citing publications screened; 168 included for detailed extraction
+  - Reports field growth since 2001 and an evolving research community/network of groups
+  - Reports tool-reporting gaps: less than 50% of city-metaphor tools are referenced in their papers
+  - Reports XR adoption gap: 85% of tools do not use extended reality environments (highlighting an opportunity for further XR research)
+  - Declares open access (CC BY 4.0) and points to a Zenodo replication package (link referenced in the paper)
+
+terms_introduced:
+  - systematic mapping study
+  - extended reality (XR)
+
+features_described: [F001, F011, F012]
+implementations_documented: []
+
+secondary_study:
+  study_type: systematic_mapping
+  corpus_size: 406
+  included_studies: 168
+  key_findings:
+    - The city metaphor remains active and continues to grow as a research topic (publication trend since 2001).
+    - Tool documentation/citation is inconsistent: <50% of city-metaphor tools are referenced in their papers.
+    - Extended reality is underused: 85% of tools do not use XR environments, though XR usage is trending upward.
+  data_availability: "Replication package hosted in Zenodo (link referenced in the paper)."
+
+quality_notes: |
+  The locally captured ScienceDirect page includes structured metadata (highlights, keywords, dates, license) and the structured abstract,
+  but does not include the full article body due to access restrictions in the capture. Extracted knowledge is therefore limited to what is
+  present in the abstract/metadata; revisit when a full-text PDF or replication package is available.
+
+statistics:
+  features_extracted: 3
+  terms_extracted: 2
+  implementations_documented: 0

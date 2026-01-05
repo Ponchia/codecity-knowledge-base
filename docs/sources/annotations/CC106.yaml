@@ -1,0 +1,51 @@
+id: CC106
+url: https://jurajvincur.github.io/3DLab/files/VincurQRS2017.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  Introduces VR City, a VR software-analysis tool for HTC Vive that adapts the software-city metaphor to support static,
+  dynamic (trace), and evolution analysis. The paper contributes a coupling-driven layout algorithm (spectral ordering +
+  Hilbert-curve placement), a fine-grained method-as-floors representation, in-VR source-code browsing via movable code
+  labels, and VR interactions such as room-scale walking and teleportation.
+
+key_contributions:
+  - Coupling-driven city layout from a weighted class-dependency graph using spectral ordering (Fiedler vector) and Hilbert-curve placement
+  - Fine-grained method visualization as floors within class buildings (floors sized by per-method metric values)
+  - Dynamic trace mode with per-trace coloring/translucency; traces recorded via Eclipse inTrace (no source modification)
+  - Evolution animation over commit ranges with author “avatars” (colored spheres) moving through waypoints derived from modified classes
+  - Remodularization analysis mode comparing packages vs semantic clusters via color schemes over the coupling layout
+
+terms_introduced:
+  - remodularization analysis
+  - semantic cluster
+  - spectral ordering
+  - Fiedler vector
+  - Hilbert curve
+  - teleportation
+
+features_described: [F002, F006, F010, F011, F013, F014, F015, F022, F045, F046]
+implementations_documented: [I011]
+
+empirical_evidence:
+  study_type: case_study
+  sample_size: 2 open-source systems (JHotDraw 7.0.6, JUnit 4)
+  dependent_variables: [qualitative_findings]
+  independent_variables: (not applicable)
+  key_findings:
+    - The fine-grained floor representation can expose method-level size distribution (e.g., oversized base floors suggesting long methods).
+    - Trace playback highlights which classes/methods participate in executions and supports comparing overlapping traces via color.
+  effect_size: (not reported)
+
+quality_notes: |
+  This is a tool/approach paper with illustrative case studies, not a controlled user study. Some claims about benefits
+  (e.g., reduced cognitive load via VR) are motivated by prior VR literature; the primary technical contribution is the
+  coupling-based layout plus interaction/analysis modes described for the prototype.
+
+statistics:
+  features_extracted: 10
+  terms_extracted: 6
+  implementations_documented: 1

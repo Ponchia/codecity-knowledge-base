@@ -1,0 +1,39 @@
+id: CC096
+url: https://folia.unifr.ch/documents/329624/files/Minelli_Lanza_2022_Elsevier_IST.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Comparative study of CodeCity used on-screen versus in immersive VR, based on a browser-based implementation (BabiaXR-CodeCity) built on A-Frame/WebXR. The paper introduces a spiral placement algorithm for file-level buildings and a data pipeline that generates JSON city inputs from Git repository snapshots. Two controlled experiments (n=24 and n=26) evaluate correctness and completion time on comprehension tasks; VR participants complete tasks significantly faster while achieving comparable correctness, leading the authors to conclude VR is at least as suitable as on-screen and likely better for CodeCity.
+
+key_contributions:
+  - Provides two controlled experiments comparing on-screen vs VR CodeCity use (n=24; n=26), measuring correctness and task completion time
+  - Introduces BabiaXR-CodeCity: an open-source, browser-based CodeCity implementation that runs on-screen or in VR (WebXR via A-Frame)
+  - Proposes a spiral layout algorithm for placing buildings within each hierarchy level, motivated by better behavior for evolution scenarios
+  - Documents the end-to-end pipeline from Git commit → per-file metrics (via Graal/Perceval + ElasticSearch) → JSON → rendered city scene
+
+terms_introduced: [BabiaXR, A-Frame]
+
+features_described: [F001, F011, F017, F038, F005, F006, F007, F037, F059]
+implementations_documented: [I026]
+
+empirical_evidence:
+  study_type: controlled_experiment
+  sample_size: 50
+  dependent_variables: [task correctness, task completion time, perceived task difficulty]
+  independent_variables: [presentation mode (VR vs on-screen)]
+  key_findings:
+    - Across both experiments, VR participants completed tasks significantly faster while maintaining comparable correctness to on-screen participants.
+    - Reported completion-time differences are statistically significant across tasks (Mann–Whitney U test) with large effect sizes (Cliff’s delta).
+  effect_size: Cliff’s delta reported (large across tasks)
+
+quality_notes: |
+  The paper is labeled as a preprint submitted to Elsevier. Tasks and measures are described in detail, but some correctness results are presented primarily as figures; use Table 3 for precise completion-time values and statistics.
+
+statistics:
+  features_extracted: 9
+  terms_extracted: 2
+  implementations_documented: 1

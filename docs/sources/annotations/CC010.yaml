@@ -1,0 +1,28 @@
+id: CC010
+url: http://www.sharpmetrics.net/index.php/city-metaphor
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  SharpMetrics web page giving a brief, high-level explanation of the “city metaphor” for software visualization (types as
+  buildings, packages as districts, metrics mapped to height/footprint). It does not add technical details, novel mappings,
+  or an implementable method beyond what is already covered by primary CodeCity/software-city sources.
+
+key_contributions:
+  - None — short conceptual overview (no technical/empirical details)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Marketing-level description; useful as an informal explanation, but not a primary technical source for this corpus.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

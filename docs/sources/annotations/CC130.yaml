@@ -1,0 +1,36 @@
+id: CC130
+url: https://github.com/codemetropolis/CodeMetropolis
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Modern CodeMetropolis repository implementing a multi-stage Java toolchain (converter → mapping → placing → rendering)
+  that generates Minecraft worlds from static-analysis inputs (notably SourceMeter; also SonarQube). The repo provides
+  mapping XML examples (normalization/quantization conversions) and extends Minecraft-based cities with gamified
+  encodings such as a `danger` attribute that renders floors/cellars with mob spawners and loot chests.
+
+key_contributions:
+  - Documents a modular Java toolchain pipeline with CLI usage strings for converter/mapping/placing/rendering
+  - Provides mapping XML examples (v1/v2) with conversions (normalize, quantization) for metric-to-visual bindings
+  - Includes a placing stage implementing a recursive rectangle-packing (“PackLayout”) layout with spacing
+  - Adds a gamified “danger” encoding: danger-tagged floors/cellars render with mob spawners and chests
+  - Adds a GUI wrapper that runs the full pipeline and stores intermediate files under `.code-metropolis/<timestamp>`
+
+terms_introduced: [CDF (Common Data Format), CMXML, IXML]
+
+features_described: [F008, F016, F035, F060]
+implementations_documented: [I024]
+
+quality_notes: |
+  Repo snapshot at commit 26193b2ba295d4808c0611d4447f0a8ae11f6258 (2024-11-22). The repository contains extensive
+  manual test specs (docs/tests/manual); some describe planned Minecraft/Spigot command features that are not fully
+  implemented in this snapshot (the Spigot plugin module is currently a stub).
+
+statistics:
+  features_extracted: 4
+  terms_extracted: 6
+  implementations_documented: 1
+

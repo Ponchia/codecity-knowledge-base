@@ -1,0 +1,29 @@
+id: CC125
+url: https://ieeexplore.ieee.org/document/8004366
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  IEEE Xplore landing page for “VR City: Software Analysis in Virtual Reality Environment”. The local text dump contains
+  only boilerplate navigation content and does not provide additional technical information beyond what is already
+  captured from the full paper in CC106.
+
+key_contributions:
+  - None — duplicate/low-signal landing page for CC106 (VR City full text)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Prefer CC106 for VR City’s layout/interaction/trace/evolution details. CC061 already covers the “IEEE metadata page”
+  duplicate classification in this corpus; CC125 provides no additional extractable content.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

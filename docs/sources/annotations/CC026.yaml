@@ -1,0 +1,33 @@
+id: CC026
+url: https://arxiv.org/pdf/2509.23297.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  ICSEng 2025 preprint introducing Code Arcades, a desktop 3D software-city visualization for C++ that renders
+  packages as blocks and classes as buildings, adds fine-grained method floors (with windows for arguments), and
+  visualizes typed dependencies between classes. The paper emphasizes configurability: users can adjust rendering
+  attributes and metric encodings interactively, and can group classes by namespaces or architecture-recovery-derived
+  components.
+
+key_contributions:
+  - Configurable grouping mechanism to organize classes by arbitrary relations (e.g., recovered architecture components), not only package hierarchy
+  - Interactive configuration UI for changing metric encodings and rendering attributes (colors, dimensions, materials/textures)
+  - Multi-level city representation including method floors and argument windows, plus typed dependency visualization between classes
+
+terms_introduced: []
+
+features_described: [F063, F035, F045]
+implementations_documented: [I029]
+
+quality_notes: |
+  Preprint; no formal evaluation results are reported. The work targets C++ and relies on a separate architecture-recovery
+  toolchain; future work mentions adding VCS evolution analysis and empirical usability studies.
+
+statistics:
+  features_extracted: 3
+  terms_extracted: 0
+  implementations_documented: 1

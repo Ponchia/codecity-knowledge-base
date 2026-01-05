@@ -1,0 +1,31 @@
+id: CC074
+url: https://www.dlr.de/en/sc/research-transfer/projects/islandviz
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  DLR project page describing IslandViz as an island-metaphor visualization of modularized software systems,
+  emphasizing dependencies (imports/exports) between modules. It positions IslandViz as a VR/AR application
+  usable with VR headsets (e.g., Oculus Rift / HTC Vive) and also mentions a web-based 2D variant.
+
+key_contributions:
+  - Confirms IslandViz supported modalities (VR via Oculus Rift/HTC Vive + AR) and a listed web-based 2D variant
+  - High-level description of the island metaphor (modules as islands with packages/classes) and dependency display
+  - Describes intended audiences/use cases (developers, project managers, onboarding and stakeholder communication)
+
+terms_introduced: []
+
+features_described: [F011, F012, F068]
+implementations_documented: [I033]
+
+quality_notes: |
+  This is a high-level project description page; use CC070 for the detailed visualization algorithm, interaction
+  design, and empirical scale statistics.
+
+statistics:
+  features_extracted: 3
+  terms_extracted: 0
+  implementations_documented: 1

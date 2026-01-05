@@ -1,0 +1,34 @@
+id: CC094
+url: https://github.com/aserg-ufmg/JSCity
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  JSCity’s repository provides implementation-level documentation for generating and viewing JavaScript “software cities”
+  in the browser, including the Node.js + MySQL setup, offline generator workflow, and the web UI controls. The code and
+  UI also clarify repository-specific interaction details (e.g., hover tooltips, orbital vs first-person navigation) and an
+  additional building type for module declarations.
+
+key_contributions:
+  - End-to-end operational workflow: MySQL schema, Node server, and offline generator that inserts city data into tables
+  - Concrete UI interaction design: orbital vs first-person navigation with adjustable speed and hover-based inspection
+  - Documents an extra mapping variant: module declarations (e.g., AMD/Angular patterns) rendered as buildings
+
+terms_introduced:
+  - module
+
+features_described: [F003, F026, F037, F044]
+implementations_documented: [I018]
+
+quality_notes: |
+  The README contains at least one inconsistent/duplicated command line in the “ignore parser errors” section; the actual
+  generator code uses Esprima tolerant parsing and records parse problems in tooltips rather than exposing a dedicated
+  “ignore errors” flag. Dependency versions in the README reflect an older Node.js ecosystem.
+
+statistics:
+  features_extracted: 4
+  terms_extracted: 1
+  implementations_documented: 1

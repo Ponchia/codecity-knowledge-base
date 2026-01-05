@@ -1,0 +1,40 @@
+id: CC040
+url: https://github.com/stefanrinderle/softvis3d
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  Open-source repository for SoftVis3D, a SonarQube plugin + web frontend that renders a software “code city” using
+  Three.js/WebGL and the `codecity-visualizer` layout engine (district and evostreet). The repo provides concrete
+  metric IDs, profile presets, scaling strategies (log/exponential/linear variants), URL-serialized view-state sharing,
+  and SCM blame-derived author/commit signals loaded via SonarQube APIs.
+
+key_contributions:
+  - Establishes project inception year (2015) and module architecture (SonarQube plugin + TypeScript/React frontend)
+  - Defines profile presets (default risk, leak period, duplicated lines) and default scaling (logarithmic)
+  - Documents and implements multiple metric scaling strategies (logarithmic, exponential, linear-scaled, linear)
+  - Implements shareable deep links by serializing view state (layout/metrics/filters/selection/camera) into `visualizationStatus`
+  - Implements SCM blame-based metrics by calling SonarQube’s SCM endpoint and deriving `number_of_authors` / `number_of_commits`
+
+terms_introduced:
+  - bus factor
+  - leak period
+  - WebGL
+  - SonarQube
+  - SCM blame
+
+features_described: [F001, F005, F006, F007, F009, F013, F015, F017, F022, F023, F035, F038]
+implementations_documented: [I019]
+
+quality_notes: |
+  Repository snapshot appears shallow (single commit present in the local clone: b1418e02d16b1eea238d4bed346fc46c005eeea9).
+  Earlier plugin versions referenced in the repo README mention a Graphviz dependency; the current frontend uses
+  `codecity-visualizer` + Three.js instead.
+
+statistics:
+  features_extracted: 12
+  terms_extracted: 5
+  implementations_documented: 1

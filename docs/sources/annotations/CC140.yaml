@@ -1,0 +1,31 @@
+id: CC140
+url: http://codemetropolis.github.io/CodeMetropolis/
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  CodeMetropolis GitHub Pages documentation landing page (“In a nutshell”) describing the Minecraft-based software city
+  metaphor, the high-level purpose of the project, and the main toolchain stages (CDF conversion, mapping, placing,
+  rendering). The page also points users to GitHub releases for stable binary packages.
+
+key_contributions:
+  - Provides a concise public overview of CodeMetropolis and its city-metaphor framing in Minecraft
+  - Lists the core toolchain components (CDF converter, mapping tool, placing tool, rendering tool) as the primary architecture
+  - Directs users to GitHub releases as the distribution mechanism for stable binaries
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: [I024]
+
+quality_notes: |
+  Web snapshot appears to primarily capture the landing page content; linked sub-pages (e.g., detailed toolchain docs)
+  may require separate ingestion if needed.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 1

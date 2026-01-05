@@ -1,0 +1,28 @@
+id: CC146
+url: https://www.i-programmer.info/news/231-methodology/10795-codecity-visualize-your-javascript-as-a-city.html
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  I-Programmer news article summarizing JSCity (JavaScript “software city” visualization) and restating the key mappings
+  and implementation choices (Esprima + Three.js) described in the primary JSCity paper/repository sources. It does not
+  add new technical details suitable for extraction.
+
+key_contributions:
+  - None — secondary article overlapping CC036/CC094
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Treat as a secondary write-up; primary sources for JSCity are CC036 (paper) and CC094 (repo).
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

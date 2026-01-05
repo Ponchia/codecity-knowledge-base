@@ -1,0 +1,26 @@
+id: CC111
+url: https://arxiv.org/abs/2504.18238
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  arXiv abstract/metadata page for “SecCityVR: Visualization and Collaborative Exploration of Software Vulnerabilities in Virtual Reality”.
+  The full paper content is already processed from the arXiv HTML version (CC069).
+
+key_contributions:
+  - None - duplicates CC069 (full-text arXiv HTML)
+
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  CC111 is useful only as a metadata landing page (submission date/IDs). Extraction is skipped in favor of CC069’s full text.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

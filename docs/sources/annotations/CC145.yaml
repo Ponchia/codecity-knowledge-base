@@ -1,0 +1,28 @@
+id: CC145
+url: https://www.planetgeek.ch/2009/03/11/code-city/
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Short 2009 blog post describing how to generate an MSE model (via iPlasma/Moose) and load it into CodeCity to visualize
+  a project, with anecdotal notes on changing metric mappings and comparing cities across iterations. It does not add new,
+  citable technical detail beyond the primary CodeCity sources already captured.
+
+key_contributions:
+  - None — secondary “how to use CodeCity” blog post
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Overlaps existing primary coverage of CodeCity’s pipeline (MSE/iPlasma/Moose) and evolution usage patterns.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

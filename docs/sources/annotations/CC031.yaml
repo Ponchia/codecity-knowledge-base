@@ -1,0 +1,29 @@
+id: CC031
+url: https://burjcdigital.urjc.es/server/api/core/bitstreams/dcaff3ba-a8c7-40bb-8294-43dafcdfbdc0/content
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  PDF of “CodeCity: On-Screen or in Virtual Reality?” describing BabiaXR-CodeCity and a controlled experiment (n=24)
+  comparing VR vs on-screen performance on program-comprehension tasks. The same tool and study line is already
+  covered by the more complete on-screen vs VR CodeCity paper processed as CC096.
+
+key_contributions:
+  - None — overlaps CC096 (BabiaXR-CodeCity + VR vs on-screen experiment; CC096 includes a larger/extended evaluation)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  The downloaded artifact is a PDF bitstream captured via URJC; local extraction required treating the stored “.html”
+  payload as a PDF to produce `bibliography/sources/pdf_text/CC031.txt`.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

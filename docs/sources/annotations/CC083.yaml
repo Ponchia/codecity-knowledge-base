@@ -1,0 +1,30 @@
+id: CC083
+url: https://www.semanticscholar.org/paper/IslandViz:-A-Tool-for-Visualizing-Modular-Software-Mišiak-Schreiber/ed2d75981054af151198fa3853b5b9f058648171
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Semantic Scholar landing page for the VISSOFT 2018 paper “IslandViz: A Tool for Visualizing Modular Software
+  Systems in Virtual Reality”. The page provides bibliographic metadata (authors/venue/date/DOI) and a short TLDR
+  describing the island metaphor (modules as islands) for exploring dependencies in OSGi-based systems.
+
+key_contributions:
+  - Captures DOI and bibliographic metadata for the IslandViz VISSOFT 2018 tool paper (DOI: 10.1109/VISSOFT.2018.00020)
+  - Confirms the tool’s core framing: island metaphor for module-level overview and dependency exploration in VR
+
+terms_introduced: []
+
+features_described: [F011, F068]
+implementations_documented: [I033]
+
+quality_notes: |
+  Only the metadata/summary page content was accessible in the local artifact; use CC070/CC078 for detailed technical
+  descriptions of the visualization and interaction model.
+
+statistics:
+  features_extracted: 2
+  terms_extracted: 0
+  implementations_documented: 1

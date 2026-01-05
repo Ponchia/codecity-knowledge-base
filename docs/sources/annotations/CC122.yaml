@@ -1,0 +1,29 @@
+id: CC122
+url: https://wettel.github.io/publications.html
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Richard Wettel’s publications list. This page primarily aggregates links to papers already tracked elsewhere in the
+  bibliography (e.g., VISSOFT 2007, WCRE 2008, SoftVis 2008, ICSE 2011) and does not provide additional technical
+  details beyond citations.
+
+key_contributions:
+  - None — bibliographic aggregation page
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Useful as a pointer to missing primary sources (e.g., a listed CodeCity technical report), but not itself a technical
+  source for feature extraction. Prefer the actual PDFs already indexed (e.g., CC023/CC024/CC025/CC116/CC117/CC120).
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

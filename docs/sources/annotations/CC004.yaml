@@ -1,0 +1,28 @@
+id: CC004
+url: https://stackoverflow.blog/2024/08/13/navigating-cities-of-code-with-norris-numbers/
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Stack Overflow blog post using a “codebase as city” analogy to discuss how development practices change with
+  codebase size (“Norris Numbers”). It does not describe software-city visualization techniques, metrics mappings, or
+  implementations relevant to the CodeCity knowledge base.
+
+key_contributions:
+  - None — tangential (software engineering essay, not city-metaphor visualization)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Treated as out-of-scope for this repository’s focus on software-city visualization methods and tools.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

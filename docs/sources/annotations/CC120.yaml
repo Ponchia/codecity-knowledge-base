@@ -1,0 +1,32 @@
+id: CC120
+url: https://wettel.github.io/download/Wettel08e-famoosr.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Experience report on extending CodeCity with a scripting environment to support rapid prototyping of new 3D
+  visualizations without repeatedly extending the GUI. It describes a Mondrian-inspired scripting interface (variables,
+  code editor, generated visualization) and explains how view configurations can be exported as scripts and stored in
+  Smalltalk’s versioning system (Store) to make configurations resilient to refactorings.
+
+key_contributions:
+  - Adds a scripting environment to CodeCity for ad-hoc visualization prototyping beyond pre-defined city views
+  - Describes a Mondrian-inspired scripting UI and its relationship to CodeCity’s view-configuration mechanism
+  - Motivates persisting view configurations as scripts tracked by Store instead of file-serialized configs that break under renaming
+
+terms_introduced: []
+
+features_described: [F035, F036]
+implementations_documented: [I003]
+
+quality_notes: |
+  Short experience-report paper; the extracted notes focus on scripting and configuration persistence rather than on
+  introducing new city-metaphor mappings or evaluation results.
+
+statistics:
+  features_extracted: 2
+  terms_extracted: 0
+  implementations_documented: 1

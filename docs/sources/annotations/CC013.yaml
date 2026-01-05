@@ -1,0 +1,28 @@
+id: CC013
+url: https://news.ycombinator.com/item?id=28074827
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Hacker News discussion thread (“Show HN: Visualizing a Codebase”) about a file/directory-structure visualization and
+  related tooling ideas. The thread is not a primary description of a software-city visualization technique and does not
+  provide extractable mappings, algorithms, or evaluation details for the CodeCity/software-city corpus.
+
+key_contributions:
+  - None — discussion thread (secondary pointers; no primary technical content)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Contains many outbound links and opinions; treat as secondary discovery material only.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

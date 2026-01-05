@@ -1,0 +1,25 @@
+id: CC060
+url: https://www.codemr.co.uk/documents/
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  CodeMR documentation page for an IntelliJ static-analysis/metrics tool (treemap, sunburst, dependency and graph views).
+  It does not document a software-city/city-metaphor visualization, so it is out of scope for this knowledge base.
+
+key_contributions: []
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  The captured page is documentation for a commercial tool and focuses on IDE-integrated metric charts/treemaps/graphs
+  rather than a 3D software-city visualization.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

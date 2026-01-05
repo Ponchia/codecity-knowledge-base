@@ -1,0 +1,36 @@
+id: CC103
+url: https://codemetropolis.github.io/CodeMetropolis/publications/balogh2015codemetropolis.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  2015 paper that integrates CodeMetropolis into the Eclipse IDE via a plug-in and a Minecraft
+  mod, enabling IDE-driven builds and synchronized navigation. It describes the toolchain
+  (Eclipse + SourceMeter + CodeMetropolis + Minecraft), manual and automatic navigation (jump
+  and follow), and configurable mapping files for metric-to-visual encodings. The paper presents
+  use cases and demo scenarios showing how floor height and materials map to metrics.
+
+key_contributions:
+  - Integrates CodeMetropolis with Eclipse, enabling background analysis and in-IDE launch
+  - Introduces jump and follow navigation to sync the active file with the city view
+  - Documents mapping files for configuring metric-to-visual encodings (height/material)
+  - Describes the multi-component toolchain (Eclipse plug-in, SourceMeter, Minecraft mod)
+  - Provides exploration/education use cases and demo scenarios
+
+terms_introduced: []
+
+features_described: [F005, F016, F035, F056]
+implementations_documented: [I024]
+
+quality_notes: |
+  The paper focuses on integration and scenarios rather than formal evaluation. Navigation is
+  one-way (IDE -> city) in the current version; two-way synchronization and auto-rebuild are
+  listed as future work. A GitHub release for the plug-in/mod is provided in the supplement.
+
+statistics:
+  features_extracted: 4
+  terms_extracted: 0
+  implementations_documented: 1

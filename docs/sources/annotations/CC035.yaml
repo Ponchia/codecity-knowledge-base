@@ -1,0 +1,57 @@
+id: CC035
+url: https://www.inf.usi.ch/lanza/Downloads/PhD/Wett2010b.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  PhD thesis presenting the most complete “software systems as cities” treatment in this corpus:
+  defines the city metaphor with explicit concept/property mapping, details the rectangle-packing
+  layout and method-level representations (bricks/progressive bricks), and extends the metaphor
+  to evolution analysis (age map, time travel, timeline) and design-quality assessment (disharmony
+  maps driven by detection strategies). Documents the CodeCity tool architecture and interaction
+  model (view configurations, scripting, selection/querying/spawning/tagging/navigation), and
+  includes both usability feedback and a controlled experiment evaluating effectiveness.
+
+key_contributions:
+  - Canonical end-to-end description of software cities across structure, evolution, and design quality
+  - Detailed algorithms for layout (rectangle packing) and fine-grained method visualization (bricks/progressive bricks)
+  - Evolution techniques: age map, time travel with temporal stability, and timeline visualizations (Hismo-based)
+  - Design-quality overlays via disharmony maps integrating detection-strategy results into the city
+  - Tooling design: view configurations (glyph/layout/mapper specs), scripting for prototyping, and rich interaction model
+  - Empirical evidence: controlled experiment and usability feedback on CodeCity
+
+terms_introduced:
+  - habitability
+  - concept mapping
+  - property mapping
+  - magnitude mapping
+  - identity mapping
+  - rectangle packing
+  - method bricks
+  - progressive bricks
+  - age map
+  - time travel
+  - timeline
+  - design harmony
+  - design disharmony
+  - detection strategy
+  - disharmony map
+  - view configuration
+  - FAMIX
+  - Hismo
+
+features_described: [F001, F002, F017, F005, F007, F006, F008, F018, F019, F020, F013, F022, F023, F024, F025, F026, F015, F027, F028, F029, F030, F031, F032, F033, F034, F035, F036, F037]
+implementations_documented: [I003]
+
+quality_notes: |
+  Strongest single source for the CodeCity approach and its extensions (evolution + design quality),
+  plus tooling and evaluation context. Empirical results include a controlled experiment (Chapter 8)
+  comparing CodeCity to an IDE+spreadsheet baseline, and a small usability questionnaire.
+
+statistics:
+  features_extracted: 28
+  terms_extracted: 44
+  implementations_documented: 1

@@ -1,0 +1,42 @@
+id: CC055
+url: http://graphics.unibas.it/Code2City/index.md.html
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Project page / technical report describing Code2City, a UE4-based 3D software-city visualization for Java systems
+  with both desktop first-person and VR modes. It documents the end-to-end pipeline (CodePro AnalytiX → XML →
+  tree reconstruction → recursive bin-packing layout → rendering), interaction/search features, and optional code-smell
+  highlighting via color.
+
+key_contributions:
+  - Details the Code2City pipeline, including extracting Java metrics via an Eclipse plugin (CodePro AnalytiX) and reconstructing a tree for packages/types from XML
+  - Describes a recursive bin-packing (rectangle-packing) layout for package/type placement and the concrete metric mappings used (NOM/NOA/LOC + package depth shading)
+  - Documents interaction patterns for both desktop and VR modes, including viewfinder/gaze selection, multiple search modes, and VR virtual-keyboard text entry with completion
+  - Adds an implementation note on design-problem (“code smell”) highlighting using distinct colors for brain/data/god classes
+
+terms_introduced: []
+features_described: [F001, F002, F005, F006, F007, F008, F011, F017, F022, F023, F026, F034]
+implementations_documented: [I016, I017]
+
+empirical_evidence:
+  study_type: benchmark
+  sample_size: 1
+  dependent_variables: [frame rate]
+  independent_variables: [mode (VR vs desktop)]
+  key_findings:
+    - "Reports ≈45 FPS in VR mode and ≈60 FPS in first-person desktop mode on a FindBugs software-system visualization (hardware: i7-3820 + Titan XP)."
+  effect_size: not reported
+
+quality_notes: |
+  This is a project web page / technical report rather than a peer-reviewed paper. It references a 2017 conference
+  paper (Capece et al., AVR 2017) and points to downloadable binaries and experimental materials/raw data; the
+  controlled-experiment writeup and results are covered in CC009.
+
+statistics:
+  features_extracted: 12
+  terms_extracted: 0
+  implementations_documented: 2

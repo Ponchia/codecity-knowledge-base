@@ -1,0 +1,45 @@
+id: CC053
+url: https://www.sciencedirect.com/science/article/pii/S2665963820300257
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  “Original software publication” describing ExplorViz as an open-source research tool (started in 2012) for software
+  visualization, comprehension, and collaboration. ExplorViz combines dynamic analysis (live trace visualization of
+  communication) with multi-level views (landscape-level overview and application-level city metaphor) and extends to
+  immersive VR, including a fully collaborative multi-user VR approach.
+
+key_contributions:
+  - Positions ExplorViz as a multi-level visualization tool for large monitored software landscapes (landscape-level + application-level)
+  - Describes dynamic analysis focus: live trace visualization of communication to support system/program comprehension
+  - Documents collaboration support, including multi-user VR enabling team-based comprehension (including remote sites)
+  - Provides tool context: open-source development since 2012, modernization toward modular microservices, and use of Kieker monitoring
+  - States open-source licensing under Apache License 2.0 and summarizes research and industry usage context
+
+terms_introduced:
+  - software landscape
+  - live trace visualization
+
+features_described: [F001, F011, F014, F041, F042]
+implementations_documented: [I009]
+
+empirical_evidence:
+  study_type: user_study
+  sample_size: (not reported in this paper)
+  dependent_variables: [efficiency, effectiveness]
+  independent_variables: (not reported in this paper)
+  key_findings:
+    - "The paper states that various empirical experiments resulted in increased efficiency and effectiveness over competing approaches, but does not report study details in this publication."
+  effect_size: (not reported)
+
+quality_notes: |
+  This is a tool/software-focused publication summarizing ExplorViz’s development history and research impact rather than
+  a single primary evaluation. It references multiple prior studies for empirical results and details.
+
+statistics:
+  features_extracted: 5
+  terms_extracted: 2
+  implementations_documented: 1

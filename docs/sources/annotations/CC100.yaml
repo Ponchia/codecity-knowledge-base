@@ -1,0 +1,31 @@
+id: CC100
+url: https://dl.acm.org/doi/10.1145/1879211.1879239
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  SOFTVIS 2010 paper proposing “evolving software cities”: a city-metaphor visualization where the layout explicitly
+  incorporates development history so history becomes visible while the city evolves smoothly and stably over time. The
+  approach positions the evolving layout as a platform for integrating diverse product/process data into specialized
+  development-history visualizations.
+
+key_contributions:
+  - History-aware city layout that makes development history directly visible while evolving smoothly/stably across versions
+  - Positions the city as a platform for integrating multiple development-history visualizations (product and process data overlays)
+
+terms_introduced: []
+
+features_described: [F015]
+implementations_documented: []
+
+quality_notes: |
+  The local artifact is an ACM Digital Library landing page / abstract (Wayback mirror) without accessible full text.
+  The extracted notes are therefore limited to the abstract-level contribution summary.
+
+statistics:
+  features_extracted: 1
+  terms_extracted: 0
+  implementations_documented: 0

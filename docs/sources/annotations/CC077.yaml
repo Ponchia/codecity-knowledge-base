@@ -1,0 +1,29 @@
+id: CC077
+url: https://explorviz.dev/1-about/
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  ExplorViz “About” page describing ExplorViz as an open-source, web-based research tool for live trace visualization of software landscapes using the 3D city metaphor. It emphasizes dynamic analysis for system/program comprehension, “focus”-driven interaction (show details in focus), and the use of modern web/XR technologies (OpenTelemetry, WebGL, WebXR). The page also notes that static-analysis support is under development and that controlled experiments found ExplorViz more effective/efficient than competing approaches (without reporting details here).
+
+key_contributions:
+  - Confirms ExplorViz positioning: live trace visualization for software landscapes and single applications, with application communication details
+  - Notes technology stack elements: OpenTelemetry (telemetry), WebGL (rendering), and WebXR (XR runtime in the browser)
+  - States that static-analysis support is under development
+  - Claims controlled experiments show increased efficiency/effectiveness over competing approaches (no metrics reported on this page)
+
+terms_introduced: [OpenTelemetry, WebXR]
+
+features_described: [F001, F011, F012, F014, F041]
+implementations_documented: [I009]
+
+quality_notes: |
+  This is a project “About” page rather than a peer-reviewed publication; it provides high-level positioning and technology mentions but limited technical detail and no primary reporting of experimental results.
+
+statistics:
+  features_extracted: 5
+  terms_extracted: 2
+  implementations_documented: 1

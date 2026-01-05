@@ -1,0 +1,54 @@
+id: CC023
+url: https://wettel.github.io/download/Wettel07b-vissoft.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Foundational paper introducing the “software city” metaphor at an OO-friendly granularity:
+  packages become districts and classes become buildings, producing a navigable 3D city that
+  restores locality and orientation. Defines metric mappings (NOM→height, NOA→footprint) and
+  a layout/topology approach (modified treemap / rectangle packing with stacked platforms for
+  nested packages). Describes interaction/navigation features (selection, query-based filtering,
+  spawning isolated views, color/transparency tagging, vertical vs horizontal navigation) and
+  reports the CodeCity tool implementation (Smalltalk on Moose) demonstrated on large systems.
+
+key_contributions:
+  - Establishes city metaphor at class/package granularity (realism + scalability)
+  - Defines metric mapping approach and discretized mapping strategies (linear vs binned categories)
+  - Describes a modified treemap / rectangle-packing layout and stacked-platform topology
+  - Documents interaction model (selection, queries, spawning, visual tagging) and constrained navigation
+  - Presents the CodeCity tool (Smalltalk + Moose) and scalability observations on large systems
+
+terms_introduced:
+  - locality
+  - god class
+  - data class
+  - discretized metric mapping
+  - boxplot-based mapping
+  - threshold-based mapping
+  - linear mapping
+  - topology
+  - stacked platforms
+  - selection
+  - spawning
+  - tagging
+  - query filtering
+  - vertical navigation
+  - horizontal navigation
+  - Moose
+
+features_described: [F001, F017, F002, F005, F007, F006, F008, F021, F018, F019, F020, F022, F023, F024, F025, F026, F013]
+implementations_documented: [I003]
+
+quality_notes: |
+  Strong foundational description with concrete mapping/layout/interaction design and multiple
+  system visualizations; evaluation is primarily demonstration + scalability discussion rather
+  than controlled user study (later papers cover empirical validation).
+
+statistics:
+  features_extracted: 17
+  terms_extracted: 25
+  implementations_documented: 1

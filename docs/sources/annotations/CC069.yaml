@@ -1,0 +1,41 @@
+id: CC069
+url: https://arxiv.org/html/2504.18238v1
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  EASE 2025 paper introducing SecCityVR, a VR code-city environment focused on visualizing SAST (FindSecBugs/SpotBugs) vulnerability findings. Classes become buildings on treemap-laid package platforms; methods are internal floors that are widened and color-coded by severity. Users can toggle call-graph arcs for vulnerable methods, view explanations/mitigations, and collaborate in multi-user VR (Meta Quest). A user study (n=17) compared SecCityVR to a dashboard, reporting higher SUS usability, lower temporal demand/frustration, but longer task times (VR avg +4:06 minutes across the whole task set); a follow-up collaboration study (n=8) found similar workload benefits.
+
+key_contributions:
+  - VR code-city overlay for SAST findings, coloring/widening vulnerable method floors
+  - On-demand call-graph visualization to contextualize vulnerable methods
+  - Differentiation of first-party vs dependency packages via platform color
+  - Multi-user VR collaboration for security auditing
+  - User studies showing improved usability and lower temporal demand/frustration versus a dashboard baseline despite longer task times
+
+terms_introduced: [SAST]
+
+features_described: [F002, F017, F008, F045, F005, F006, F030, F026, F042, F057]
+implementations_documented: [I025]
+
+empirical_evidence:
+  study_type: user_study
+  sample_size: 17
+  dependent_variables: [usability (SUS), workload (NASA TLX subscales), task time]
+  independent_variables: [tool (dashboard vs SecCityVR)]
+  key_findings:
+    - SUS median 70 (VR) vs 58.75 (dashboard).
+    - TLX temporal demand median 10 (VR) vs 42.5 (dashboard); frustration 17.5 (VR) vs 52.5 (dashboard).
+    - Task completion times were longer in VR (about 4 minutes more across tasks).
+  effect_size: not reported
+
+quality_notes: |
+  Source is a preprint-style HTML; figures are referenced but not all visible in text dump. VR study limited to Java projects and FindSecBugs; visualization currently class/method only. Motion-sickness risk noted (fear of heights for some); collaboration study small (n=8) with potential volunteer bias.
+
+statistics:
+  features_extracted: 10
+  terms_extracted: 1
+  implementations_documented: 1

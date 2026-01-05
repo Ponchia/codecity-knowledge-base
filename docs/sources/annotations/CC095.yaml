@@ -1,0 +1,28 @@
+id: CC095
+url: https://medium.com/@aserg.ufmg/visualizing-javascript-code-as-3d-cities-5785867f7d85
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Short Medium blog post (2016) describing JSCity at a high level (JavaScript Code City metaphor, example cities, and
+  basic metric mappings). It does not add technical details beyond what is already captured in the JSCity paper/repo.
+
+key_contributions:
+  - None — secondary overview; overlaps CC036 (JSCity paper) and CC094 (JSCity repository)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  This is a blog-level description (not a primary research publication). Use CC036/CC094 for the authoritative mapping,
+  implementation pipeline, and interaction details.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

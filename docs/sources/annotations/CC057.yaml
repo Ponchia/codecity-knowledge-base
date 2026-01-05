@@ -1,0 +1,42 @@
+id: CC057
+url: https://www.cs.kent.edu/~jmaletic/softvis/papers/Maletic2001ICSE.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Early paper on “Imsovision”, a VRML-based immersive software-visualization environment targeting the CAVE. It argues
+  that immersive VR (stereopsis + motion + in-world interaction) can aid comprehension compared to 2D/3D desktop views,
+  and outlines collaboration goals via “Multiple Collaborative Representations” (MCR), where collaborators can create
+  and tailor their own views rather than only sharing a single representation.
+
+key_contributions:
+  - Motivates immersive VR for software visualization and distinguishes VR environments from conventional 3D desktop views (stereopsis, physical navigation, in-context access to external info)
+  - Describes Imsovision’s implementation approach (VRML visualizations rendered in the CAVE with wand/joystick interaction)
+  - Frames software-visualization tasks using Shneiderman’s overview/zoom/filter/details/relate/history/extract task set and extends it for collaboration
+  - Introduces MCR as a collaboration paradigm for software visualization, emphasizing per-user tailorable representations
+
+terms_introduced: [CAVE, multiple collaborative representations (MCR)]
+features_described: [F011, F013, F042, F067]
+implementations_documented: [I032]
+
+empirical_evidence:
+  study_type: case_study
+  sample_size: 1
+  dependent_variables: []
+  independent_variables: []
+  key_findings:
+    - "Demonstrates a VR visualization of a small UML-modeled mail system and argues it conveys more metric/structure detail than the corresponding UML diagram."
+  effect_size: not reported
+
+quality_notes: |
+  The paper is primarily conceptual and formative; no controlled user study is reported. Collaboration is discussed as a
+  design direction (MCR) rather than a validated implementation outcome.
+
+statistics:
+  features_extracted: 4
+  terms_extracted: 2
+  implementations_documented: 1
+

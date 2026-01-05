@@ -1,0 +1,35 @@
+id: CC080
+url: https://www.explorviz.net
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  Archived repository snapshot of the ExplorViz web client. It confirms a WebGL/HTML5 stack
+  for live trace visualization of communication in software landscapes, with an application-
+  level 3D city view. The repo adds concrete evidence for time-shift navigation over runtime
+  traces, a CodeMirror-based source-code viewer, an OpenSCAD export path for 3D printing, and
+  WebVR/Leap Motion integration.
+
+key_contributions:
+  - Confirms the web-based WebGL/HTML5 client stack and archived status of this ExplorViz codebase
+  - Implements live landscape exchange with time-shift selection of historical runtime snapshots
+  - Provides a source-code viewer service and UI (context-menu “Inspect source code”)
+  - Adds OpenSCAD export for printable 3D models (labels, lids, puzzle cuts)
+  - Includes WebVR + Leap Motion integration scaffolding for immersive interaction
+
+terms_introduced: []
+
+features_described: [F011, F013, F014, F040, F041]
+implementations_documented: [I009]
+
+quality_notes: |
+  Local repo snapshot appears archived; README indicates migration to a new architecture.
+  Snapshot commit: 02e7fa3bac74b995bcca99abb27b4c0e647f694b.
+
+statistics:
+  features_extracted: 5
+  terms_extracted: 0
+  implementations_documented: 1

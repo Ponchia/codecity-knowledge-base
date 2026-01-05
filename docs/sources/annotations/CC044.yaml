@@ -1,0 +1,27 @@
+id: CC044
+url: https://programming-group.com/assets/pdf/papers/2014_An-Empirical-Study-on-Program-Comprehension-with-Reactive-Programming.pdf
+type: pdf
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Empirical study comparing reactive programming to the Observer pattern for program comprehension. It does not involve
+  software visualization or software-city (CodeCity-style) metaphors and is out of scope for this corpus.
+
+key_contributions:
+  - None — unrelated domain (program comprehension study; no software-city visualization)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Excluded due to lack of software visualization/city-metaphor content.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

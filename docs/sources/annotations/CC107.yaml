@@ -1,0 +1,31 @@
+id: CC107
+url: https://dl.acm.org/doi/10.1145/3139131.3141209
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Short VRST 2017 paper proposing a VR environment for searching and exploring software repositories. The abstract
+  describes mapping repository information structures to interactive 3D objects and hypothesizes that VR exploration can
+  help users acquire problem-domain knowledge “subliminally” during exploration to perform future tasks more effectively.
+
+key_contributions:
+  - Proposes VR-based search and exploration of software repositories via mapping information structures to interactive 3D objects
+  - Suggests VR exploration can support problem-domain knowledge acquisition during navigation
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  The local artifact is an ACM Digital Library landing page / abstract (Wayback mirror) without accessible full text.
+  The abstract does not explicitly describe a software-city metaphor or provide enough technical detail to extract new
+  features beyond a high-level “VR repository exploration” framing.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

@@ -1,0 +1,44 @@
+id: CC084
+url: https://macau.uni-kiel.de/receive/diss_mods_00017810?lang=en
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Dissertation introducing ExplorViz, a live trace visualization approach for understanding large software landscapes
+  via two coupled perspectives: a landscape-level (UML-inspired) view and an application-level 3D software city view.
+  It details a monitoring/analysis pipeline for high-volume method-call traces, a time-shift mode and other interaction
+  concepts (including a gesture-controlled VR setup), and reports multiple empirical evaluations.
+
+key_contributions:
+  - End-to-end description of ExplorViz for live trace visualization in large software landscapes (landscape + software-city perspectives)
+  - Monitoring and analysis approach designed to scale to high-volume traces with low overhead, including evaluation against Kieker baselines
+  - Time-shifted trace analysis and interaction concepts beyond 2D displays/pointing devices, including a gesture-controlled VR setup (Oculus Rift DK1 + Kinect v2)
+  - Reports controlled experiments showing increased efficiency/effectiveness for comprehension tasks versus baseline tools (e.g., ExplorViz vs Extravis; landscape view vs APM-style visualizations)
+
+terms_introduced: [time shift mode]
+
+features_described: [F014, F041, F011, F069]
+implementations_documented: [I009]
+
+empirical_evidence:
+  study_type: controlled_experiment
+  sample_size: 30
+  dependent_variables: [task correctness, task completion time]
+  independent_variables: [tool (ExplorViz vs baseline visualization)]
+  key_findings:
+    - "ExplorViz vs Extravis on PMD comprehension tasks: ExplorViz was more efficient and effective."
+    - "Replication on Babsi (n=50): time differences were not significant, but correctness was significantly higher with ExplorViz."
+    - "Landscape-level experiment vs APM-style visualizations: time differences were not significant, but correctness was significantly higher with ExplorViz."
+  effect_size: not reported
+
+quality_notes: |
+  The MACAU landing page provides an open-access PDF; the extracted text comes from the full dissertation PDF.
+  The thesis spans multiple experiments and performance evaluations; the annotation summarizes headline outcomes.
+
+statistics:
+  features_extracted: 4
+  terms_extracted: 1
+  implementations_documented: 1

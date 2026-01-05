@@ -1,0 +1,57 @@
+id: CC009
+url: https://www.inf.usi.ch/lanza/Downloads/Journals/Roma2019b.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Empirical study evaluating the city metaphor in two implementations: a desktop 3D tool (Code2City) and an immersive
+  VR tool (Code2CityVR, Oculus Rift). Compares both against Eclipse for program comprehension tasks, focusing on users’
+  feelings/emotions (PANAS) and post-task thinking (tool quality, usefulness, playfulness, etc.), and reports VR side effects.
+
+key_contributions:
+  - Describes Code2City and Code2CityVR interaction models (viewfinder vs gaze/controller selection; VR navigation and search input)
+  - Reports a controlled experiment on affect and thinking comparing Code2City, Code2CityVR, and Eclipse (between-subject)
+  - Finds significantly higher positive affect for Code2CityVR vs Eclipse, with no significant differences in negative affect
+  - Reports largely positive and comparable “thinking” across tools, with a positive effect for city-metaphor tools on playfulness
+  - Highlights VR side effects (headache, nausea, visual annoyance) experienced by most participants
+
+terms_introduced:
+  - PANAS
+  - positive affect score (PAS)
+  - negative affect score (NAS)
+
+features_described: [F001, F002, F005, F006, F007, F011, F017, F022, F023, F025, F026]
+implementations_documented: [I016, I017]
+
+empirical_evidence:
+  study_type: controlled_experiment
+  sample_size: 42 students (between-subject; 12 Code2City, 17 Code2CityVR, 13 Eclipse)
+  dependent_variables:
+    - positive affect score (PAS)
+    - negative affect score (NAS)
+    - post-mortem survey theme scores (TQ, IQ, SQ, P, PEU, PU, AU, BIU)
+    - self-reported VR side effects
+  independent_variables:
+    - tool (Code2City vs Code2CityVR vs Eclipse)
+  key_findings:
+    - "Positive affect (PAS): significant overall difference (ANOVA p=0.04); Code2CityVR > Eclipse (Tukey p=0.031). Mean PAS: Code2CityVR 31.412, Code2City 28.167, Eclipse 24.231."
+    - "Negative affect (NAS): no significant differences (Kruskal p=0.164). Mean NAS: Code2City 11.667, Code2CityVR 13.235, Eclipse 13.538 (lower is better)."
+    - "Thinking (post-mortem themes): most overall theme differences are not significant; playfulness differs (Kruskal p=0.024) with Code2City > Eclipse (post-hoc p=0.011). Mean playfulness: Code2City 32.417, Code2CityVR 30.706, Eclipse 25.308."
+    - "VR side effects: only 3/17 Code2CityVR participants reported no side effect; most reported headache, nausea, or visual annoyance."
+  effect_size: (not reported)
+
+quality_notes: |
+  Strong for affect/thinking-focused evaluation of VR vs desktop vs IDE baseline, with explicit threats-to-validity discussion.
+  Uses student participants; generalizability to professional developers is discussed as a validity threat. Reports that VR can
+  introduce physical discomforts, suggesting caution and the need for further studies.
+  CC009 also references a companion paper by Romano et al. (“[26]”) for the quantitative part of the larger study and points
+  to another publication (“[5]”) for additional implementation details about Code2City/Code2CityVR; these are not currently
+  indexed as separate CC### sources in this repo.
+
+statistics:
+  features_extracted: 11
+  terms_extracted: 3
+  implementations_documented: 2

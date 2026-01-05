@@ -1,0 +1,26 @@
+id: CC063
+url: https://silice.csic.es/publication/ed56c9e8-56a0-44b6-aeb0-200e0f5b8b50
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Sílice/CSIC publication metadata page for “A landscape metaphor for visualization of software projects”
+  (DOI: 10.1145/1409720.1409753). The abstract indicates a project-management visualization (risk/cost/schedule
+  control) rather than software-city/city-metaphor visualization of code, so it is out of scope for this knowledge base.
+
+key_contributions: []
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  The captured page is a JS-heavy metadata/landing page; the visible content in the static capture is largely placeholders,
+  but the HTML metadata provides the paper title, DOI, and a short abstract description.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

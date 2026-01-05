@@ -1,0 +1,47 @@
+id: CC137
+url: https://github.com/qaware/holoware-software-city
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Unity-based software-city visualization (Holoware/DynaCity codebase) that builds a package/class city from a `.dot`
+  dependency graph, derives an LSM-like layering, and renders multiple views: static cycle visualization, “use case”
+  trace arcs, and an error-code-focused dynamic dependency overlay based on ElasticSearch-exported APM spans and
+  transactions. The repo also bundles raw experimental data spreadsheets comparing two layout variants (binpacking vs
+  levelized) on correctness/time for comprehension tasks, plus a questionnaire on dependency/use-case filtering.
+
+key_contributions:
+  - Constructs a layered software city from a DOT dependency graph (LSM-derived levels used for “levelized” row layout)
+  - Implements dynamic trace overlays from ElasticSearch span/transaction JSON with time-frame navigation and HTTP-status-based coloring
+  - Provides selection-scoped dependency filtering (hide all arcs except those related to the selected component)
+  - Includes a “use case” trace view that can step through use cases and points of interest over time
+  - Bundles raw evaluation spreadsheets for task correctness/time and filter-preference questionnaires
+
+terms_introduced: [Layered Structure Model (LSM)]
+
+features_described: [F061, F014, F030, F022, F008]
+implementations_documented: [I028]
+
+empirical_evidence:
+  study_type: controlled_experiment
+  sample_size: 15
+  dependent_variables: [task correctness, task completion time, filter preference ratings]
+  independent_variables: [layout variant (binpacking vs levelized)]
+  key_findings:
+    - Repo includes raw per-task correctness and timing spreadsheets for 7 comprehension tasks (15 rows each for both “binpacking” and “levelized” files).
+    - Repo includes a filter-preference questionnaire spreadsheet (22 response rows) about dependency/use-case filtering usefulness.
+  effect_size: not reported (raw data only)
+
+quality_notes: |
+  Repo snapshot at commit 6af6f83e7217eb937dfa18ef736e5e48603df9ab. The README references two 2021 publications
+  (“A Layered Software City for Dependency Visualization” and “Trace Visualization within the Software City Metaphor:
+  A Controlled Experiment on Program Comprehension”) that are not currently indexed in `bibliography/index.csv` and
+  should be added as primary sources.
+
+statistics:
+  features_extracted: 5
+  terms_extracted: 1
+  implementations_documented: 1

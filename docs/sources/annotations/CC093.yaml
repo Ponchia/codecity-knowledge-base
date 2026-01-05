@@ -1,0 +1,33 @@
+id: CC093
+url: https://github.com/rodrigo-brito/gocity
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  GoCity is a Go-language implementation of the Code City metaphor. The repository README
+  specifies the core concept mapping (folders→districts, files→buildings, structs stacked on files)
+  and metric encodings (LOC color, NOV footprint, NOM height), and notes a web UI built with
+  React and Babylon.js.
+
+key_contributions:
+  - Defines GoCity’s city mappings: folders as districts, files as buildings, structs stacked atop files
+  - Specifies metric encodings for GoCity (LOC→color, NOV→footprint, NOM→height)
+  - Documents the frontend stack (React + Babylon.js) and Go tooling for installation/usage
+
+terms_introduced: []
+
+features_described: [F001, F017, F038, F043, F005, F006, F007]
+implementations_documented: [I023]
+
+quality_notes: |
+  Repository snapshot commit: f2b5f40ced5929a8de100a87fec53bac0d296a06.
+  The UI source code is hosted on a separate branch (front-end), so this snapshot focuses on
+  the main Go codebase and README-provided mappings.
+
+statistics:
+  features_extracted: 7
+  terms_extracted: 0
+  implementations_documented: 1

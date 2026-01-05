@@ -1,0 +1,26 @@
+id: CC110
+url: https://robertominelli.com/assets/downloads/publications/More2023a.pdf
+type: pdf
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Author-hosted PDF of the Information and Software Technology (2023) paper “CodeCity: A comparison of on-screen and virtual reality”.
+  This is a duplicate/alternate copy of the already-processed CC096 source (same study and BabiaXR-CodeCity pipeline).
+
+key_contributions:
+  - None - duplicates CC096
+
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  CC110 appears to be a published-version PDF of the same work already captured in CC096; no additional extraction was performed.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

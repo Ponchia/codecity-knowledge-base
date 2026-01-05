@@ -1,0 +1,33 @@
+id: CC098
+url: https://www.inf.usi.ch/lanza/Downloads/Wett2008e.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Short 2008 technical report summarizing CodeCity as a city-metaphor visualization tool for OO reverse engineering.
+  It recaps the class/building and package/district mappings, describes the UI (city + information pane), navigation,
+  contextual menus and query types, and highlights configurability via view configurations and scripting. It also reports
+  applying CodeCity to 9 systems across Java/C++/Smalltalk (>900 kLOC total) and provides a public download link.
+
+key_contributions:
+  - Concise end-to-end description of CodeCity’s UI and interaction model (navigation, contextual menus, queries, selection actions)
+  - Documents configurability via view configurations (UI panel) and a basic scripting language for ad-hoc views
+  - Provides a multi-system application table (9 systems, >900 kLOC) with package/class counts, reinforcing scalability intent
+  - Provides a public CodeCity download URL
+
+terms_introduced: []
+
+features_described: [F023, F035, F036]
+implementations_documented: [I003]
+
+quality_notes: |
+  This is a short technical report intended as an overview; most details overlap with CC020/CC024/CC086/CC035 and no
+  controlled user study is reported here. It is still useful as a compact, citable summary including the multi-system table.
+
+statistics:
+  features_extracted: 3
+  terms_extracted: 0
+  implementations_documented: 1

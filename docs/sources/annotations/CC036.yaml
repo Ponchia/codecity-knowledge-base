@@ -1,0 +1,51 @@
+id: CC036
+url: https://arxiv.org/pdf/1705.05476.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Introduces JSCity, an open-source, browser-based implementation of the CodeCity “software city” metaphor for
+  JavaScript systems. JSCity visualizes folders as districts, files as sub-districts, and functions as buildings, including
+  explicit visualization of nested functions as stacked buildings. Describes the tool’s JavaScript implementation
+  pipeline (Esprima AST extraction + Three.js rendering) and reports experience producing cities for 40 popular
+  JavaScript projects.
+
+key_contributions:
+  - Adapts the city metaphor to JavaScript by mapping functions (not classes) to buildings and supporting anonymous + nested functions
+  - Defines concrete metric mappings for JavaScript: LOC→height, number of variables (NOV)→footprint, named/anonymous→color
+  - Documents a browser-native implementation approach using Esprima (AST) and Three.js
+  - Reports experience generating visualizations for 40 popular JavaScript systems and summarizes observed structural patterns
+  - Positions the tool as low-friction to use (runs in standard web browsers without specialized visualization installs)
+
+terms_introduced:
+  - Abstract Syntax Tree (AST)
+  - Esprima
+  - Three.js
+  - number of variables (NOV)
+
+features_described: [F001, F003, F005, F006, F007, F017, F043]
+implementations_documented: [I018]
+
+empirical_evidence:
+  study_type: case_study
+  sample_size: 40 JavaScript systems
+  dependent_variables: [qualitative_patterns]
+  independent_variables: (not applicable)
+  key_findings:
+    - "Tall and wide buildings often correspond to core functions."
+    - "Large districts with many small buildings can reflect large groups of small utility functions (e.g., internationalization code)."
+    - "Anonymous functions and nested functions are common in practice."
+  effect_size: (not reported)
+
+quality_notes: |
+  This is a short arXiv paper focused on describing a tool and its mappings; it does not report a controlled user study.
+  The implementation and interaction details are high-level, but sufficient to document a browser-based pipeline and
+  JavaScript-specific mapping choices.
+
+statistics:
+  features_extracted: 7
+  terms_extracted: 4
+  implementations_documented: 1

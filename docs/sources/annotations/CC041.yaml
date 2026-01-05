@@ -1,0 +1,40 @@
+id: CC041
+url: https://www.sciencedirect.com/science/article/pii/S1877050925029862
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+
+summary: |
+  Introduces CodeVestimenta, an IDE plugin that visualizes object-oriented software using a clothing metaphor, mapping
+  class-level metrics to garment attributes to support program comprehension. Presents a controlled study comparing
+  text-only versus visual resources (41 completed participants) across 10 tasks and four scopes, reporting advantages
+  for dependency analysis and design-quality assessment when the metaphor is available.
+
+key_contributions:
+  - Proposes the CodeVestimenta clothing metaphor for software visualization and program comprehension.
+  - Defines a metric-to-garment mapping (size, sleeves, color, garment type, collar/belt, stripes) for OO metrics.
+  - Reports an empirical evaluation (Text vs Visual groups) showing improvements in speed/accuracy on harder tasks.
+
+terms_introduced: [clothing metaphor, NOC, RFC]
+features_described: [F072, F073, F074]
+implementations_documented: [I037]
+
+empirical_evidence:
+  study_type: controlled_experiment
+  sample_size: 41
+  dependent_variables: [response_time, answer_correctness]
+  independent_variables: [visualization_condition, task_scope]
+  key_findings:
+    - The visual metaphor helped on harder comprehension tasks, especially dependency and design-quality scopes.
+  effect_size: unknown
+
+quality_notes: |
+  68 participants enrolled but 41 completed the tasks; results are limited to a single Java system and an image-based
+  IDE plugin, so generalizability to other languages or workflows is uncertain.
+
+statistics:
+  features_extracted: 3
+  terms_extracted: 3
+  implementations_documented: 1

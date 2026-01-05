@@ -1,0 +1,39 @@
+id: CC020
+url: https://dl.acm.org/doi/10.1145/1370175.1370188
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Short ICSE 2008 tool-demo paper introducing CodeCity, a language-independent interactive 3D visualization tool that
+  represents object-oriented systems as a “software city” (classes/buildings, packages/districts). Describes the overview
+  value of the city metaphor for spotting large-scale structural patterns, outlines key metric mappings and a rectangle-
+  packing-inspired containment layout, and documents the implementation stack (Smalltalk + Moose/FAMIX, iPlasma for
+  Java/C++ model extraction, Jun/OpenGL rendering).
+
+key_contributions:
+  - Concise motivation for city metaphor: locality/orientation + incremental exploration; avoids low-level “class internals” in the overview
+  - Concrete mapping recap: NOA→building footprint, NOM→height, package nesting→district color; discusses alternative mapping mechanisms
+  - Describes city overview usage for pattern spotting (e.g., very large buildings as potential god classes) and focused exploration via spawned windows
+  - Notes interactive navigation and interaction via query mechanism and manual inspection
+  - Documents implementation pipeline and dependencies (Moose/FAMIX model, iPlasma for Java/C++, Jun for OpenGL rendering)
+
+terms_introduced:
+  - polymetric view
+  - iPlasma
+  - Jun
+
+features_described: [F001, F002, F005, F006, F007, F008, F017, F023, F024, F026, F035]
+implementations_documented: [I003]
+
+quality_notes: |
+  This is a brief tool-demo paper; detailed algorithmic descriptions and evaluations are in CC023 and CC035.
+  The “Tool Availability” link in this paper points to a CodeCity download page (tracked separately as CC017).
+  The paper explicitly references “software habitability” (ICPC 2007) and VISSOFT 2007 as prior foundations.
+
+statistics:
+  features_extracted: 11
+  terms_extracted: 3
+  implementations_documented: 1

@@ -1,0 +1,43 @@
+id: CC117
+url: https://wettel.github.io/download/Wettel08c-softvis.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  SoftVis 2008 paper introducing “disharmony maps”, which overlay code-city visualizations with the results of
+  metric-based detection strategies to localize design disharmonies (code smells) in the context of the full system.
+  Disharmony types are encoded primarily via vivid colors while structural metrics remain mapped to geometry, enabling
+  quick assessment of distribution, proportion, and correlations of design problems across packages. The authors apply
+  the approach to four open-source Java systems and report qualitative findings.
+
+key_contributions:
+  - Introduces disharmony maps: color-encoded overlays of detection-strategy results on top of a software city
+  - Frames disharmony maps as an answer to the “where are the design problems?” question, preserving global context unlike lists
+  - Reports application to 4 open-source Java systems (incl. JDK) to illustrate distribution and correlation of disharmony types
+
+terms_introduced: []
+
+features_described: [F034]
+implementations_documented: [I003]
+
+empirical_evidence:
+  study_type: case_study
+  sample_size: 4 systems (open-source Java)
+  dependent_variables: [qualitative findings about disharmony distribution and dominant types]
+  independent_variables: []
+  key_findings:
+    - Disharmony maps help localize disharmonies in package context and distinguish large-but-healthy from disharmonious entities.
+    - Encoding disharmony types with color preserves the ability to map structural metrics on geometry for additional context.
+  effect_size: not reported
+
+quality_notes: |
+  This paper focuses on introducing the visualization concept and demonstrating it on real systems; it does not provide
+  a controlled user study. CC035 later expands the approach and CC086 provides a disease-map motivation for vivid/neutral color schemes.
+
+statistics:
+  features_extracted: 1
+  terms_extracted: 0
+  implementations_documented: 1

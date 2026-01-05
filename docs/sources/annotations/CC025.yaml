@@ -1,0 +1,55 @@
+id: CC025
+url: https://dl.acm.org/doi/10.1145/1985793.1985868
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-02
+
+summary: |
+  Controlled experiment paper evaluating the CodeCity city-metaphor visualization for program comprehension tasks.
+  Compares CodeCity to a state-of-the-practice baseline (Eclipse + Excel tables for metrics and design problems) on
+  two real-world Java systems (FindBugs and Azureus) with 45 participants across multiple runs; after outlier removal,
+  analysis uses 41 subjects. Reports statistically significant improvements in correctness (+24.26%) and completion
+  time (-12.01%) and reflects on experiment design and lessons learned.
+
+key_contributions:
+  - Controlled experiment design and execution for evaluating a 3D city-metaphor visualization (CodeCity) against an IDE+spreadsheet baseline
+  - “Experimental design wish list” (12 guidelines) distilled from a broader survey to guide empirical evaluation of software visualization
+  - Task set covering structural understanding and design-quality assessment (e.g., god class and dominant design problems) on two real-world systems (FindBugs, Azureus)
+  - Quantitative evidence via ANOVA: significant main effect of tool on correctness and completion time, with reported mean/SD and percent deltas
+  - Practical procedure notes: randomized block design (background/experience), blind marking with oracles, and outlier handling; documents pitfalls (e.g., task A4.2 ceiling effect)
+
+terms_introduced:
+  - controlled experiment
+  - program comprehension
+  - Ecl+Exl
+  - experimental design wish list
+  - randomized block design
+  - blind marking
+  - oracle set
+  - outlier analysis
+
+features_described: [F001, F013, F015, F023, F034, F035]
+implementations_documented: [I003]
+
+empirical_evidence:
+  study_type: controlled_experiment
+  sample_size: 41
+  dependent_variables: [correctness, completion_time]
+  independent_variables: [tool, system_size]
+  key_findings:
+    - "Correctness: significant main effect of tool (F(1,37)=14.722, p=.001); +24.26% (5.968 vs 4.803 points)."
+    - "Completion time: significant main effect of tool (F(1,37)=4.392, p=.043); -12.01% (36.117 vs 41.048 minutes)."
+  effect_size: "Percent deltas reported; standardized effect size not reported."
+
+quality_notes: |
+  Canonical evaluation source for CodeCity’s effectiveness and efficiency versus an Eclipse+Excel baseline.
+  The source URL is an ACM DL landing page; extraction used a locally mirrored PDF text. One task (A4.2) is
+  excluded from some analyses due to a ceiling effect, and some block-level analyses are deferred to a longer
+  technical report referenced by the paper.
+
+statistics:
+  features_extracted: 6
+  terms_extracted: 4
+  implementations_documented: 1

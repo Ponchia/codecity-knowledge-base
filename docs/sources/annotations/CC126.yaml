@@ -1,0 +1,45 @@
+id: CC126
+url: https://arxiv.org/abs/1708.02174
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Primary paper for Code Park (VISSOFT 2017): a 3D “game-like” code visualization tool that represents each class as a
+  room and displays code elements as syntax-aware “wallpaper” on room walls. The tool supports both bird’s-eye and
+  first-person navigation and uses orientation-preserving animated transitions for navigation actions (e.g., go-to-definition).
+  Two user studies report improved code understanding versus a traditional IDE and high engagement (all participants found it fun).
+
+key_contributions:
+  - 3D “park” metaphor where classes are rooms and source code is shown directly on walls as syntax-aware wallpaper
+  - Dual navigation modes (exocentric overview + egocentric first-person inspection) with animated transitions to preserve spatial awareness
+  - Empirical evaluation: usability study (n=28) comparing against Visual Studio plus a follow-up organization study (n=9)
+
+terms_introduced: []
+
+features_described: [F013, F026]
+implementations_documented: [I012]
+
+empirical_evidence:
+  study_type: controlled_experiment
+  sample_size: 28
+  dependent_variables: [qualitative post-task ratings, post-study preferences, task completion time]
+  independent_variables: [tool (Code Park vs Visual Studio), codebase (LM vs MG)]
+  key_findings:
+    - "Participants rated Code Park significantly easier to get familiar with and more beneficial for learning a codebase than Visual Studio."
+    - "All 28 participants reported Code Park as more enjoyable to use (engagement goal)."
+  effect_size: not reported
+
+quality_notes: |
+  The arXiv record links to the full VISSOFT 2017 paper PDF; extraction is based on the full PDF. Code Park is implemented
+  in Unity and (at publication time) supports only C#; the paper notes missing IDE features (editing/debugging) and potential
+  bias from participants’ prior Visual Studio familiarity, mitigated via a mixed-effects study design. The second study (n=9)
+  focuses on how users spatially organize classes and is summarized in the implementation notes rather than encoded as a
+  separate empirical-evidence block here.
+
+statistics:
+  features_extracted: 2
+  terms_extracted: 0
+  implementations_documented: 1

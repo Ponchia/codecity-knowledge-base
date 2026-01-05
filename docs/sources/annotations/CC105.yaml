@@ -1,0 +1,28 @@
+id: CC105
+url: https://arxiv.org/pdf/1705.05476
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  arXiv PDF for the JSCity paper (JavaScript Code City). This is a duplicate of CC036 (same arXiv paper already
+  processed), so no additional extraction is needed.
+
+key_contributions:
+  - None — duplicates CC036 (same paper)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  CC105 points to the same arXiv identifier as CC036 (JSCity). Use CC036/CC094 for the extracted mappings and
+  implementation details.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

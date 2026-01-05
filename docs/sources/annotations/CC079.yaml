@@ -1,0 +1,47 @@
+id: CC079
+url: https://robertominelli.com/assets/downloads/publications/Ardi2021a.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  Presents “m3triCity 2” (Metricity v2), extending m3triCity with explicit visualization of data sources: data files
+  (XML/JSON/CSV) and databases inferred from code. The paper introduces data-specific meshes and metrics, integrates
+  database tables via a sky/underground layout, and preserves evolution stability using the history-resistant layout.
+
+key_contributions:
+  - Extends the evolution model with data entities (DataFile, Database, Table, TableAccess, Binary) and their histories
+  - Adds data-file visualization with domain-specific metrics (entity counts, entity types, nesting, properties)
+  - Infers database schema and table accesses from code using SQLInspect (incl. MongoDB support) and renders tables
+  - Introduces “City with Clouds” and “City with Underground” layouts to separate databases from source code
+  - Demonstrates the approach on SwissCovid Android and GnuCash Android case studies
+
+terms_introduced:
+  - data file (city entity)
+  - table access
+  - SQLInspect
+  - city with clouds
+  - city with underground
+
+features_described: [F015, F032, F033, F050, F051]
+implementations_documented: [I021]
+
+empirical_evidence:
+  study_type: case_study
+  sample_size: 2
+  dependent_variables: []
+  independent_variables: []
+  key_findings:
+    - "SwissCovid Android case study shows growth of data files and their evolution alongside source code."
+    - "GnuCash Android case study highlights database introduction, table evolution, and class–table access links."
+
+quality_notes: |
+  Evidence is based on two case studies; no controlled user study or quantitative evaluation is reported. Database
+  schema inference is required when schemas are not available in the repository.
+
+statistics:
+  features_extracted: 5
+  terms_extracted: 5
+  implementations_documented: 1

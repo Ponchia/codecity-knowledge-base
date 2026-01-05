@@ -1,0 +1,27 @@
+id: CC127
+url: https://arxiv.org/abs/2509.23297
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  arXiv landing page (metadata + abstract) for “Code Arcades” (arXiv:2509.23297). This is a duplicate entry for the
+  same work already processed via the full PDF in CC026, so no additional extraction is needed.
+
+key_contributions:
+  - None — duplicates CC026 (same arXiv identifier / paper)
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Use CC026 for extracted feature details (configurable grouping, multi-level metrics, interactive rendering configuration).
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

@@ -1,0 +1,42 @@
+id: CC070
+url: https://core.ac.uk/download/pdf/211559869.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Presents IslandViz, a VR/AR visualization for component-based (OSGi) software architectures based on an island
+  metaphor: bundles are islands, packages are regions, and class types are buildings. The approach mines repository data
+  into a Neo4j graph database (via JQA SSISTANT) and supports multi-level exploration on a virtual table in VR and as an
+  AR overlay on HoloLens, with gesture/gaze/voice interaction and basic collaboration.
+
+key_contributions:
+  - Island metaphor for modular software architectures (bundle→island, package→region, class→building) with dependency depiction via ports/arced arrows and service layers
+  - Island construction algorithm using Voronoi tiling and a cohesion factor to control region “holes” and visual ruggedness
+  - VR interaction model built around a virtual table (translate/rotate/scale) plus a hand-attached “virtual tablet” for details-on-demand text
+  - AR mode on HoloLens using gesture/gaze/voice, including a state-machine interaction model and shared-state collaboration via MRTK
+
+terms_introduced: [island metaphor]
+features_described: [F011, F012, F022, F055, F068]
+implementations_documented: [I033]
+
+empirical_evidence:
+  study_type: case_study
+  sample_size: 1
+  dependent_variables: []
+  independent_variables: []
+  key_findings:
+    - "Demonstrates IslandViz on a large industrial OSGi system (RCE) and reports mined graph scale (≈1.75M nodes; ≈6.48M relations in Neo4j) as a basis for interactive exploration."
+  effect_size: not reported
+
+quality_notes: |
+  The paper focuses on system design and interaction techniques; no controlled user study is reported (future work notes
+  user studies, including eye-tracking for VR).
+
+statistics:
+  features_extracted: 5
+  terms_extracted: 1
+  implementations_documented: 1
+

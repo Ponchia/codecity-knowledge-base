@@ -1,0 +1,29 @@
+id: CC071
+url: https://ar5iv.labs.arxiv.org/html/2109.14217
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  arXiv preprint (submitted 2021-09-29) introducing live heat-map overlays for ExplorViz. The web/AR tool continuously processes runtime traces (inspectIT Ocelot) to update a software city and overlays a ground-plane heat map for user-selected dynamic metrics. Users can switch metrics at runtime and select one of three heat-map time modes: snapshot (current snapshot only), continuously aggregated (adds 50% of the previous score), and windowed (difference vs an earlier snapshot, default window size 10). Heat maps reduce city opacity for visibility, link classes to patches, and are planned for VR. Compared to prior static/offline heat maps, this runs live without manual generation.
+
+key_contributions:
+  - Live, user-toggleable heat-map overlay for runtime metrics on software cities
+  - Heat-map time modes: snapshot, continuously aggregated (50% carryover), and windowed (difference vs earlier snapshot)
+  - Integration into ExplorViz web and AR clients; planned VR support
+  - Uses inspectIT Ocelot traces with 10s update loop; no manual preprocessing required
+
+terms_introduced: []
+
+features_described: [F014, F058]
+implementations_documented: [I009]
+
+quality_notes: |
+  Source is an arXiv preprint; figures referenced but not all visible in text dump. Evaluation data is not included (concept/demo paper). Heat-map calculations are implemented in the frontend (on the user’s device) using backend-provided trace data. Metrics focus on class-level dynamic coupling; extensibility is noted but not detailed.
+
+statistics:
+  features_extracted: 2
+  terms_extracted: 0
+  implementations_documented: 1

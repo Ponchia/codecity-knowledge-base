@@ -1,0 +1,32 @@
+id: CC002
+url: https://www.galois.com/articles/visualizing-codebases-as-cities
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Galois blog post motivating “code as city” visualizations as a shared spatial metaphor to help engineers orient in
+  large codebases and communicate about architecture. It sketches (at a high level) how dependencies and other
+  analysis results could be layered onto a cityscape, and notes an early prototype implemented in Blender with a
+  planned VSCode integration.
+
+key_contributions:
+  - Modern industry framing of software cities as shared metaphors for onboarding and team communication
+  - Suggests layering analysis results (e.g., dependencies) on top of a cityscape as an overlay metaphor (e.g., transit map)
+  - Notes an early prototype tool (Blender) and intent to develop an IDE (VSCode) plugin
+
+terms_introduced: []
+
+features_described: [F001]
+implementations_documented: []
+
+quality_notes: |
+  Blog post (not peer-reviewed) with no detailed algorithmic description or released tool/repo; use as contextual
+  motivation rather than primary technical evidence.
+
+statistics:
+  features_extracted: 1
+  terms_extracted: 0
+  implementations_documented: 0

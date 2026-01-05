@@ -1,0 +1,31 @@
+id: CC030
+url: https://www.eurecom.fr/en/publication/937/download/mm-russch-020419.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Thesis on 3D metaphoric information visualization with a substantial chapter on navigation in metaphoric virtual
+  worlds. It introduces “metaphor-aware navigation” (navigation schemes embedded in metaphor components) and
+  argues for assisted locomotion and multi-level navigation (e.g., city-metaphor walking vs flying) to preserve spatial
+  knowledge and reduce disorientation.
+
+key_contributions:
+  - Introduces “metaphor-aware navigation”: navigation schemes tied to metaphor components and hierarchy levels
+  - Describes assisted navigation modes (e.g., path-based travel vs jump) and ties city-metaphor navigation levels to route vs survey knowledge
+
+terms_introduced: [metaphor-aware navigation]
+
+features_described: [F026, F064]
+implementations_documented: []
+
+quality_notes: |
+  General 3D information-visualization work (not specific to software cities), but it provides concrete navigation design
+  concepts that can be applied when implementing and evaluating navigation in software-city visualizations.
+
+statistics:
+  features_extracted: 2
+  terms_extracted: 1
+  implementations_documented: 0

@@ -1,0 +1,24 @@
+id: CC073
+url: https://eprints.soton.ac.uk/488714/1/1-s2.0-S2665963820300257-main.pdf
+type: pdf
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-03
+
+summary: |
+  Duplicate PDF of the ExplorViz Software Impacts 2020 paper already processed as CC053 (ScienceDirect landing page).
+  Content matches the CC053 source; no new information extracted.
+
+key_contributions: []
+terms_introduced: []
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  This is an eprint/PDF mirror of the same paper indexed at CC053; skipped to avoid duplication.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

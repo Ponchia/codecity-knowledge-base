@@ -1,0 +1,26 @@
+id: CC090
+url: https://codecharta.com/
+type: website
+status: ok
+extraction_status: skip
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  Duplicate of CC014: same CodeCharta marketing/overview site content, only differing by URL normalization (trailing slash).
+
+key_contributions:
+  - None — duplicates CC014
+
+terms_introduced: []
+
+features_described: []
+implementations_documented: []
+
+quality_notes: |
+  Treat CC014 as the canonical CodeCharta website source in this bibliography.
+
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

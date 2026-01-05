@@ -1,0 +1,33 @@
+id: CC134
+url: https://gitlab.com/babiaxr/aframe-babia-components
+type: repo
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-04
+
+summary: |
+  BabiaXR A-Frame component library that includes software-city visualizers for web/VR (WebXR), notably a treemap-like
+  city component (`babia-city`) and a spiral-style “boats” layout (`babia-boats`). The repo also includes an evolution
+  playback mode (`babiaxr-codecity`) driven by commit/time snapshots, plus multi-user demos using Networked-AFrame.
+
+key_contributions:
+  - Implements both treemap-like and spiral-style city layouts as reusable A-Frame components
+  - Provides time-evolution playback driven by snapshot JSON (date + optional commit SHA) with animated geometry updates
+  - Includes UI support for switching which data fields map to visual properties (e.g., height/area/color)
+  - Demonstrates multi-user shared exploration (Networked-AFrame) with a software-city dataset (JetUML) rendered via `babia-boats`
+
+terms_introduced: []
+
+features_described: [F008, F059, F032, F015, F035, F022, F037, F042]
+implementations_documented: [I026]
+
+quality_notes: |
+  Repo snapshot at commit 47d386de78ed45573c15a0eb1184b1e273a845b2. The README indicates this repository is a GitHub
+  mirror of the canonical GitLab project. The codebase is a general A-Frame data-visualization component suite; this
+  extraction focuses on the software-city/city-metaphor-related components and examples.
+
+statistics:
+  features_extracted: 8
+  terms_extracted: 0
+  implementations_documented: 1
