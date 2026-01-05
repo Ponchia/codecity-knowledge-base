@@ -3,9 +3,12 @@ id: F015
 title: Evolution Visualization
 category: analysis
 status: canonical
+maturity: established
+bounded_context: [universal]
 introduced_by: CC035
 implementations: [CodeCity, EvoStreets, CrocoCosmos, SkyscrapAR, VR City, CodeCharta, SoftVis3D, m3triCity, Langelier Quality Visualization Framework, Getaviz, BabiaXR-CodeCity, Trend Maps (UE4 prototype)]
 related_features: [F001, F006, F031, F032, F033, F039]
+supersedes: []
 taxonomy:
   granularity: [file, class, package, method]
   visual_element: [building, street, brick]
@@ -16,11 +19,36 @@ updated_from: [CC015, CC035, CC038, CC040, CC059, CC075, CC091, CC106, CC116, CC
 
 # Evolution Visualization
 
+## Problem & Motivation
+
+Maintenance and refactoring decisions often depend on how code changes over time, not just its current shape. CC035 and CC116 motivate evolution views (age maps, time travel, timelines) as ways to localize change and growth within the city’s spatial context, while later systems emphasize layout stability across versions (CC059, CC101).
+
 ## Definition
 
 Visualization of how a software system changes over time (e.g., origin date, churn, authorship, modification date), using the city as a spatial context for temporal information.
 
-## Mechanism
+## Context & Applicability
+
+**Use when:**
+- Prioritizing hotspots and refactoring candidates using churn/age/authorship signals (CC015, CC035, CC059).
+- Reviewing architectural evolution and major changes across a release range (CC116, CC106).
+
+**Avoid when:**
+- Repository history is unavailable, incomplete, or not comparable (e.g., shallow/squashed history).
+- You cannot maintain stable identifiers/positions across versions and frequent re-layout would obscure real changes (CC059, CC101).
+
+**Prerequisites:** Version-control metadata (commits, timestamps, authors, diffs or blame) and a strategy for stable identity/placement across versions (CC035, CC059, CC101).
+**Alternatives:** [[dynamic-visualization]] for runtime traces, [[delta-comparison]] for comparing two snapshots, or [[trend-map-visualization]] for aggregated trends over a revision range.
+
+## Forces
+
+| Force | Pull |
+|-------|------|
+| Temporal comparability vs. space efficiency | Stable layouts enable comparison, but often require preallocation and waste space. |
+| Temporal resolution vs. readability | Fine-grained commit views preserve detail, but need bucketing/aggregation to remain usable. |
+| Automated continuity vs. refactoring correctness | Track entities across history automatically, but avoid misattributing changes across moves/renames/splits. |
+
+## Mechanism (Solution)
 
 **Input**: Version-control or repository-derived history (dates, churn, authors).
 
@@ -31,7 +59,30 @@ Visualization of how a software system changes over time (e.g., origin date, chu
 
 **Output**: A city that exposes change-over-time signals.
 
-## Evidence (from CC015)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Surfaces where change concentrates over time in structural context, supporting hotspot-driven maintenance. | Evolution signals can be noisy/biased (e.g., blame-based measures) and require careful interpretation. |
+| Enables reasoning about major refactorings and growth patterns beyond a single snapshot. | Layout instability can be mistaken for evolution; stability mechanisms trade precision/space for comparability. |
+
+**Complexity**: Medium
+**Performance**: Depends on analysis pipeline and refresh cadence.
+**Cognitive Load**: Medium–High (interpretation requires metric literacy).
+
+## Variations
+
+CC038 describes a “Leak period” profile intended to focus on new code (e.g., new LOC and new issues) and an “Evostreet” stable layout for evolving systems. It also notes that author/commit signals are derived from SCM blame info (current lines only, no SCM history).
+
+CC040 defines a dedicated leak-period commit signal (`number_of_commits`) as “number of commits during the current leak period”, computed from SCM blame information loaded via SonarQube.
+
+## Implementation Notes
+
+CC066 (a software-architecture visualization survey) summarizes additional evolution visualizations that reuse the city metaphor, including an “evolving software cities” variant where streets represent packages and building plots represent classes. It also notes extensions using contour-line “evolution maps” for versions and a modification-history map combining contour lines with towers (height = number of modifications; color = modification date).
+
+## Evidence
+
+### Evidence (from CC015)
 
 CC015 describes:
 - CodeCity being used for studying evolution over time.
@@ -41,13 +92,7 @@ CC015 describes:
 
 CC131’s Getaviz README states that generated visualizations can be enriched with evolutionary information from git and svn repositories and supports tracking changes across multiple versions. The generator component also accepts a Hismo model as an optional input alongside FAMIX (structure).
 
-## Variations (SoftVis3D, from CC038)
-
-CC038 describes a “Leak period” profile intended to focus on new code (e.g., new LOC and new issues) and an “Evostreet” stable layout for evolving systems. It also notes that author/commit signals are derived from SCM blame info (current lines only, no SCM history).
-
-CC040 defines a dedicated leak-period commit signal (`number_of_commits`) as “number of commits during the current leak period”, computed from SCM blame information loaded via SonarQube.
-
-## Evidence (from CC106)
+### Evidence (from CC106)
 
 CC106 describes VR City’s evolution animation over a selected commit range:
 - Users specify a commit interval by date or SHA; commits are sampled via Git.
@@ -58,7 +103,7 @@ CC106 also notes two constraints of the current implementation:
 - Building positions are kept fixed during the animation (no re-layout).
 - Classes created and removed outside the current revision do not appear in the animation.
 
-## Evidence (from CC035)
+### Evidence (from CC035)
 
 CC035 details three concrete evolution techniques implemented in CodeCity:
 - [[age-map]] — color overlay encoding artifact age
@@ -67,30 +112,30 @@ CC035 details three concrete evolution techniques implemented in CodeCity:
 
 CC116 presents the same three techniques as a focused evolution-visualization approach (coarse + fine grained), and reports case studies on ArgoUML, JHotDraw, and Jmol with findings confirmed by developers.
 
-## Evidence (from CC091)
+### Evidence (from CC091)
 
 CC091 documents CodeCharta supporting evolution analysis by generating maps from VCS history (e.g., Git/SVN log parsers) and by providing a dedicated [[delta-comparison]] view to compare two snapshots (two maps).
 
-## Evidence (from CC059)
+### Evidence (from CC059)
 
 CC059 presents m3triCity as an evolution-first city visualization for Git repositories:
 - Uses a history-resistant (stable) layout to avoid version-to-version “layout jumps” when stepping through time.
 - Explicitly visualizes structural refactorings (moves/renames) as movements between positions (with arcs via 3D edge bundling).
 - Provides interactive evolution controls, including time bucketing and a timeline view that supports jumping to specific points in history.
 
-## Evidence (from CC100)
+### Evidence (from CC100)
 
 CC100 describes an “evolving software cities” approach where the **layout itself** incorporates development history so history becomes visible in a smooth, stable way across versions. The city then serves as a platform for overlaying product and process data to create specialized history-oriented visualizations.
 
-## Evidence (from CC101)
+### Evidence (from CC101)
 
 CC101 expands the “consistent software cities” approach with EvoStreets layouts that encode evolution directly in the street structure while keeping positions stable across versions. It also presents thematic evolution views such as modification-history maps (height = number of modifications, color = last-modified recency) layered on the stable layout to support maintenance and quality analysis.
 
-## Evidence (from CC075)
+### Evidence (from CC075)
 
 CC075 uses multi-version visualizations to analyze package/program evolution, rendering successive versions side-by-side to identify growth patterns and refactoring needs.
 
-## Evidence (Trend Maps, from CC054)
+### Evidence (Trend Maps, from CC054)
 
 CC054 introduces “trend maps”, which extend a software map of a selected revision to visualize metric changes over a revision range in a single view:
 - Computes per-entity metric time series across revisions and aggregates values bottom-up for group-level trends.
@@ -99,15 +144,23 @@ CC054 introduces “trend maps”, which extend a software map of a selected rev
 
 CC054 notes a conceptual limitation: trends are shown only for entities present in the chosen revision within the range; added/removed entities within the range are not fully represented.
 
-## Notes (from CC066)
-
-CC066 (a software-architecture visualization survey) summarizes additional evolution visualizations that reuse the city metaphor, including an “evolving software cities” variant where streets represent packages and building plots represent classes. It also notes extensions using contour-line “evolution maps” for versions and a modification-history map combining contour lines with towers (height = number of modifications; color = modification date).
-
-## Evidence (BabiaXR-CodeCity, from CC134)
+### Evidence (BabiaXR-CodeCity, from CC134)
 
 CC134 includes a time-evolution mode for a web-based software city (`babiaxr-codecity`): snapshots are keyed by date and optional commit SHA and can be stepped automatically or via UI events, updating and optionally animating per-entity geometry across versions.
 
 CC034 describes the same line of work as a web-based CodeCity prototype focused on time evolution. It emphasizes keeping building positions stable by updating area/height using unique per-building identifiers, leaving empty terrain for buildings that do not exist in earlier snapshots, and leveraging A-Frame’s built-in VR mode for in-city navigation and interaction.
+
+## Known Limitations
+
+- Layout instability can be mistaken for code change; stable-layout strategies trade space efficiency for temporal comparability (CC059, CC101).
+- Some approaches visualize only entities present in a reference revision, under-representing births/deaths within a range (CC054).
+- Evolution metrics derived from blame/current lines may not capture full history (e.g., authors/commits in leak periods) (CC040).
+
+## Open Questions
+
+- What are robust, language-agnostic identity-tracking strategies across refactorings that are accurate enough for visual narratives?
+- How should tools represent births/deaths and structural moves in a way that is both visually clear and analytically honest?
+- Which evolution signals (age, churn, ownership, trends) most reliably predict maintenance risk, and how should they be layered without channel conflicts?
 
 ## Sources
 
@@ -131,3 +184,8 @@ CC034 describes the same line of work as a web-based CodeCity prototype focused 
 ## See Also
 
 - [[dynamic-visualization]] — runtime behavior (distinct from evolution over versions)
+- [[age-map]] — age coloring as a longevity overlay
+- [[time-travel]] — stable-layout stepping through history
+- [[timeline-visualization]] — compact “when did this change?” component
+- [[delta-comparison]] — two-snapshot comparison
+- [[trend-map-visualization]] — aggregate trend encoding over a revision range

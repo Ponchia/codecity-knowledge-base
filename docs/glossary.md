@@ -14,6 +14,8 @@
 
 **Category**: metaphor
 
+**Bounded Context**: city-metaphor
+
 **Sources**: CC015, CC023, CC025, CC035
 
 **Related**: [building](#building), [district](#district)
@@ -30,6 +32,8 @@
 
 **Category**: metaphor
 
+**Bounded Context**: island-metaphor
+
 **Sources**: CC070
 
 **Related**: [city metaphor](#city-metaphor), [district](#district), [[island-metaphor]]
@@ -44,11 +48,31 @@
 
 **Category**: metaphor
 
+**Bounded Context**: clothing-metaphor
+
 **Sources**: CC041
 
 **Related**: [city metaphor](#city-metaphor), [[clothing-metaphor]]
 
 **Example**: Each class is shown as a shirt or pants whose size, color, collar, and stripes reflect quality metrics.
+
+---
+
+### galaxy metaphor
+
+**Definition**: A visualization approach that depicts software as a galaxy/constellation where files are rendered as stars and semantic clusters appear as nebulae, with spatial layout determined by semantic similarity (via NLP/LDA) rather than structural hierarchy.
+
+**Aliases**: software galaxy, constellation metaphor
+
+**Category**: metaphor
+
+**Bounded Context**: galaxy-metaphor
+
+**Sources**: CC157
+
+**Related**: [city metaphor](#city-metaphor), [semantic layout](#semantic-layout), [[galaxy-metaphor]]
+
+**Example**: Files with similar topics (from LDA analysis) cluster together as a nebula, regardless of their package structure.
 
 ---
 
@@ -59,6 +83,8 @@
 **Aliases**: block, tower
 
 **Category**: metaphor
+
+**Bounded Context**: city-metaphor
 
 **Sources**: CC015, CC023, CC035
 
@@ -74,6 +100,8 @@
 
 **Category**: metaphor
 
+**Bounded Context**: city-metaphor
+
 **Sources**: CC015, CC023, CC035, CC134
 
 ---
@@ -85,6 +113,8 @@
 **Aliases**: method brick
 
 **Category**: metaphor
+
+**Bounded Context**: city-metaphor
 
 **Sources**: CC035
 
@@ -100,6 +130,8 @@
 
 **Category**: metaphor
 
+**Bounded Context**: universal
+
 **Sources**: CC023, CC035, CC085
 
 **Related**: [city metaphor](#city-metaphor), [building](#building)
@@ -113,6 +145,8 @@
 **Aliases**: habitable visualization
 
 **Category**: metaphor
+
+**Bounded Context**: universal
 
 **Sources**: CC035, CC085
 
@@ -130,6 +164,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC015
 
 **Related**: [[evolution-visualization]]
@@ -145,6 +181,8 @@
 **Aliases**: truck factor
 
 **Category**: metric
+
+**Bounded Context**: universal
 
 **Sources**: CC038
 
@@ -162,6 +200,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC136
 
 **Related**: [SCM blame](#scm-blame), [bus factor](#bus-factor), [[evolution-visualization]]
@@ -178,6 +218,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC015, CC035, CC093, CC104
 
 **Related**: [[height-mapping]], [[base-mapping]], [[texture-mapping]]
@@ -191,6 +233,8 @@
 **Aliases**: logical lines of code
 
 **Category**: metric
+
+**Bounded Context**: universal
 
 **Sources**: CC102
 
@@ -206,6 +250,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC102
 
 **Related**: [[base-mapping]]
@@ -219,6 +265,8 @@
 **Aliases**: number of methods, method count
 
 **Category**: metric
+
+**Bounded Context**: universal
 
 **Sources**: CC015, CC023, CC035, CC093, CC104
 
@@ -234,6 +282,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC015, CC023, CC035
 
 ---
@@ -245,6 +295,8 @@
 **Aliases**: number of incoming invocations
 
 **Category**: metric
+
+**Bounded Context**: universal
 
 **Sources**: CC102, CC130
 
@@ -260,6 +312,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC102, CC130
 
 **Related**: [[base-mapping]]
@@ -274,6 +328,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC102, CC130
 
 ---
@@ -285,6 +341,8 @@
 **Aliases**: number of statements, statement count
 
 **Category**: metric
+
+**Bounded Context**: universal
 
 **Sources**: CC102, CC103
 
@@ -300,6 +358,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC069
 
 **Related**: [[vulnerability-overlay]]
@@ -314,6 +374,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC075
 
 **Related**: [[color-mapping]]
@@ -327,6 +389,8 @@
 **Aliases**: co-change coupling, change coupling
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC148
 
@@ -344,6 +408,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC148
 
 **Related**: [coupling](#coupling), [static analysis](#static-analysis)
@@ -360,6 +426,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC075
 
 **Related**: [[orientation-mapping]]
@@ -373,6 +441,8 @@
 **Aliases**: Coupling Between Objects
 
 **Category**: metric
+
+**Bounded Context**: universal
 
 **Sources**: CC075
 
@@ -388,6 +458,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC075
 
 **Related**: [[orientation-mapping]], [cohesion](#cohesion)
@@ -401,6 +473,8 @@
 **Aliases**: Weighted Methods per Class
 
 **Category**: metric
+
+**Bounded Context**: universal
 
 **Sources**: CC075
 
@@ -416,6 +490,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC075
 
 ---
@@ -427,6 +503,8 @@
 **Aliases**: number of child classes
 
 **Category**: metric
+
+**Bounded Context**: universal
 
 **Sources**: CC041
 
@@ -442,6 +520,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC041
 
 **Related**: [CBO](#cbo)
@@ -455,6 +535,8 @@
 **Aliases**: number of variables, variable count
 
 **Category**: metric
+
+**Bounded Context**: universal
 
 **Sources**: CC036, CC093, CC104
 
@@ -470,6 +552,8 @@
 
 **Category**: metric
 
+**Bounded Context**: universal
+
 **Sources**: CC024, CC035, CC086
 
 **Related**: [district](#district), [[package-as-district]]
@@ -484,6 +568,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC023, CC035
 
 ---
@@ -495,6 +581,8 @@
 **Aliases**: data-only class
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC023, CC035
 
@@ -510,6 +598,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC035
 
 **Related**: [god class](#god-class), [design disharmony](#design-disharmony)
@@ -523,6 +613,8 @@
 **Aliases**: Blob class
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC075
 
@@ -538,6 +630,8 @@
 
 **Category**: mapping
 
+**Bounded Context**: universal
+
 **Sources**: CC035
 
 **Related**: [property mapping](#property-mapping), [city metaphor](#city-metaphor)
@@ -551,6 +645,8 @@
 **Aliases**: metric mapping, visual encoding
 
 **Category**: mapping
+
+**Bounded Context**: universal
 
 **Sources**: CC035
 
@@ -566,6 +662,8 @@
 
 **Category**: mapping
 
+**Bounded Context**: universal
+
 **Sources**: CC035
 
 **Related**: [NOM](#nom), [NOA](#noa), [LOC](#loc), [NL](#nl)
@@ -579,6 +677,8 @@
 **Aliases**: polymetric views
 
 **Category**: mapping
+
+**Bounded Context**: universal
 
 **Sources**: CC020
 
@@ -594,6 +694,8 @@
 
 **Category**: mapping
 
+**Bounded Context**: universal
+
 **Sources**: CC015, CC023, CC035
 
 **Related**: [[height-mapping]]
@@ -607,6 +709,8 @@
 **Aliases**: footprint mapping
 
 **Category**: mapping
+
+**Bounded Context**: universal
 
 **Sources**: CC015, CC023, CC035
 
@@ -622,6 +726,8 @@
 
 **Category**: mapping
 
+**Bounded Context**: universal
+
 **Sources**: CC015, CC023, CC035
 
 **Related**: [[color-mapping]]
@@ -636,6 +742,8 @@
 
 **Category**: mapping
 
+**Bounded Context**: universal
+
 **Sources**: CC015
 
 ---
@@ -647,6 +755,8 @@
 **Aliases**: binned mapping, categorical scaling
 
 **Category**: mapping
+
+**Bounded Context**: universal
 
 **Sources**: CC023
 
@@ -662,6 +772,8 @@
 
 **Category**: mapping
 
+**Bounded Context**: universal
+
 **Sources**: CC023, CC035
 
 **Related**: [[boxplot-metric-mapping]]
@@ -675,6 +787,8 @@
 **Aliases**: threshold binned mapping
 
 **Category**: mapping
+
+**Bounded Context**: universal
 
 **Sources**: CC023, CC035
 
@@ -690,6 +804,8 @@
 
 **Category**: mapping
 
+**Bounded Context**: universal
+
 **Sources**: CC023, CC035
 
 **Related**: [[texture-mapping]]
@@ -703,6 +819,8 @@
 **Aliases**: identity mapper
 
 **Category**: mapping
+
+**Bounded Context**: universal
 
 **Sources**: CC035
 
@@ -718,6 +836,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC015
 
 **Related**: [dynamic analysis](#dynamic-analysis)
@@ -732,6 +852,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC015
 
 **Related**: [static analysis](#static-analysis)
@@ -745,6 +867,8 @@
 **Aliases**: LSM, layered structure model
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC137
 
@@ -762,6 +886,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC114
 
 **Related**: [module](#module), [coupling](#coupling), [static analysis](#static-analysis), [architectural erosion](#architectural-erosion)
@@ -777,6 +903,8 @@
 **Aliases**: architectural degradation
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC114
 
@@ -794,6 +922,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC015, CC094
 
 **Related**: [district](#district), [[module-as-building]]
@@ -809,6 +939,8 @@
 **Aliases**: hotspot, code hotspot
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC014, CC040
 
@@ -826,6 +958,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC045
 
 **Related**: [technical debt](#technical-debt), [[variability-hotspot-overlay]]
@@ -841,6 +975,8 @@
 **Aliases**: design debt
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC045
 
@@ -858,6 +994,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC045
 
 **Related**: [technical debt](#technical-debt), [software variability](#software-variability), [[variability-hotspot-overlay]]
@@ -871,6 +1009,8 @@
 **Aliases**: VP, vp, variation point (vp)
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC045
 
@@ -886,6 +1026,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC045
 
 **Related**: [variation point](#variation-point)
@@ -899,6 +1041,8 @@
 **Aliases**: new code period
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC038, CC040
 
@@ -916,6 +1060,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC106
 
 **Related**: [module](#module), [[remodularization-analysis]]
@@ -929,6 +1075,8 @@
 **Aliases**: semantic clustering
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC106
 
@@ -944,6 +1092,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC025
 
 **Related**: [city metaphor](#city-metaphor), [static analysis](#static-analysis)
@@ -957,6 +1107,8 @@
 **Aliases**: production visualization, production-cost visualization
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC006
 
@@ -974,6 +1126,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC054
 
 **Related**: [[treemap-layout]], [city metaphor](#city-metaphor), [[color-mapping]]
@@ -990,6 +1144,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC054
 
 **Related**: [software map](#software-map), [[evolution-visualization]]
@@ -1003,6 +1159,8 @@
 **Aliases**: item-based effect
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC054
 
@@ -1018,6 +1176,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC054
 
 **Related**: [item-based metaphor](#item-based-metaphor), [[production-cost-overlay]]
@@ -1031,6 +1191,8 @@
 **Aliases**: application landscape, system landscape
 
 **Category**: analysis
+
+**Bounded Context**: landscape-metaphor
 
 **Sources**: CC053, CC084
 
@@ -1046,6 +1208,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: landscape-metaphor
+
 **Sources**: CC101
 
 **Related**: [software landscape](#software-landscape), [[software-landscape-view]]
@@ -1059,6 +1223,8 @@
 **Aliases**: live monitoring visualization
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC053, CC084
 
@@ -1074,6 +1240,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC025
 
 **Related**: [program comprehension](#program-comprehension)
@@ -1087,6 +1255,8 @@
 **Aliases**: Positive Affect and Negative Affect Schedule
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC009
 
@@ -1102,6 +1272,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC009
 
 **Related**: [PANAS](#panas), [negative affect score (NAS)](#negative-affect-score-nas)
@@ -1115,6 +1287,8 @@
 **Aliases**: NAS, negative affect score
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC009
 
@@ -1130,6 +1304,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC018
 
 **Related**: [city metaphor](#city-metaphor)
@@ -1143,6 +1319,8 @@
 **Aliases**: design harmony concept
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC035
 
@@ -1158,6 +1336,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC035
 
 **Related**: [detection strategy](#detection-strategy), [[disharmony-maps]]
@@ -1171,6 +1351,8 @@
 **Aliases**: smell detector, anomaly detection rule
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC035
 
@@ -1186,6 +1368,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC035, CC025
 
 **Related**: [[disharmony-maps]], [design disharmony](#design-disharmony)
@@ -1199,6 +1383,8 @@
 **Aliases**: age overlay
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC035
 
@@ -1214,6 +1400,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC035, CC059
 
 **Related**: [[time-travel]], [[timeline-visualization]]
@@ -1227,6 +1415,8 @@
 **Aliases**: time-shift mode, time shift, time shifting
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC084, CC108, CC080
 
@@ -1242,6 +1432,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC059
 
 **Related**: [[time-travel]]
@@ -1255,6 +1447,8 @@
 **Aliases**: timeline technique
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC035, CC059
 
@@ -1270,6 +1464,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC079
 
 **Related**: [[data-file-visualization]], [[file-as-building]]
@@ -1284,6 +1480,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC079
 
 **Related**: [[database-access-visualization]]
@@ -1297,6 +1495,8 @@
 **Aliases**: SQLInspect analyzer
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC079
 
@@ -1314,6 +1514,8 @@
 
 **Category**: layout
 
+**Bounded Context**: universal
+
 **Sources**: CC015, CC023, CC035
 
 **Related**: [[treemap-layout]]
@@ -1327,6 +1529,8 @@
 **Aliases**: sunburst layout
 
 **Category**: layout
+
+**Bounded Context**: universal
 
 **Sources**: CC075
 
@@ -1342,6 +1546,8 @@
 
 **Category**: layout
 
+**Bounded Context**: universal
+
 **Sources**: CC035, CC059
 
 **Related**: [[treemap-layout]]
@@ -1356,6 +1562,28 @@
 
 **Category**: layout
 
+**Bounded Context**: universal
+
+**Sources**: CC035
+
+---
+
+### semantic layout
+
+**Definition**: A layout algorithm that positions code elements based on semantic similarity extracted from source code (identifiers, comments) using NLP techniques like LDA topic modeling, rather than structural hierarchy.
+
+**Aliases**: semantic similarity layout, NLP-based layout, topic-based layout
+
+**Category**: layout
+
+**Bounded Context**: universal
+
+**Sources**: CC157
+
+**Related**: [[semantic-similarity-layout]], [[galaxy-metaphor]]
+
+**Example**: Files discussing "authentication" cluster together regardless of package structure
+
 **Sources**: CC075
 
 ---
@@ -1367,6 +1595,8 @@
 **Aliases**: history resistant layout, stable layout (evolution)
 
 **Category**: layout
+
+**Bounded Context**: universal
 
 **Sources**: CC059
 
@@ -1382,6 +1612,8 @@
 
 **Category**: layout
 
+**Bounded Context**: universal
+
 **Sources**: CC101
 
 **Related**: [[street-layout]], [layout consistency](#layout-consistency)
@@ -1395,6 +1627,8 @@
 **Aliases**: layout stability, mental-map preservation
 
 **Category**: layout
+
+**Bounded Context**: universal
 
 **Sources**: CC101
 
@@ -1410,6 +1644,8 @@
 
 **Category**: layout
 
+**Bounded Context**: universal
+
 **Sources**: CC079
 
 **Related**: [[database-access-visualization]]
@@ -1423,6 +1659,8 @@
 **Aliases**: underground layout
 
 **Category**: layout
+
+**Bounded Context**: universal
 
 **Sources**: CC079
 
@@ -1438,6 +1676,8 @@
 
 **Category**: layout
 
+**Bounded Context**: universal
+
 **Sources**: CC035, CC059
 
 **Related**: [[bundled-edge-relations]]
@@ -1451,6 +1691,8 @@
 **Aliases**: Progressive Bricks
 
 **Category**: layout
+
+**Bounded Context**: universal
 
 **Sources**: CC035
 
@@ -1466,6 +1708,8 @@
 
 **Category**: layout
 
+**Bounded Context**: universal
+
 **Sources**: CC015
 
 ---
@@ -1477,6 +1721,8 @@
 **Aliases**: spectral sequencing
 
 **Category**: layout
+
+**Bounded Context**: universal
 
 **Sources**: CC106
 
@@ -1492,6 +1738,8 @@
 
 **Category**: layout
 
+**Bounded Context**: universal
+
 **Sources**: CC106
 
 **Related**: [spectral ordering](#spectral-ordering)
@@ -1505,6 +1753,8 @@
 **Aliases**: Hilbert space-filling curve
 
 **Category**: layout
+
+**Bounded Context**: universal
 
 **Sources**: CC106
 
@@ -1520,6 +1770,8 @@
 
 **Category**: layout
 
+**Bounded Context**: universal
+
 **Sources**: CC023
 
 ---
@@ -1531,6 +1783,8 @@
 **Aliases**: stacked-platform topology
 
 **Category**: layout
+
+**Bounded Context**: universal
 
 **Sources**: CC023
 
@@ -1550,6 +1804,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC015
 
 ---
@@ -1561,6 +1817,8 @@
 **Aliases**: GNU profiler
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC015
 
@@ -1574,6 +1832,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC015
 
 ---
@@ -1585,6 +1845,8 @@
 **Aliases**: inTrace traces
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC015, CC106
 
@@ -1598,6 +1860,8 @@
 
 **Category**: analysis
 
+**Bounded Context**: universal
+
 **Sources**: CC015
 
 ---
@@ -1609,6 +1873,8 @@
 **Aliases**: JVM Tool Interface
 
 **Category**: analysis
+
+**Bounded Context**: universal
 
 **Sources**: CC015
 
@@ -1624,6 +1890,8 @@
 
 **Category**: interaction
 
+**Bounded Context**: universal
+
 **Sources**: CC015
 
 ---
@@ -1636,6 +1904,8 @@
 
 **Category**: metaphor
 
+**Bounded Context**: universal
+
 **Sources**: CC015
 
 ---
@@ -1647,6 +1917,8 @@
 **Aliases**: selection set
 
 **Category**: interaction
+
+**Bounded Context**: universal
 
 **Sources**: CC023, CC035
 
@@ -1662,6 +1934,8 @@
 
 **Category**: interaction
 
+**Bounded Context**: universal
+
 **Sources**: CC106
 
 **Related**: [VR visualization](#vr-visualization)
@@ -1676,11 +1950,211 @@
 
 **Category**: interaction
 
+**Bounded Context**: universal
+
 **Sources**: CC030
 
 **Related**: [[navigation-modes]]
 
-**Example**: In a city/building metaphor, moving from one “office” to another follows corridors and stairs rather than passing through walls.
+**Example**: In a city/building metaphor, moving from one "office" to another follows corridors and stairs rather than passing through walls.
+
+---
+
+### sonification
+
+**Definition**: Converting data values into non-speech audio tones for non-visual consumption, enabling blind/low-vision users and eyes-free exploration of metric values.
+
+**Aliases**: audio encoding, metric sonification
+
+**Category**: interaction
+
+**Bounded Context**: universal
+
+**Sources**: CC158, CC159
+
+**Related**: [[sonification-navigation]], [[accessibility-mode]]
+
+**Example**: Building height encoded as audio pitch—taller buildings produce higher-pitched tones when focused.
+
+---
+
+### gaze-guided navigation
+
+**Definition**: Using eye-tracking to infer user intent and guide navigation in VR, enabling hands-free interaction based on where the user looks.
+
+**Aliases**: eye-tracking navigation, gaze-based interaction
+
+**Category**: interaction
+
+**Bounded Context**: universal
+
+**Sources**: CC161
+
+**Related**: [[gaze-based-interaction]], [[vr-immersion]]
+
+---
+
+### LLM-guided navigation
+
+**Definition**: A navigation enhancement that uses Large Language Models to interpret natural language developer queries and guide exploration to relevant code elements in the visualization.
+
+**Aliases**: AI-guided exploration, intent-aware navigation
+
+**Category**: interaction
+
+**Bounded Context**: universal
+
+**Sources**: CC155
+
+**Related**: [[llm-guided-navigation]], [[navigation-modes]]
+
+**Example**: User asks "show me the authentication logic" and the system navigates to relevant buildings.
+
+---
+
+### semantic zoom
+
+**Definition**: A camera-distance-responsive visualization mechanism where the graphical representation of software elements changes based on the virtual camera's distance from visual objects, showing aggregate views at far distances and detailed views at close distances.
+
+**Aliases**: level-of-detail zoom, context-aware zoom
+
+**Category**: interaction
+
+**Bounded Context**: universal
+
+**Sources**: CC164
+
+**Related**: [[semantic-zoom]], [[adaptive-lod]], [[multilevel-visualization]]
+
+**Example**: At far zoom, packages appear as colored regions; zooming in reveals individual class buildings with metric encodings.
+
+---
+
+### mini-map
+
+**Definition**: A miniature two-dimensional top-view projection of the software city displayed alongside the 3D visualization, providing navigational context and enabling quick orientation and teleportation to different areas.
+
+**Aliases**: overview map, navigation map, radar view
+
+**Category**: interaction
+
+**Bounded Context**: universal
+
+**Sources**: CC164
+
+**Related**: [[mini-map-navigation]], [[navigation-modes]]
+
+---
+
+### adaptive LOD
+
+**Definition**: Dynamic adjustment of visualization Level of Detail based on multiple contextual factors including user roles, current development tasks, code metrics, and real-time code changes.
+
+**Aliases**: context-aware LOD, dynamic level of detail
+
+**Category**: interaction
+
+**Bounded Context**: universal
+
+**Sources**: CC166
+
+**Related**: [[adaptive-lod]], [[semantic-zoom]]
+
+---
+
+### evolution sonification
+
+**Definition**: Encoding software evolution patterns (commit frequency, change intensity) as audio signals, using a heartbeat metaphor where tempo and intensity convey the health and activity rhythm of the evolving codebase.
+
+**Aliases**: heartbeat sonification, evolution audio
+
+**Category**: analysis
+
+**Bounded Context**: universal
+
+**Sources**: CC165
+
+**Related**: [[evolution-sonification]], [[sonification-navigation]], [[evolution-visualization]]
+
+---
+
+### developer competence metric
+
+**Definition**: An expertise score derived from version control data (commit frequency, change significance, recency) indicating how much knowledge a developer has about specific code areas.
+
+**Aliases**: expertise score, knowledge metric
+
+**Category**: metric
+
+**Bounded Context**: universal
+
+**Sources**: CC168
+
+**Related**: [[developer-knowledge-map]], [bus factor](#bus-factor), [code ownership](#code-ownership)
+
+---
+
+### knowledge gray zone
+
+**Definition**: A code area with dangerously scarce developer competence, where no team member has sufficient expertise to maintain or modify the code effectively—a high bus factor risk.
+
+**Aliases**: expertise gap, knowledge desert
+
+**Category**: analysis
+
+**Bounded Context**: universal
+
+**Sources**: CC168
+
+**Related**: [[developer-knowledge-map]], [bus factor](#bus-factor)
+
+---
+
+### XAI for SE
+
+**Definition**: Application of Explainable AI techniques to software engineering tasks, providing human-interpretable explanations for ML model predictions about code quality, defects, or security vulnerabilities.
+
+**Aliases**: explainable AI for software engineering
+
+**Category**: analysis
+
+**Bounded Context**: universal
+
+**Sources**: CC169
+
+**Related**: [[explainable-ai-overlay]]
+
+---
+
+### line-level risk localization
+
+**Definition**: Using XAI attribution techniques to identify which specific lines of code within a file contributed most to an AI model's prediction (e.g., defect risk), enabling targeted remediation.
+
+**Aliases**: line attribution, code risk localization
+
+**Category**: analysis
+
+**Bounded Context**: universal
+
+**Sources**: CC169
+
+**Related**: [[explainable-ai-overlay]], [[vulnerability-overlay]]
+
+---
+
+### CollaVRation
+
+**Definition**: An immersive virtual reality environment for collaborative software development featuring live programming, UML visualization, round-trip engineering, and multi-user synchronization.
+
+**Aliases**: collaborative VR development
+
+**Category**: platform
+
+**Bounded Context**: universal
+
+**Sources**: CC167
+
+**Related**: [[collaborative-multi-user-vr]]
 
 ---
 
@@ -1691,6 +2165,8 @@
 **Aliases**: isolate selection
 
 **Category**: interaction
+
+**Bounded Context**: universal
 
 **Sources**: CC023, CC035
 
@@ -1706,6 +2182,8 @@
 
 **Category**: interaction
 
+**Bounded Context**: universal
+
 **Sources**: CC023, CC035, CC059
 
 **Related**: [[visual-tagging]]
@@ -1719,6 +2197,8 @@
 **Aliases**: query-based selection
 
 **Category**: interaction
+
+**Bounded Context**: universal
 
 **Sources**: CC023, CC035, CC059
 
@@ -1734,6 +2214,8 @@
 
 **Category**: interaction
 
+**Bounded Context**: universal
+
 **Sources**: CC059
 
 **Related**: [[elision]], [[selection]], [[query-filtering]]
@@ -1748,6 +2230,8 @@
 
 **Category**: interaction
 
+**Bounded Context**: universal
+
 **Sources**: CC023, CC035
 
 ---
@@ -1760,6 +2244,8 @@
 
 **Category**: interaction
 
+**Bounded Context**: universal
+
 **Sources**: CC023, CC035
 
 ---
@@ -1771,6 +2257,8 @@
 **Aliases**: hover inspection
 
 **Category**: interaction
+
+**Bounded Context**: universal
 
 **Sources**: CC035, CC059
 
@@ -1786,6 +2274,8 @@
 
 **Category**: interaction
 
+**Bounded Context**: universal
+
 **Sources**: CC057
 
 **Related**: [[collaborative-multi-user-vr]], [[view-configuration]]
@@ -1799,6 +2289,8 @@
 **Aliases**: Moose framework
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC020, CC023, CC024, CC035
 
@@ -1814,6 +2306,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC130
 
 **Related**: [CMXML](#cmxml), [IXML](#ixml)
@@ -1827,6 +2321,8 @@
 **Aliases**: CodeMetropolis XML, CMXML format
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC130
 
@@ -1842,6 +2338,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC130
 
 **Related**: [CDF (Common Data Format)](#cdf-common-data-format), [CMXML](#cmxml)
@@ -1855,6 +2353,8 @@
 **Aliases**: FAMIX meta-model
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC020, CC024, CC035
 
@@ -1870,6 +2370,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC035
 
 **Related**: [FAMIX](#famix), [Moose](#moose), [time travel](#time-travel)
@@ -1883,6 +2385,8 @@
 **Aliases**: iPlasma platform, iplasma
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC020, CC024
 
@@ -1898,6 +2402,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC020, CC024
 
 **Related**: [Moose](#moose)
@@ -1911,6 +2417,8 @@
 **Aliases**: AST
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC036
 
@@ -1926,6 +2434,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC036
 
 **Related**: [Abstract Syntax Tree (AST)](#abstract-syntax-tree-ast)
@@ -1939,6 +2449,8 @@
 **Aliases**: ThreeJS, three.js
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC036
 
@@ -1954,6 +2466,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC096, CC134
 
 **Related**: [WebXR](#webxr), [WebGL](#webgl)
@@ -1967,6 +2481,8 @@
 **Aliases**: BabiaXR toolset
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC096, CC134
 
@@ -1982,6 +2498,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC038, CC040
 
 **Related**: [Three.js](#threejs)
@@ -1995,6 +2513,8 @@
 **Aliases**: WebXR Device API
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC077
 
@@ -2010,6 +2530,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC077
 
 **Related**: [dynamic analysis](#dynamic-analysis), [[dynamic-visualization]]
@@ -2023,6 +2545,8 @@
 **Aliases**: Sonar
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC038, CC040
 
@@ -2038,6 +2562,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC038, CC040, CC136
 
 **Related**: [bus factor](#bus-factor), [[evolution-visualization]]
@@ -2051,6 +2577,8 @@
 **Aliases**: dot, neato
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC043
 
@@ -2066,6 +2594,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC043
 
 **Related**: [WebGL](#webgl), [GraphViz](#graphviz)
@@ -2079,6 +2609,8 @@
 **Aliases**: Goanna reporter
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC043
 
@@ -2094,6 +2626,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC024
 
 **Related**: [iPlasma](#iplasma), [FAMIX](#famix), [Moose](#moose)
@@ -2107,6 +2641,8 @@
 **Aliases**: Mondrian framework
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC024
 
@@ -2122,6 +2658,8 @@
 
 **Category**: interaction
 
+**Bounded Context**: universal
+
 **Sources**: CC024
 
 **Related**: [Mondrian](#mondrian), [[selection]]
@@ -2135,6 +2673,8 @@
 **Aliases**: view configurations
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC024, CC035
 
@@ -2150,6 +2690,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC091
 
 **Related**: [city metaphor](#city-metaphor), [[file-as-building]]
@@ -2163,6 +2705,8 @@
 **Aliases**: XR, extended reality visualization
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC018
 
@@ -2178,6 +2722,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC057
 
 **Related**: [VR visualization](#vr-visualization)
@@ -2192,6 +2738,8 @@
 
 **Category**: platform
 
+**Bounded Context**: universal
+
 **Sources**: CC015
 
 **Related**: [AR visualization](#ar-visualization)
@@ -2205,6 +2753,8 @@
 **Aliases**: augmented reality visualization
 
 **Category**: platform
+
+**Bounded Context**: universal
 
 **Sources**: CC015
 

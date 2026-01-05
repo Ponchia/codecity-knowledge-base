@@ -337,7 +337,7 @@ statistics:
 
 **Category**: {metaphor | metric | layout | interaction | platform | analysis}
 
-**Bounded Context**: {universal | city-metaphor | island-metaphor | landscape-metaphor | treemap-only}
+**Bounded Context**: {universal | city-metaphor | island-metaphor | landscape-metaphor | clothing-metaphor | treemap-only}
 
 **Sources**: {CC###, CC###}
 
@@ -356,6 +356,7 @@ Terms and features may only apply within certain visualization paradigms. Use `b
 | `city-metaphor` | 3D city with buildings/districts | CodeCity, CodeCharta, GoCity, JSCity |
 | `island-metaphor` | Landmasses in water | IslandViz, OSGi Islands |
 | `landscape-metaphor` | Terrain/topography features | ExplorViz (landscape view) |
+| `clothing-metaphor` | Wardrobe/garment metaphor | CodeVestimenta |
 | `treemap-only` | 2D treemap without 3D city | Pure treemap tools |
 
 **When to use:**
@@ -375,7 +376,7 @@ title: {Feature Name}
 category: {metaphor | mapping | layout | interaction | analysis | platform}
 status: {canonical | variant | experimental | deprecated}
 maturity: {established | emerging | research}
-bounded_context: [universal | city-metaphor | island-metaphor | landscape-metaphor | treemap-only]
+bounded_context: [universal | city-metaphor | island-metaphor | landscape-metaphor | clothing-metaphor | treemap-only]
 introduced_by: CC###
 implementations: [{tool}, {tool}]
 related_features: [F###, F###]

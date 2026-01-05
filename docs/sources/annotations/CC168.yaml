@@ -1,0 +1,30 @@
+id: CC168
+url: https://cyber.bibl.u-szeged.hu/index.php/actcybern/article/view/4338
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Fekete and Porkolab address developer knowledge distribution challenges in large
+  software projects. Develops visualization tool to identify developer expertise
+  across codebases, calculating competence metrics from commit frequency and significance.
+key_contributions:
+  - Developer expertise calculation from version control data
+  - Knowledge distribution visualization at individual, team, and company levels
+  - Identification of "gray zones" with dangerously scarce developer competence
+  - Integration as CodeCompass plugin
+terms_introduced:
+  - developer competence metric: "Expertise score derived from commit frequency and significance"
+  - knowledge gray zone: "Code sections with dangerously scarce developer competence"
+features_described:
+  - F086  # developer-knowledge-map (NEW)
+implementations_documented:
+  - CodeCompass plugin
+quality_notes: |
+  Acta Cybernetica 2024 journal paper. Addresses bus-factor and knowledge loss
+  risks. Built on existing CodeCompass code comprehension platform.
+statistics:
+  features_extracted: 1
+  terms_extracted: 2
+  implementations_documented: 1

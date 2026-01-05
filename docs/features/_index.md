@@ -22,6 +22,7 @@
 | F068 | [[island-metaphor]] | metaphor | variant |
 | F072 | [[clothing-metaphor]] | metaphor | variant |
 | F073 | [[class-as-clothing-item]] | mapping | variant |
+| F076 | [[galaxy-metaphor]] | metaphor | variant |
 
 ## Property Mappings
 
@@ -50,6 +51,7 @@
 | F052 | [[sunburst-layout]] | layout | variant |
 | F059 | [[spiral-layout]] | layout | variant |
 | F061 | [[levelized-layout]] | layout | variant |
+| F077 | [[semantic-similarity-layout]] | layout | experimental |
 
 ## Interaction
 
@@ -74,6 +76,13 @@
 | F056 | [[ide-synchronized-navigation]] | interaction | variant |
 | F064 | [[metaphor-aware-navigation]] | interaction | variant |
 | F067 | [[multiple-collaborative-representations]] | interaction | variant |
+| F075 | [[llm-guided-navigation]] | interaction | experimental |
+| F078 | [[accessibility-mode]] | platform | experimental |
+| F079 | [[sonification-navigation]] | interaction | experimental |
+| F080 | [[gaze-based-interaction]] | interaction | experimental |
+| F082 | [[semantic-zoom]] | interaction | experimental |
+| F083 | [[mini-map-navigation]] | interaction | experimental |
+| F085 | [[adaptive-lod]] | interaction | experimental |
 
 ## Analysis
 
@@ -102,11 +111,15 @@
 | F069 | [[time-shift-mode]] | analysis | variant |
 | F070 | [[architectural-violation-overlay]] | analysis | variant |
 | F071 | [[code-ownership-segmentation]] | analysis | variant |
+| F081 | [[test-coverage-overlay]] | analysis | experimental |
+| F084 | [[evolution-sonification]] | analysis | experimental |
+| F086 | [[developer-knowledge-map]] | analysis | experimental |
+| F087 | [[explainable-ai-overlay]] | analysis | experimental |
 
 ---
 
 ## Statistics
 
-- **Total features**: 74
+- **Total features**: 87
 - **Last updated**: 2026-01-05
-- **Sources processed**: CC009, CC014, CC015, CC017, CC018, CC020, CC023, CC024, CC025, CC035, CC036, CC038, CC040, CC041, CC043, CC053, CC059, CC075, CC079, CC080, CC085, CC086, CC091, CC092, CC093, CC094, CC096, CC102, CC103, CC104, CC106, CC069, CC071, CC077, CC098, CC108, CC116, CC117, CC128, CC129, CC130, CC131, CC133, CC134, CC137, CC140, CC002, CC005, CC006, CC021, CC026, CC030, CC034, CC045, CC054, CC055, CC057, CC064, CC066, CC070, CC074, CC076, CC078, CC083, CC084, CC100, CC101, CC107, CC114, CC120, CC121, CC126, CC136, CC143, CC147, CC148
+- **Sources processed**: CC009, CC014, CC015, CC017, CC018, CC020, CC023, CC024, CC025, CC035, CC036, CC038, CC040, CC041, CC043, CC053, CC059, CC075, CC079, CC080, CC085, CC086, CC091, CC092, CC093, CC094, CC096, CC102, CC103, CC104, CC106, CC069, CC071, CC077, CC098, CC108, CC116, CC117, CC128, CC129, CC130, CC131, CC133, CC134, CC137, CC140, CC002, CC005, CC006, CC021, CC026, CC030, CC034, CC045, CC054, CC055, CC057, CC064, CC066, CC070, CC074, CC076, CC078, CC083, CC084, CC100, CC101, CC107, CC114, CC120, CC121, CC126, CC136, CC143, CC147, CC148, CC155, CC156, CC157, CC158, CC159, CC161, CC162, CC163, CC164, CC165, CC166, CC167, CC168, CC169

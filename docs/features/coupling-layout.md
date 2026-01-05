@@ -3,24 +3,31 @@ id: F010
 title: Coupling Layout
 category: layout
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC106
 implementations: [VR City, Viseagull]
 related_features: [F001]
+supersedes: []
 taxonomy:
   granularity: [class, file]
   visual_element: [building]
   metric_category: [coupling]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC015, CC106, CC148]
 ---
 
 # Coupling Layout
 
+## Problem & Motivation
+
+This capability helps keep spatial organization interpretable and memorable as the city grows. A layout where spatial proximity (and sometimes geometric contact) between buildings encodes coupling: more-coupled entities are placed nearer to each other to make dependency structure visible in the city’s geometry. Without it, navigation and spatial memory degrade because placement feels arbitrary or unstable.
+
 ## Definition
 
 A layout where spatial proximity (and sometimes geometric contact) between buildings encodes coupling: more-coupled entities are placed nearer to each other to make dependency structure visible in the city’s geometry.
 
-## Mechanism (from CC106)
+## Mechanism (Solution)
 
 **Input**: A weighted coupling graph of classes (nodes) and dependencies (edges, weighted by dependency count), plus a per-method metric (e.g., LOC) for fine-grained building floors.
 
@@ -31,6 +38,13 @@ A layout where spatial proximity (and sometimes geometric contact) between build
 4. Leave space between buildings to form streets.
 
 **Output**: A city where proximity/contact is meaningful as coupling.
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Makes large structures navigable via spatial organization. | May hide non-hierarchical relationships. |
+| Can improve stability/orientation if positions are consistent. | Computing layout can be expensive at scale. |
 
 ## Variations
 

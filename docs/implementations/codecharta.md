@@ -48,3 +48,4 @@ CodeCharta is an open-source “software city/map” toolchain with two parts: a
 ## Sources
 
 - [CC091] CodeCharta repository — README, docs site (gh-pages), schema changelog, and changelogs
+- [CC014] CodeCharta website — product framing (local-only posture, hotspots/technical debt) and high-level feature overview

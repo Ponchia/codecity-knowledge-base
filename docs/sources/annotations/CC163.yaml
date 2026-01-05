@@ -1,0 +1,28 @@
+id: CC163
+url: https://docs.gitlab.com/ee/ci/testing/test_coverage_visualization.html
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  GitLab documentation for test coverage visualization in CI/CD pipelines.
+  Describes Cobertura/JaCoCo integration, line-level coverage display in
+  merge request diffs, and pipeline artifact processing.
+key_contributions:
+  - Cobertura/JaCoCo coverage format integration patterns
+  - Line-level coverage mapping to code diffs
+  - CI/CD pipeline artifact processing for coverage data
+terms_introduced:
+  - coverage visualization: "Displaying test coverage data (covered/uncovered lines) overlaid on code or code representations"
+features_described:
+  - F058  # heat-map-overlay - ENHANCED with coverage variant
+  - F081  # test-coverage-overlay (NEW)
+implementations_documented: []
+quality_notes: |
+  Industry documentation (GitLab). Provides CI/CD integration patterns for
+  coverage data that could be mapped onto software city buildings as overlay.
+statistics:
+  features_extracted: 1
+  terms_extracted: 1
+  implementations_documented: 0

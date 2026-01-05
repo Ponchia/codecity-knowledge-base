@@ -3,24 +3,31 @@ id: F036
 title: Scripting Support for Ad-hoc Visualizations
 category: platform
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC035
 implementations: [CodeCity]
 related_features: [F035]
+supersedes: []
 taxonomy:
   granularity: [class]
   visual_element: [building]
   metric_category: [size, coupling, evolution, quality]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC024, CC035, CC086, CC098, CC120]
 ---
 
 # Scripting Support for Ad-hoc Visualizations
 
+## Problem & Motivation
+
+This capability helps enable rapid ad-hoc exploration and creation of custom queries/views. A scripting mechanism that enables rapid prototyping of new visualizations on top of the underlying model, beyond the fixed set of pre-defined city views. Without it, users are limited to built-in interactions and cannot quickly prototype task-specific analyses.
+
 ## Definition
 
 A scripting mechanism that enables rapid prototyping of new visualizations on top of the underlying model, beyond the fixed set of pre-defined city views.
 
-## Mechanism (from CC035)
+## Mechanism (Solution)
 
 **Input**: A model (e.g., FAMIX/Hismo entities) and a script defining how to build a view.
 
@@ -31,7 +38,14 @@ A scripting mechanism that enables rapid prototyping of new visualizations on to
 
 **Output**: Quickly iterated prototypes of new city-style (or other) views.
 
-## Notes (from CC024)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Enables rapid prototyping of new views/queries and “one-off” analyses without extending the GUI. | Requires scripting expertise; can exclude users and increase support burden. |
+| Scripts can be versioned/reused, improving reproducibility of ad-hoc analyses. | Scripts can become brittle as the underlying model/API evolves, and may raise security/sandboxing concerns. |
+
+## Implementation Notes
 
 CC024 describes implementing a basic scripting language (inspired by Mondrian) to build **ad-hoc visualizations** by replacing the view-construction part, enabling feasibility experiments before fully integrating a visualization into the GUI. It also notes that CodeCity’s built-in view construction remained optimized (domain-knowledge based) for performance rather than being script-driven.
 
@@ -48,3 +62,8 @@ CC120 describes a scripting interface inspired by Mondrian’s Easel (variable l
 - [CC086] Wettel & Lanza (2008) — CodeCity architecture includes scripting and scriptable mappers (`asScript`)
 - [CC098] Wettel & Lanza (2008 tech report) — CodeCity scripting example and resulting ad-hoc city view
 - [CC120] Wettel (2008) — experience report on adding scripting to CodeCity, including a scripting UI and prototyping rationale
+
+## See Also
+
+- [[view-configuration]] — GUI-driven configuration vs script-driven extension
+- [[query-filtering]] — common target for scripting new queries

@@ -81,12 +81,16 @@ As of 2026-01-05:
 ```
 BY PRIORITY:        BY STATUS:
   critical:  9        pending:    0
-  high:     40        reviewed:    0
-  medium:   61        extracted:   0
-  low:      43        complete:   76
+  high:     48        reviewed:    0
+  medium:   67        extracted:   0
+  low:      43        complete:   90
   skip:      1        skip:       78
+                    partial:     1
                     error:       0
                     suspect:     0
+
+TOTAL SOURCES: 169 (154 original + 15 SOTA gap sources)
+TOTAL FEATURES: 87
 ```
 
 ---
@@ -103,7 +107,7 @@ term:
   definition: string           # 1-2 sentence definition
   aliases: [string]            # Alternative names
   category: enum               # metaphor | metric | mapping | layout | interaction | analysis | platform
-  bounded_context: enum        # universal | city-metaphor | island-metaphor | landscape-metaphor | treemap-only
+  bounded_context: enum        # universal | city-metaphor | island-metaphor | landscape-metaphor | clothing-metaphor | treemap-only
   source_refs: [CC###]         # First/authoritative sources
   related_terms: [string]      # Cross-references
   example: string              # Optional concrete example
@@ -119,6 +123,7 @@ Terms and features may only apply within certain visualization paradigms. The `b
 | `city-metaphor` | 3D city with buildings/districts | CodeCity, CodeCharta, GoCity, JSCity |
 | `island-metaphor` | Landmasses in water | IslandViz, OSGi Islands |
 | `landscape-metaphor` | Terrain/topography features | ExplorViz (landscape view) |
+| `clothing-metaphor` | Wardrobe/garment metaphor | CodeVestimenta |
 | `treemap-only` | 2D treemap without 3D city | Pure treemap tools |
 
 **Usage guidelines:**
@@ -252,7 +257,7 @@ updated_from: [CC###]           # Sources that contributed
 ---
 ```
 
-**Bounded context values**: `universal`, `city-metaphor`, `island-metaphor`, `landscape-metaphor`, `treemap-only`
+**Bounded context values**: `universal`, `city-metaphor`, `island-metaphor`, `landscape-metaphor`, `clothing-metaphor`, `treemap-only`
 
 Use an array when a feature applies to multiple contexts (e.g., `[city-metaphor, island-metaphor]`).
 

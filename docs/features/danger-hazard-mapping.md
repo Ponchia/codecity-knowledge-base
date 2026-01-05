@@ -3,24 +3,31 @@ id: F060
 title: Danger Hazard Mapping (Spawners & Loot)
 category: analysis
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC130
 implementations: [CodeMetropolis]
 related_features: [F020, F016, F057]
+supersedes: []
 taxonomy:
   granularity: [method]
   visual_element: [floor]
   metric_category: [quality]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC130]
 ---
 
 # Danger Hazard Mapping (Spawners & Loot)
 
+## Problem & Motivation
+
+This capability helps connect analysis findings to structural and spatial context so they are explainable and actionable. A mapping that encodes a “danger” signal for a code element as game-mechanics hazards in a game-engine software city (e.g., hostile mob spawners and loot chests), making hotspots discoverable through exploration. Without it, findings stay detached from structure, making prioritization and communication harder.
+
 ## Definition
 
 A mapping that encodes a “danger” signal for a code element as game-mechanics hazards in a game-engine software city (e.g., hostile mob spawners and loot chests), making hotspots discoverable through exploration.
 
-## Mechanism (from CC130)
+## Mechanism (Solution)
 
 **Input**: A buildable (floor/cellar) with a `danger` attribute (value used as a danger level).
 
@@ -29,6 +36,13 @@ A mapping that encodes a “danger” signal for a code element as game-mechanic
 2. If `danger` is absent, render the normal “safe” floor decorations (e.g., torches).
 
 **Output**: A city where “dangerous” code elements are rendered as dungeon-like hotspots that visibly and behaviorally stand out.
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Surfaces quality/evolution signals in context. | Overlays can overwhelm the base metaphor. |
+| Supports prioritization (hotspots, anomalies). | Signals may be noisy or metric-dependent. |
 
 ## Sources
 
@@ -39,4 +53,3 @@ A mapping that encodes a “danger” signal for a code element as game-mechanic
 - [[threshold-metric-mapping]] — common way to derive discrete “levels” from metrics
 - [[texture-mapping]] — another discrete channel used heavily in Minecraft-based cities
 - [[vulnerability-overlay]] — risk/issue overlays on city elements (security-focused variant)
-

@@ -1,0 +1,200 @@
+# Domain Configuration for CodeCity Knowledge Base
+# Used by pattern-docs skill for consistent feature documentation
+
+# Project identity
+project_name: "CodeCity Knowledge Base"
+domain: "software-visualization"
+description: |
+  A knowledge base documenting features, implementations, and research in
+  software city visualization — 3D metaphors for understanding code structure,
+  quality, and evolution.
+
+# Bounded contexts in this domain
+# Each context represents a distinct visualization paradigm with its own ubiquitous language
+bounded_contexts:
+  - id: city-metaphor
+    type: core
+    description: "3D city visualization paradigm where classes/files are buildings and packages/folders are districts"
+    owner: core-team
+    key_terms: [building, district, height-mapping, base-mapping, treemap-layout]
+
+  - id: island-metaphor
+    type: supporting
+    description: "Archipelago visualization where modules/bundles are islands with internal city structure"
+    owner: core-team
+    key_terms: [island, coastline, water, bundle]
+
+  - id: landscape-metaphor
+    type: supporting
+    description: "Multi-application landscape view showing systems and their runtime communication"
+    owner: core-team
+    key_terms: [software-landscape, system, application, trace]
+
+  - id: clothing-metaphor
+    type: supporting
+    description: "Wardrobe/garment metaphor where classes are clothing items with metric-encoded attributes"
+    owner: research
+    key_terms: [clothing, garment, wardrobe, collar, stripes]
+
+  - id: galaxy-metaphor
+    type: supporting
+    description: "Constellation metaphor where files are stars and semantic clusters form nebulae"
+    owner: research
+    key_terms: [star, nebula, constellation, semantic-cluster]
+
+  - id: universal
+    type: generic
+    description: "Cross-paradigm concepts applicable to any software visualization metaphor"
+    owner: platform-team
+    key_terms: [metric, layout, navigation, selection, filtering]
+
+# Feature categories
+feature_categories:
+  - metaphor      # Core visualization paradigms
+  - mapping       # Property mappings (metrics → visual attributes)
+  - layout        # Spatial arrangement algorithms
+  - interaction   # User interaction patterns
+  - analysis      # Analysis and overlay features
+  - platform      # Platform and tooling concerns
+
+# Feature statuses
+feature_statuses:
+  - canonical     # Well-established, widely implemented
+  - variant       # Variation of a canonical feature
+  - experimental  # Research or emerging
+  - deprecated    # Being phased out
+
+# Maturity levels
+maturity_levels:
+  - established   # Proven in multiple implementations
+  - emerging      # Gaining adoption
+  - research      # Theoretical or prototype only
+
+# Taxonomy dimensions (from taxonomy.md)
+taxonomy_dimensions:
+  granularity:
+    - package
+    - class
+    - method
+    - function
+    - component
+    - module
+    - file
+    - system
+    - database
+    - table
+
+  visual_element:
+    - building
+    - district
+    - brick
+    - floor
+    - street
+    - platform
+    - edge
+    - island
+    - clothing
+
+  metric_category:
+    - size
+    - complexity
+    - coupling
+    - cohesion
+    - evolution
+    - behavior
+    - variability
+    - quality
+
+  metric_mapping_strategy:
+    - linear
+    - linear_scaled
+    - logarithmic
+    - exponential
+    - boxplot_binned
+    - threshold_binned
+
+  layout_algorithm:
+    - treemap
+    - rectangle_packing
+    - progressive_bricks
+    - force_directed
+    - layered_graph
+    - levelized
+    - street
+    - coupling
+    - sunburst
+    - spiral
+
+  platform:
+    - desktop
+    - web
+    - game_engine
+    - vr_hmd
+    - cave
+    - ar
+    - vrml
+
+  analysis_mode:
+    - static
+    - dynamic
+    - evolution
+    - collaborative
+
+  instrumentation:
+    - none
+    - gprof
+    - kieker
+    - opentelemetry
+    - intrace
+    - asm_injection
+    - jvmti
+
+# ID prefixes for artifact types
+id_prefixes:
+  feature: "F"
+  bounded_context: "BC"
+  implementation: "I"
+  source: "CC"  # CodeCity source prefix
+
+# Source tracking configuration
+source_tracking:
+  prefix: "CC"
+  bibliography_path: "bibliography/index.csv"
+  processing_status_path: "bibliography/processing_status.csv"
+  annotations_path: "docs/sources/annotations/"
+
+# Cross-reference paths
+cross_references:
+  feature_index: "docs/features/_index.md"
+  glossary: "docs/glossary.md"
+  taxonomy: "docs/taxonomy.md"
+  implementations_index: "docs/implementations/_index.md"
+  sources_index: "docs/sources/_index.md"
+  bounded_contexts: "docs/bounded-contexts/"
+
+# DDD defaults for this domain
+ddd_defaults:
+  common_aggregates:
+    - name: SoftwareCity
+      typical_invariants:
+        - "Every building belongs to exactly one district"
+        - "District hierarchy forms a tree (no cycles)"
+    - name: CityConfiguration
+      typical_invariants:
+        - "Scale min < max for all property mappings"
+        - "Default metric must be a valid metric type"
+
+  common_value_objects:
+    - MetricValue
+    - Position
+    - Color
+    - Scale
+    - DateRange
+
+  common_domain_events:
+    - CityGenerated
+    - LayoutComputed
+    - MetricsMapped
+    - ViewConfigurationChanged
+
+  event_naming_convention: "{Noun}{PastTenseVerb}"

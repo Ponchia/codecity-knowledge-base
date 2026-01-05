@@ -1,0 +1,29 @@
+id: CC166
+url: https://ieeexplore.ieee.org/document/10857740/
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Devendra, Wijesiriwardana, and Wimalaratne propose adaptive Level of Detail (LOD)
+  for software security visualization using city metaphor. LOD dynamically adjusts
+  based on user roles, tasks, code metrics, and real-time code changes.
+key_contributions:
+  - Adaptive LOD mechanism based on user roles and development tasks
+  - Context-aware visualization responding to code metrics
+  - Real-time LOD adjustment responding to code modifications
+  - Content-aware switching between detail levels
+terms_introduced:
+  - adaptive LOD: "Dynamic adjustment of visualization detail based on user context, roles, and task requirements"
+  - content-aware LOD switching: "Intelligent transition between detail levels based on content characteristics"
+features_described:
+  - F085  # adaptive-lod (NEW)
+implementations_documented: []
+quality_notes: |
+  ICITR 2024 conference paper. Focuses on security visualization use case.
+  Abstract-level information; full algorithm details not extracted.
+statistics:
+  features_extracted: 1
+  terms_extracted: 2
+  implementations_documented: 0

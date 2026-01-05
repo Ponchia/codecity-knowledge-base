@@ -152,4 +152,19 @@ CC150,skip,low,low,DBLP author profile (metadata-only; no extractable technique/
 CC151,skip,low,low,OpenAlex author profile mirror — metadata only; no software-city technique details,2026-01-05,0,0,gpt
 CC152,skip,low,low,Secondary metadata page (Semantic Scholar) for CodeCity ICSE Companion 2008 demo paper,2026-01-04,0,0,gpt
 CC153,skip,low,low,VS Code “CodeViz” extension listing (diagram/maps + LLM search; not software-city visualization),2026-01-04,0,0,gpt
-CC154,skip,low,low,VS Code “Code Visualizer” extension (call-hierarchy flowcharts; not software-city visualization),2026-01-04,0,0,gpt
+CC154,skip,low,low,VS Code "Code Visualizer" extension (call-hierarchy flowcharts; not software-city visualization),2026-01-04,0,0,gpt
+CC155,complete,high,high,AI-Guided Code Exploration (arXiv 2025) - LLM/AI integration gap - Alebachew hybrid LLM+UML system,2026-01-05,1,0,gpt
+CC156,complete,high,high,ML Code Smell Detection Survey (MDPI 2024) - 42 papers 2005-2024 covering DT/SVM/NN/ensemble,2026-01-05,1,0,gpt
+CC157,complete,medium,high,Software Galaxies (VINCI 2021) - Atzberger et al. LDA-based galaxy metaphor for semantic similarity,2026-01-05,1,1,gpt
+CC158,complete,high,high,Chart Reader (CHI 2023) - Thompson et al. hierarchical+sonification accessibility engine,2026-01-05,2,0,gpt
+CC159,complete,medium,high,MIT Umwelt (2024) - Zong et al. multimodal (visual+text+sonification) accessibility,2026-01-05,1,0,gpt
+CC160,partial,high,high,WebGPU Performance (ACM 2025) - paywall blocked full extraction; metadata only,2026-01-05,0,0,gpt
+CC161,complete,high,high,Eye Tracking in VR Survey (Springer 2024) - gaze-guided interaction patterns for VR,2026-01-05,1,0,gpt
+CC162,complete,medium,medium,VS Live Share - Microsoft real-time collaboration reference implementation,2026-01-05,0,0,gpt
+CC163,complete,medium,medium,GitLab Test Coverage Visualization - Cobertura/JaCoCo CI/CD integration patterns,2026-01-05,1,0,gpt
+CC164,complete,high,high,Hansen et al. VISSOFT 2025 - Semantic Zoom and Mini-Maps for software cities,2026-01-05,2,2,gpt
+CC165,complete,high,high,Armenti et al. VISSOFT 2025 - Sonifying Heartbeat of code evolution,2026-01-05,1,2,gpt
+CC166,complete,high,high,Devendra et al. ICITR 2024 - Adaptive LOD for 3D code visualization,2026-01-05,1,2,gpt
+CC167,complete,medium,high,Kozma et al. 2024 - CollaVRation multi-user VR collaboration,2026-01-05,0,2,gpt
+CC168,complete,high,high,Fekete & Porkoláb 2024 - Developer Knowledge Maps in CodeMetropolis,2026-01-05,1,2,gpt
+CC169,complete,medium,high,XAI for SE - Explainable AI overlays for code analysis,2026-01-05,1,2,gpt

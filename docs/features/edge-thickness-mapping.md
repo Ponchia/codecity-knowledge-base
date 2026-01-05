@@ -3,24 +3,31 @@ id: F048
 title: Edge Thickness Mapping
 category: mapping
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC043
 implementations: [SoftViz3D, SoftVis3D]
 related_features: [F030, F047]
+supersedes: []
 taxonomy:
   granularity: [file, package]
   visual_element: [edge]
   metric_category: [coupling]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC043, CC129]
 ---
 
 # Edge Thickness Mapping
 
+## Problem & Motivation
+
+This capability helps make important properties visible at a glance without relying on separate numeric views. A property mapping where the thickness (line width) of an edge encodes a numeric value (e.g., dependency count or coupling strength), making “stronger” relations visually heavier. Without it, metric signals remain harder to perceive and often require separate tables or charts.
+
 ## Definition
 
 A property mapping where the thickness (line width) of an edge encodes a numeric value (e.g., dependency count or coupling strength), making “stronger” relations visually heavier.
 
-## Mechanism (from CC043)
+## Mechanism (Solution)
 
 **Input**: A set of relations (edges) each with an associated numeric weight.
 
@@ -30,6 +37,13 @@ A property mapping where the thickness (line width) of an edge encodes a numeric
 3. Render edges using that width (optionally with direction cues like arrowheads).
 
 **Output**: A dependency graph where edge thickness communicates relative relation strength.
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Adds an at-a-glance quantitative cue. | Outliers can dominate perception without scaling/binning. |
+| Supports quick comparison across many entities. | Multiple encodings can increase visual clutter. |
 
 ## Variations
 

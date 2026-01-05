@@ -3,24 +3,31 @@ id: F003
 title: Function-as-Building Mapping
 category: mapping
 status: variant
+maturity: emerging
+bounded_context: [city-metaphor]
 introduced_by: CC015
 implementations: [Software World, Vizz3D, High-Rise, JSCity]
 related_features: [F001, F002, F005, F044]
+supersedes: []
 taxonomy:
   granularity: [function]
   visual_element: [building]
   metric_category: [size, behavior]
-last_updated: 2026-01-02
+last_updated: 2026-01-05
 updated_from: [CC015, CC036, CC094]
 ---
 
 # Function-as-Building Mapping
 
+## Problem & Motivation
+
+This capability helps make important properties visible at a glance without relying on separate numeric views. A concept mapping where each function/method is represented as a building. Without it, metric signals remain harder to perceive and often require separate tables or charts.
+
 ## Definition
 
 A concept mapping where each function/method is represented as a building. This supports fine-grained inspection but can reduce scalability on large systems.
 
-## Mechanism
+## Mechanism (Solution)
 
 **Input**: A program model with functions/methods and (optionally) their containing classes.
 
@@ -31,7 +38,14 @@ A concept mapping where each function/method is represented as a building. This 
 
 **Output**: A city where the primary visual unit is a function/method.
 
-## Variations (from CC015)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Adds an at-a-glance quantitative cue. | Outliers can dominate perception without scaling/binning. |
+| Supports quick comparison across many entities. | Multiple encodings can increase visual clutter. |
+
+## Variations
 
 | Tool | Notable mapping details |
 |------|--------------------------|

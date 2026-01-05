@@ -3,24 +3,31 @@ id: F062
 title: Production-Cost Overlay (Business Indicators)
 category: analysis
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC006
 implementations: [Panas et al. 3D City prototype]
 related_features: [F057, F058]
+supersedes: []
 taxonomy:
   granularity: [package, class]
   visual_element: [district, building]
   metric_category: [evolution, behavior, quality]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC006]
 ---
 
 # Production-Cost Overlay (Business Indicators)
 
+## Problem & Motivation
+
+This capability helps connect analysis findings to structural and spatial context so they are explainable and actionable. An analysis overlay that superimposes production- and maintenance-cost signals (e.g., work distribution, hot execution, frequent modifications, obsolete code) onto a software city to help stakeholders quickly identify high-cost or high-risk areas without changing the underlying structural mapping. Without it, findings stay detached from structure, making prioritization and communication harder.
+
 ## Definition
 
 An analysis overlay that superimposes production- and maintenance-cost signals (e.g., work distribution, hot execution, frequent modifications, obsolete code) onto a software city to help stakeholders quickly identify high-cost or high-risk areas without changing the underlying structural mapping.
 
-## Mechanism (from CC006)
+## Mechanism (Solution)
 
 **Input**: Static and dynamic analysis signals plus production context (e.g., execution frequency, modification frequency, ownership/work assignment, aspect tags).
 
@@ -36,6 +43,13 @@ An analysis overlay that superimposes production- and maintenance-cost signals (
 
 **Output**: A city augmented with business/production annotations indicating where maintenance and operational effort concentrates.
 
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Surfaces quality/evolution signals in context. | Overlays can overwhelm the base metaphor. |
+| Supports prioritization (hotspots, anomalies). | Signals may be noisy or metric-dependent. |
+
 ## Sources
 
 - [CC006] Panas et al. (IV 2003) — proposes a software-city overlay focused on production and maintenance-cost information.
@@ -44,4 +58,3 @@ An analysis overlay that superimposes production- and maintenance-cost signals (
 
 - [[vulnerability-overlay]] — security-focused overlay variant using SAST findings
 - [[heat-map-overlay]] — heat-map overlay for runtime metrics
-

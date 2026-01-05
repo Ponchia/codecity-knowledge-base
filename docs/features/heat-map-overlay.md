@@ -3,24 +3,31 @@ id: F058
 title: Heat-Map Overlay (Dynamic Metrics)
 category: analysis
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC071
 implementations: [SynchroVis / ExplorViz]
 related_features: [F014, F041, F062]
+supersedes: []
 taxonomy:
   granularity: [class]
   visual_element: [district, building]
   metric_category: [behavior]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC071, CC006]
 ---
 
 # Heat-Map Overlay (Dynamic Metrics)
 
+## Problem & Motivation
+
+This capability helps connect analysis findings to structural and spatial context so they are explainable and actionable. An analysis overlay that renders a 2D heat map on the city ground/platforms to display live or recent runtime metrics (e.g., dynamic coupling) without recoloring buildings themselves. Without it, findings stay detached from structure, making prioritization and communication harder.
+
 ## Definition
 
 An analysis overlay that renders a 2D heat map on the city ground/platforms to display live or recent runtime metrics (e.g., dynamic coupling) without recoloring buildings themselves.
 
-## Mechanism (from CC071)
+## Mechanism (Solution)
 
 **Input**: Live execution traces (inspectIT Ocelot) aggregated into class-level metrics; user-selected metric at runtime.
 
@@ -31,6 +38,13 @@ An analysis overlay that renders a 2D heat map on the city ground/platforms to d
 4. Allow users to switch metrics and select a heat-map time mode (via the heat-map legend controls).
 
 **Output**: A city with an overlaid heat layer showing hotspots for the chosen runtime metric, refreshable live.
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Surfaces quality/evolution signals in context. | Overlays can overwhelm the base metaphor. |
+| Supports prioritization (hotspots, anomalies). | Signals may be noisy or metric-dependent. |
 
 ## Variations
 
@@ -43,6 +57,7 @@ An analysis overlay that renders a 2D heat map on the city ground/platforms to d
 ## Sources
 
 - [CC071] Krause et al. (2021) - Live heat-map overlays in ExplorViz web/AR with user-selectable metrics and snapshot modes
+- [CC006] John & Strahringer (IV 2003) - Early motivation for overlaying operational signals (incl. “hot execution spots”) on a software city
 
 ## See Also
 

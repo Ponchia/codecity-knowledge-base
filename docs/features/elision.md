@@ -3,24 +3,31 @@ id: F049
 title: Elision
 category: interaction
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC085
 implementations: [CodeCity, m3triCity]
 related_features: [F022, F023]
+supersedes: []
 taxonomy:
   granularity: [class, package]
   visual_element: [building, district]
   metric_category: [size]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC059, CC085]
 ---
 
 # Elision
 
+## Problem & Motivation
+
+This capability helps enable efficient details-on-demand and focused exploration in dense scenes. An interaction that temporarily removes selected artifacts from the view to reduce occlusion and keep the remaining city readable. Without it, exploration becomes slower and more error-prone because users cannot inspect and act in-context.
+
 ## Definition
 
 An interaction that temporarily removes selected artifacts from the view to reduce occlusion and keep the remaining city readable.
 
-## Mechanism (from CC059)
+## Mechanism (Solution)
 
 **Input**: A user selection of artifacts (e.g., a large building obstructing the view).
 
@@ -30,7 +37,14 @@ An interaction that temporarily removes selected artifacts from the view to redu
 
 **Output**: A simplified view with obstructing artifacts elided.
 
-## Notes (CodeCity, from CC085)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Enables details-on-demand workflows. | Adds UI/interaction complexity. |
+| Reduces cognitive load by filtering/focusing. | Can create mode errors if state is unclear. |
+
+## Implementation Notes
 
 CC085 describes CodeCity supporting “eliding” as part of its interaction set, alongside selection- and query-driven operations, to help keep views readable during exploration.
 

@@ -1,0 +1,26 @@
+id: CC162
+url: https://visualstudio.microsoft.com/services/live-share/
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Microsoft VS Live Share documentation - real-time collaborative code editing
+  for pair programming, code reviews, and interviews. Reference implementation
+  for synchronous multi-user collaboration patterns.
+key_contributions:
+  - Real-time session management for collaborative editing
+  - Cursor/focus synchronization across remote participants
+  - Use cases: pair programming, code review, interviews
+terms_introduced: []
+features_described:
+  - F042  # collaborative-multi-user-vr - ENHANCED with real-time patterns
+implementations_documented: []
+quality_notes: |
+  Commercial documentation (Microsoft). Provides design patterns applicable to
+  collaborative software city exploration. Not academic but industry-validated.
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

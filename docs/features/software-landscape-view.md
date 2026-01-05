@@ -3,24 +3,31 @@ id: F041
 title: Software Landscape View
 category: analysis
 status: variant
+maturity: emerging
+bounded_context: [landscape-metaphor]
 introduced_by: CC053
 implementations: [ExplorViz, CrocoCosmos]
 related_features: [F014, F001, F058]
+supersedes: []
 taxonomy:
   granularity: [system]
   visual_element: [building, district]
   metric_category: [behavior]
 last_updated: 2026-01-05
-updated_from: [CC053, CC080, CC071, CC108, CC084, CC101]
+updated_from: [CC053, CC080, CC108, CC084, CC101]
 ---
 
 # Software Landscape View
+
+## Problem & Motivation
+
+This capability helps connect analysis results to the system’s structural and spatial context. A high-level view that visualizes a monitored **software landscape**—multiple servers and applications and their communication—to support system-level comprehension beyond a single application. Without it, findings stay detached from structural context, reducing explainability and prioritization.
 
 ## Definition
 
 A high-level view that visualizes a monitored **software landscape**—multiple servers and applications and their communication—to support system-level comprehension beyond a single application.
 
-## Mechanism (from CC053)
+## Mechanism (Solution)
 
 **Input**: Monitoring/trace data describing applications and their interactions in a landscape.
 
@@ -31,7 +38,16 @@ A high-level view that visualizes a monitored **software landscape**—multiple 
 
 **Output**: A multi-level visualization that connects system-level overview to application-level details.
 
-## Additional Details (from CC108)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Surfaces quality/evolution signals in context. | Overlays can overwhelm the base metaphor. |
+| Supports prioritization (hotspots, anomalies). | Signals may be noisy or metric-dependent. |
+
+## Implementation Notes
+
+### Additional Details (from CC108)
 
 CC108 describes ExplorViz’s landscape level as a 2D visualization inspired by a mix of UML deployment and activity diagram elements:
 - **Macro view**: shows application nodes and their communication; edges encode request volume (thickness) within a time window.
@@ -39,17 +55,19 @@ CC108 describes ExplorViz’s landscape level as a 2D visualization inspired by 
 - **Relationship view**: users can expand a combined entity to reveal its contained applications and their communication.
 - **Micro view**: links from the landscape view into the corresponding system-level perspective for deeper inspection.
 
-## Evidence (from CC080)
+### Structural Software City Landscapes (from CC101)
+
+CC101 introduces **software city landscapes** that combine multiple software cities to represent component-level architecture. Cities correspond to fine-grained components, and placement strategies are used to convey architectural structure and dependencies while preserving the internal city layouts.
+
+## Evidence
+
+### Evidence (from CC080)
 
 CC080’s README emphasizes live trace visualization of communication in **large software landscapes**, and confirms that ExplorViz uses a landscape-level perspective before drilling down into an application-level 3D city.
 
-## Evidence (from CC084)
+### Evidence (from CC084)
 
 CC084 (Fittkau’s dissertation) positions ExplorViz as a live trace visualization approach for large software landscapes with a landscape-level perspective based on UML elements, linked to an application-level city metaphor view.
-
-## Structural Software City Landscapes (from CC101)
-
-CC101 introduces **software city landscapes** that combine multiple software cities to represent component-level architecture. Cities correspond to fine-grained components, and placement strategies are used to convey architectural structure and dependencies while preserving the internal city layouts.
 
 ## Sources
 

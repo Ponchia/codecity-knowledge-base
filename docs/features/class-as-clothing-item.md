@@ -3,9 +3,12 @@ id: F073
 title: Class-as-Clothing-Item Mapping
 category: mapping
 status: variant
+maturity: emerging
+bounded_context: [clothing-metaphor]
 introduced_by: CC041
 implementations: [CodeVestimenta]
 related_features: [F072, F074]
+supersedes: []
 taxonomy:
   granularity: [class]
   visual_element: [clothing]
@@ -16,11 +19,15 @@ updated_from: [CC041]
 
 # Class-as-Clothing-Item Mapping
 
+## Problem & Motivation
+
+This capability helps make important properties visible at a glance without relying on separate numeric views. A mapping where each software **class** is rendered as a distinct clothing item, enabling quick visual comparison of class-level metric profiles in a wardrobe-style display. Without it, metric signals remain harder to perceive and often require separate tables or charts.
+
 ## Definition
 
 A mapping where each software **class** is rendered as a distinct clothing item, enabling quick visual comparison of class-level metric profiles in a wardrobe-style display.
 
-## Mechanism (from CC041)
+## Mechanism (Solution)
 
 **Input**: Class list plus computed metrics (LOC, members/methods, inheritance, coupling).
 
@@ -30,6 +37,13 @@ A mapping where each software **class** is rendered as a distinct clothing item,
 3. Pair the view with a legend so garments can be traced back to class names.
 
 **Output**: A grid of garments representing the classes in a system, useful for scanning outliers.
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Adds an at-a-glance quantitative cue. | Outliers can dominate perception without scaling/binning. |
+| Supports quick comparison across many entities. | Multiple encodings can increase visual clutter. |
 
 ## Variations
 
@@ -47,5 +61,5 @@ CC041’s study reports improved comprehension for dependency and design-quality
 
 ## See Also
 
-- [[F072]] clothing-metaphor — the umbrella metaphor.
-- [[F074]] clothing-attribute-mapping — how metrics map to garment properties.
+- [[clothing-metaphor]] — the umbrella metaphor.
+- [[clothing-attribute-mapping]] — how metrics map to garment properties.

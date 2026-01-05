@@ -3,24 +3,31 @@ id: F052
 title: Sunburst Layout
 category: layout
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC075
 implementations: [Langelier Quality Visualization Framework]
 related_features: [F008, F001]
+supersedes: []
 taxonomy:
   granularity: [class]
   visual_element: [district, building]
   metric_category: [size]
-last_updated: 2026-01-03
+last_updated: 2026-01-05
 updated_from: [CC075]
 ---
 
 # Sunburst Layout
 
+## Problem & Motivation
+
+This capability helps keep spatial organization interpretable and memorable as the city grows. A radial, space-filling layout that assigns hierarchical groups (e.g., packages) to angular slices and places entities along concentric arcs, enabling an overview of package structure in a circular “map”. Without it, navigation and spatial memory degrade because placement feels arbitrary or unstable.
+
 ## Definition
 
 A radial, space-filling layout that assigns hierarchical groups (e.g., packages) to angular slices and places entities along concentric arcs, enabling an overview of package structure in a circular “map”.
 
-## Mechanism (from CC075)
+## Mechanism (Solution)
 
 **Input**: Package hierarchy with class counts per package.
 
@@ -32,7 +39,14 @@ A radial, space-filling layout that assigns hierarchical groups (e.g., packages)
 
 **Output**: A circular, hierarchy-preserving city map with classes arranged radially.
 
-## Evidence / Notes
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Makes large structures navigable via spatial organization. | May hide non-hierarchical relationships. |
+| Can improve stability/orientation if positions are consistent. | Computing layout can be expensive at scale. |
+
+## Evidence
 
 CC075 reports that Sunburst supports many analysis tasks effectively but can make orientation-based cues (e.g., box twist for cohesion) harder to perceive than in treemap layouts.
 

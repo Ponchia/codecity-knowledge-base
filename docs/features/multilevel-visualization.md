@@ -3,24 +3,31 @@ id: F055
 title: Multilevel Visualization (Distance-Based Detail)
 category: interaction
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC102
 implementations: [CodeMetropolis, IslandViz]
 related_features: [F026, F037]
+supersedes: []
 taxonomy:
   granularity: [package, class, method, module]
   visual_element: [district, floor, island, building]
   metric_category: [size, complexity]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC102, CC070, CC078]
 ---
 
 # Multilevel Visualization (Distance-Based Detail)
 
+## Problem & Motivation
+
+This capability helps enable efficient details-on-demand and focused exploration in dense scenes. A multi-scale interaction technique where the visible level of detail depends on distance: an overview emphasizes large-scale structure, while close inspection reveals finer-grained entities and metrics. Without it, exploration becomes slower and more error-prone because users cannot inspect and act in-context.
+
 ## Definition
 
 A multi-scale interaction technique where the visible level of detail depends on distance: an overview emphasizes large-scale structure, while close inspection reveals finer-grained entities and metrics.
 
-## Mechanism (from CC102)
+## Mechanism (Solution)
 
 **Input**: A hierarchical city model with multiple levels (namespaces, classes, methods).
 
@@ -31,7 +38,14 @@ A multi-scale interaction technique where the visible level of detail depends on
 
 **Output**: A city that supports both macro and micro comprehension without overwhelming the viewer.
 
-## Variations (IslandViz, from CC070)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Enables details-on-demand workflows. | Adds UI/interaction complexity. |
+| Reduces cognitive load by filtering/focusing. | Can create mode errors if state is unclear. |
+
+## Variations
 
 CC070 uses a related approach for an island-metaphor architecture view: it defines three abstraction layers (island, region, building) and targets implicit transitions based on the relative size of elements in the user’s view frustum. Users can also scale the table visualization (zoom), which changes what detail level is rendered.
 

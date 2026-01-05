@@ -3,24 +3,31 @@ id: F013
 title: Source Code Display
 category: interaction
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC023
 implementations: [CodeCity, GoCity, CityVR, VR City, Code Park, SoftVis3D, SynchroVis / ExplorViz]
 related_features: [F001, F006]
+supersedes: []
 taxonomy:
   granularity: [file, class]
   visual_element: [building]
   metric_category: [size, behavior]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC015, CC023, CC035, CC040, CC025, CC106, CC080, CC104, CC057, CC126]
 ---
 
 # Source Code Display
 
+## Problem & Motivation
+
+This capability helps connect analysis findings to structural and spatial context so they are explainable and actionable. An interaction feature that presents actual source code in-context within the city (e.g., on building walls) or via overlays (e.g., a translucent HUD), enabling navigation from spatial structures to concrete code. Without it, findings stay detached from structure, making prioritization and communication harder.
+
 ## Definition
 
 An interaction feature that presents actual source code in-context within the city (e.g., on building walls) or via overlays (e.g., a translucent HUD), enabling navigation from spatial structures to concrete code.
 
-## Mechanism
+## Mechanism (Solution)
 
 **Input**: Source code text linked to city entities.
 
@@ -31,7 +38,20 @@ An interaction feature that presents actual source code in-context within the ci
 
 **Output**: A city visualization that doubles as a code navigation interface.
 
-## Examples (from CC015 / CC023)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Enables details-on-demand workflows. | Adds UI/interaction complexity. |
+| Reduces cognitive load by filtering/focusing. | Can create mode errors if state is unclear. |
+
+## Variations
+
+CC040 shows SoftVis3D providing source-code access by opening SonarQube’s code view for the selected file in a new browser window/tab (linking out from the city to the platform’s code viewer rather than rendering code directly in the 3D scene).
+
+## Implementation Notes
+
+### Examples (from CC015 / CC023)
 
 - CodeCity: context menu can access the represented source code.
 - CityVR: source code shown in a translucent 2D heads-up display.
@@ -41,19 +61,17 @@ CC035 further notes that CodeCity allows viewing the source code of any visualiz
 
 CC057 notes that immersive VR environments can allow users to access external information such as source code without leaving the visualization context (e.g., using a palmtop or laptop inside the VR environment).
 
-## Evidence (from CC080)
+## Evidence
+
+### Evidence (from CC080)
 
 CC080 shows ExplorViz exposing a context-menu action (“Inspect source code”) that opens a CodeMirror-based viewer and fetches code via a server-side CodeViewer service.
 
-## Evidence (from CC104)
+### Evidence (from CC104)
 
 CC104 reports GoCity providing a button that opens the selected directory, file, or struct directly on GitHub.
 
-## Variations (SoftVis3D, from CC040)
-
-CC040 shows SoftVis3D providing source-code access by opening SonarQube’s code view for the selected file in a new browser window/tab (linking out from the city to the platform’s code viewer rather than rendering code directly in the 3D scene).
-
-## Evidence (from CC106)
+### Evidence (from CC106)
 
 CC106 describes VR City providing in-VR source-code browsing via “code labels”:
 - Clicking a method floor creates a label showing class information (e.g., modifiers and qualified name) and method header.

@@ -3,24 +3,31 @@ id: F069
 title: Time Shift Mode (Live Trace History Navigation)
 category: analysis
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC108
 implementations: [SynchroVis / ExplorViz]
 related_features: [F014, F041, F032, F033]
+supersedes: []
 taxonomy:
   granularity: [system, class]
   visual_element: [district, building]
   metric_category: [behavior]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC108, CC080, CC084]
 ---
 
 # Time Shift Mode (Live Trace History Navigation)
 
+## Problem & Motivation
+
+This capability helps connect analysis results to the system’s structural and spatial context. A runtime-analysis control that lets users **shift away from “now”** to inspect earlier snapshots/time windows in a live monitoring visualization, supporting investigation of specific situations and traces without losing the system-level context. Without it, findings stay detached from structural context, reducing explainability and prioritization.
+
 ## Definition
 
 A runtime-analysis control that lets users **shift away from “now”** to inspect earlier snapshots/time windows in a live monitoring visualization, supporting investigation of specific situations and traces without losing the system-level context.
 
-## Mechanism
+## Mechanism (Solution)
 
 **Input**: Monitoring/trace stream plus a persisted history of snapshots/traces.
 
@@ -30,6 +37,13 @@ A runtime-analysis control that lets users **shift away from “now”** to insp
 3. Render the landscape/city based on the selected time range and allow returning to live mode.
 
 **Output**: A live visualization that can be paused/rewound to analyze past runtime behavior.
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Surfaces quality/evolution signals in context. | Overlays can overwhelm the base metaphor. |
+| Supports prioritization (hotspots, anomalies). | Signals may be noisy or metric-dependent. |
 
 ## Evidence
 

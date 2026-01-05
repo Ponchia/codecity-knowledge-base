@@ -1,0 +1,39 @@
+id: CC158
+url: https://dl.acm.org/doi/10.1145/3544548.3581186
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Introduces Chart Reader, an accessibility engine for screen reader users.
+  Combines hierarchical navigation, sonification, and cross-cutting insights
+  to enable blind/low-vision users to consume data visualizations autonomously.
+key_contributions:
+  - Hierarchical navigation structure for accessible chart reading
+  - Sonification for non-visual data consumption
+  - Five-region navigation model (insights, x-axis, y-axis, data points, filters)
+  - Design dimensions: structure, navigation, description, non-speech audio, focus
+terms_introduced:
+  - sonification: "Converting data values into non-speech audio tones for non-visual consumption"
+  - hierarchical accessibility: "Organizing visualization elements into navigable hierarchy for screen readers"
+features_described:
+  - F078  # accessibility-mode (NEW)
+  - F079  # sonification-navigation (NEW)
+implementations_documented: []
+empirical_evidence:
+  study_type: user_study
+  sample_size: 10
+  dependent_variables: [task_completion, autonomy, comprehension]
+  independent_variables: [navigation_method, sonification]
+  key_findings:
+    - "BLV screen reader users can autonomously read and understand visualizations"
+    - "Five-region model supports targeted data comparison"
+  effect_size: null
+quality_notes: |
+  CHI 2023 paper by Microsoft Research. 5-month co-design study with 10 BLV users.
+  Directly applicable to making software city visualizations accessible.
+statistics:
+  features_extracted: 2
+  terms_extracted: 2
+  implementations_documented: 0

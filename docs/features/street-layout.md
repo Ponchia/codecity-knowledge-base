@@ -3,9 +3,12 @@ id: F009
 title: Street Layout
 category: layout
 status: variant
+maturity: emerging
+bounded_context: [city-metaphor]
 introduced_by: CC015
 implementations: [EvoStreets, CrocoCosmos, CodeCharta, SoftVis3D]
 related_features: [F001, F015]
+supersedes: []
 taxonomy:
   granularity: [file, class]
   visual_element: [street, building]
@@ -16,11 +19,15 @@ updated_from: [CC015, CC038, CC040, CC091, CC128, CC101]
 
 # Street Layout
 
+## Problem & Motivation
+
+This capability helps keep spatial organization interpretable and memorable as the city grows. A layout approach that organizes buildings around streets, using street structure to represent packages/directories and improve navigability and spatial orientation. Without it, navigation and spatial memory degrade because placement feels arbitrary or unstable.
+
 ## Definition
 
 A layout approach that organizes buildings around streets, using street structure to represent packages/directories and improve navigability and spatial orientation.
 
-## Mechanism
+## Mechanism (Solution)
 
 **Input**: Hierarchy (directories/packages) and entities (e.g., classes).
 
@@ -32,7 +39,14 @@ A layout approach that organizes buildings around streets, using street structur
 
 **Output**: A city where streets are first-class organizing elements.
 
-## Evidence (from CC015)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Makes large structures navigable via spatial organization. | May hide non-hierarchical relationships. |
+| Can improve stability/orientation if positions are consistent. | Computing layout can be expensive at scale. |
+
+## Evidence
 
 CC015 describes EvoStreets laying out classes around streets corresponding to directories or packages, with origin date conveyed via topographic elevation.
 

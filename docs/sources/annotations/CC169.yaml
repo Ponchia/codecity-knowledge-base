@@ -1,0 +1,30 @@
+id: CC169
+url: https://xai4se.github.io/index.html
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Tantithamthavorn and Jiarpakdee present XAI (Explainable AI) techniques for
+  software engineering, focusing on defect prediction. Covers model-specific and
+  model-agnostic explanation techniques for identifying risky code and explaining
+  predictions to developers and managers.
+key_contributions:
+  - Survey of XAI techniques applicable to software engineering
+  - Line-level risk localization for identifying risky code
+  - File-level explanations for defect predictions
+  - Quality improvement planning using XAI insights
+terms_introduced:
+  - XAI for SE: "Application of explainable AI techniques to software engineering tasks"
+  - line-level risk localization: "Using XAI to pinpoint risky code sections within files"
+features_described:
+  - F087  # explainable-ai-overlay (NEW)
+implementations_documented: []
+quality_notes: |
+  Book/resource from Monash University researchers. Provides Jupyter notebooks
+  for hands-on learning. Applicable to software city overlays for AI-driven analysis.
+statistics:
+  features_extracted: 1
+  terms_extracted: 2
+  implementations_documented: 0

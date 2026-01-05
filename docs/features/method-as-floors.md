@@ -3,24 +3,31 @@ id: F045
 title: Method-as-Floors Mapping
 category: mapping
 status: variant
+maturity: emerging
+bounded_context: [city-metaphor]
 introduced_by: CC106
 implementations: [VR City, CodeMetropolis, SecCityVR, Getaviz, Code Arcades]
 related_features: [F002, F027, F005, F057]
+supersedes: []
 taxonomy:
   granularity: [method]
   visual_element: [floor]
   metric_category: [size]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC106, CC102, CC069, CC131, CC026]
 ---
 
 # Method-as-Floors Mapping
 
+## Problem & Motivation
+
+This capability helps make important properties visible at a glance without relying on separate numeric views. A fine-grained representation where methods are rendered as **floors (storeys)** within the building representing their class, enabling method-level inspection while preserving class-as-building structure. Without it, metric signals remain harder to perceive and often require separate tables or charts.
+
 ## Definition
 
 A fine-grained representation where methods are rendered as **floors (storeys)** within the building representing their class, enabling method-level inspection while preserving class-as-building structure.
 
-## Mechanism (from CC106)
+## Mechanism (Solution)
 
 **Input**: Classes with declared methods and a per-method metric (e.g., LOC).
 
@@ -32,9 +39,12 @@ A fine-grained representation where methods are rendered as **floors (storeys)**
 
 **Output**: Buildings whose internal floor structure exposes per-method metric distribution.
 
-## Notes
+## Consequences & Trade-offs
 
-CC106 reports that varying floor shapes can help visually distinguish interfaces, abstract classes, and ordinary classes without requiring separate overlays.
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Adds an at-a-glance quantitative cue. | Outliers can dominate perception without scaling/binning. |
+| Supports quick comparison across many entities. | Multiple encodings can increase visual clutter. |
 
 ## Variations
 
@@ -45,6 +55,10 @@ CC106 reports that varying floor shapes can help visually distinguish interfaces
 | SecCityVR | class building | method floors normally hidden; vulnerable methods rendered wider and colored by severity |
 | Getaviz | class building | “City Floors” renders method-level elements as stacked floors inside class buildings |
 | Code Arcades | class building | each method is a floor; windows designate method arguments (CC026) |
+
+## Implementation Notes
+
+CC106 reports that varying floor shapes can help visually distinguish interfaces, abstract classes, and ordinary classes without requiring separate overlays.
 
 ## Sources
 

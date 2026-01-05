@@ -1,0 +1,28 @@
+id: CC165
+url: https://www.inf.usi.ch/phd/raglianti/publications/Armenti2025b.pdf
+type: pdf
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Armenti, Raglianti, and Lanza present a multisensory approach combining sonification
+  and visualization to represent software evolution. Uses a "heartbeat" metaphor to
+  convey temporal dynamics of code changes through audio encoding.
+key_contributions:
+  - Multisensory approach combining audio and visual for evolution understanding
+  - Heartbeat metaphor for conveying temporal dynamics of code changes
+  - Integration of sonification with traditional visualization techniques
+terms_introduced:
+  - heartbeat metaphor: "Audio representation of code evolution tempo/rhythm conveying change dynamics"
+  - evolution sonification: "Encoding software change patterns as audio signals over time"
+features_described:
+  - F084  # evolution-sonification (NEW)
+implementations_documented: []
+quality_notes: |
+  VISSOFT 2025 paper (DOI: 10.1109/VISSOFT67405.2025.00009). From USI Software
+  Institute (same group as original CodeCity). Novel multisensory approach.
+statistics:
+  features_extracted: 1
+  terms_extracted: 2
+  implementations_documented: 0

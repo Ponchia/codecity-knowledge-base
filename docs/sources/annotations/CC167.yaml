@@ -1,0 +1,35 @@
+id: CC167
+url: https://link.springer.com/chapter/10.1007/978-3-031-62273-1_19
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Kozma, Vincur, and Kapec present CollaVRation, a collaborative VR environment for
+  software development. Features live programming, UML class diagram visualization,
+  round-trip engineering, automatic versioning, and synchronized multi-user interaction.
+key_contributions:
+  - Multi-user collaborative VR environment for software development
+  - Live programming in VR with immediate feedback
+  - UML class diagram visualization integrated with VR code editing
+  - Round-trip engineering between visual models and code
+  - Automatic versioning system for collaborative changes
+terms_introduced:
+  - CollaVRation: "Immersive virtual environment for collaborative software development"
+  - round-trip engineering in VR: "Bidirectional synchronization between UML diagrams and code in VR"
+features_described:
+  - F042  # collaborative-multi-user-vr (existing - enhanced)
+implementations_documented:
+  - CollaVRation
+quality_notes: |
+  SAI 2024 conference paper. User study comparing VR collaboration vs traditional
+  approaches. Found VR approach "more attractive, stimulating, and novel."
+empirical_evidence:
+  method: user study
+  participants: not specified in abstract
+  findings: "Proposed collaborative VR environment was more attractive, stimulating, and novel than traditional approaches"
+statistics:
+  features_extracted: 0
+  terms_extracted: 2
+  implementations_documented: 1

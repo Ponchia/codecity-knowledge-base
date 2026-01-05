@@ -1,0 +1,35 @@
+id: CC156
+url: https://www.mdpi.com/2076-3417/14/14/6149
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Comprehensive survey of ML-based code smell detection from 2005-2024, covering
+  42 papers. Documents Decision Tree, SVM, Neural Networks, Ensemble methods for
+  detecting 30+ code smells. Provides foundation for ML-enhanced quality overlays.
+key_contributions:
+  - Survey of ML techniques for code smell detection (DT, SVM, NN, ensemble)
+  - Coverage of 30+ code smells with ML detection approaches
+  - Identification of challenges: standardization, feature selection, scale
+terms_introduced: []
+features_described:
+  - F034  # disharmony-maps - ENHANCED with ML detection approaches
+implementations_documented: []
+secondary_study:
+  study_type: survey
+  corpus_size: 42
+  included_studies: 42
+  key_findings:
+    - "17 papers from IEEE indicating ML code smell detection prominence"
+    - "Random Forest, Gradient Boosting, Deep Learning most effective"
+    - "Challenges: lack of standardized smell definitions, feature selection, scale"
+  data_availability: null
+quality_notes: |
+  MDPI Applied Sciences 2024. Provides ML technique catalog that could enhance
+  disharmony-maps (F034) with automated ML-based detection instead of rule-based.
+statistics:
+  features_extracted: 0
+  terms_extracted: 0
+  implementations_documented: 0

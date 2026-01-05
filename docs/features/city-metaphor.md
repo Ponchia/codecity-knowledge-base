@@ -3,36 +3,23 @@ id: F001
 title: City Metaphor
 category: metaphor
 status: canonical
+maturity: established
+bounded_context: [city-metaphor]
 introduced_by: CC023
 implementations: [Software World, Component City, CodeCity, Vizz3D, SkyscrapAR, UML-City, VizzAspectJ-3D, EvoStreets, SynchroVis / ExplorViz, CityVR, VR City, Code Park, High-Rise, LD-City, CodeCharta, CodeMetropolis, GoCity, Code2City, Code2CityVR, JSCity, SoftVis3D, m3triCity, VariCity / VariMetrics]
 related_features: [F017, F002, F038, F003, F004, F005, F006, F008]
+supersedes: []
 taxonomy:
   granularity: [file, class, function, component]
   visual_element: [building, district, street, platform]
   metric_category: [size, complexity, coupling, evolution, behavior, variability]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC009, CC015, CC017, CC018, CC020, CC023, CC024, CC025, CC035, CC036, CC038, CC040, CC053, CC059, CC091, CC092, CC093, CC102, CC104, CC085, CC002, CC045]
 ---
 
 # City Metaphor
 
-## Definition
-
-A visualization paradigm that depicts software systems as cities, leveraging human spatial cognition and familiarity with urban environments to make abstract code structures tangible and navigable. Software entities become buildings, organizational structures become districts, and the resulting cityscape enables intuitive understanding of system size, structure, and properties.
-
-## Mechanism
-
-**Input**: Software system model (classes, packages, metrics)
-
-**Process**:
-1. Map software entities to city elements (concept mapping)
-2. Map entity properties to visual attributes (property mapping)
-3. Arrange elements spatially using layout algorithm
-4. Render as 3D visualization
-
-**Output**: Interactive 3D city visualization
-
-## Rationale
+## Problem & Motivation
 
 CC023 motivates the metaphor as a way to restore **locality** in 3D software visualization: instead of freely movable objects in space (which can cause disorientation), the city provides well-defined placement rules in a familiar spatial context.
 
@@ -52,6 +39,56 @@ The metaphor works because:
 - Building size/shape intuitively conveys magnitude
 - District organization maps to hierarchical structure
 
+## Definition
+
+A visualization paradigm that depicts software systems as cities, leveraging human spatial cognition and familiarity with urban environments to make abstract code structures tangible and navigable. Software entities become buildings, organizational structures become districts, and the resulting cityscape enables intuitive understanding of system size, structure, and properties.
+
+## Context & Applicability
+
+**Use when:**
+- You need a high-level structural overview and orientation for large systems (thousands of entities), leveraging locality and spatial memory (CC023, CC035).
+- You want a shared spatial metaphor to communicate structure and hotspots across a team, and a substrate for layered overlays (CC002, CC023).
+- You plan to combine structural context with additional analyses (quality, evolution, dependencies) in one navigable scene (CC035, CC023).
+
+**Avoid when:**
+- The primary task is reading/writing detailed code or long text; city views complement (not replace) IDE workflows (CC023, CC009).
+- The system lacks a meaningful containment structure for the chosen granularity (packages/folders), so the metaphor would mislead (CC023, CC035).
+
+**Prerequisites:** A structural model (packages/classes/files/functions) plus at least one metric; a concept mapping + property mapping; a layout algorithm; and basic navigation/selection interactions.
+**Alternatives:** [[island-metaphor]] for bundle/module archipelagos; [[software-landscape-view]] for multi-application landscapes; [[clothing-metaphor]] for non-spatial class metaphors; 2D-first maps when 3D navigation cost is too high.
+
+## Forces
+
+| Force | Pull |
+|-------|------|
+| Familiarity vs. accuracy | Lean on a familiar “city” mental model for faster orientation, but avoid implying semantics the code does not have. |
+| Overview scalability vs. inspection detail | Fit thousands of entities into one view, but accept that fine-grained code/relationships must be on-demand. |
+| Locality vs. travel cost | Constrain navigation to preserve spatial memory (“habitability”), but mitigate the time cost of moving long distances. |
+| Overlay expressiveness vs. visual clutter | Layer multiple analyses onto a stable city substrate, but prevent channel conflicts (especially color) and occlusion. |
+
+## Mechanism (Solution)
+
+**Input**: Software system model (classes, packages, metrics)
+
+**Process**:
+1. Map software entities to city elements (concept mapping)
+2. Map entity properties to visual attributes (property mapping)
+3. Arrange elements spatially using layout algorithm
+4. Render as 3D visualization
+
+**Output**: Interactive 3D city visualization
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Provides an intuitive mental model for structure. | Metaphor can oversimplify or mislead. |
+| Supports orientation via spatial cues. | Different users may interpret metaphors differently. |
+
+**Complexity**: Medium
+**Performance**: Depends on rendering scale and navigation.
+**Cognitive Load**: Medium (requires mapping concepts to visuals).
+
 ## Variations
 
 | Implementation | Primary Entity | District Concept |
@@ -65,11 +102,12 @@ The metaphor works because:
 | SoftVis3D | file | folder/package |
 | m3triCity | class | package |
 
-## Limitations
+## Implementation Notes
 
-Current challenges:
-- VR headsets inadequate for displaying large quantities of text
-- Bifurcation between high-text desktop and low-text VR implementations
+- Choose the primary granularity (class vs file vs function) based on language and target tasks (CC023, CC035, CC036, CC091).
+- Provide sane default encodings (height/base/color) and scaling/discretization options to keep overviews readable (CC023, CC035, CC085).
+- Optimize for scalability (simple glyphs, batching/culling/LOD) and preserve locality with constrained navigation (CC023, CC085).
+- Support shareable/reproducible views via configurations/presets or view-state serialization (CC024, CC040, CC091).
 
 ## Evidence
 
@@ -85,6 +123,19 @@ CC009 reports a controlled experiment comparing a desktop (Code2City) and VR (Co
 
 CC036 adapts the city metaphor to JavaScript by switching to function-level buildings and representing nested functions as stacked buildings. It also demonstrates a browser-based implementation approach (Three.js) and reports experience producing visualizations for 40 popular JavaScript systems.
 
+## Known Limitations
+
+Current challenges:
+- VR headsets inadequate for displaying large quantities of text
+- Bifurcation between high-text desktop and low-text VR implementations
+
+## Open Questions
+
+- What is the right balance between in-scene text (labels/tooltips) and IDE-linked detail views, especially in VR?
+- How stable does a city layout need to be across versions before users can reliably compare evolution in the same “place”?
+- Which overlay channels (color/texture/geometry) should be reserved for “analysis” vs “interaction” (tagging/highlighting) to avoid misinterpretation?
+- When do alternative metaphors (islands/landscapes/2D maps) outperform cities for specific tasks (dependencies, architecture, runtime behavior)?
+
 ## Sources
 
 - [CC023] Wettel & Lanza (VISSOFT 2007) — foundational approach and CodeCity tool
@@ -93,6 +144,7 @@ CC036 adapts the city metaphor to JavaScript by switching to function-level buil
 - [CC018] Moreno-Lumbreras et al. (JSS 2024) — systematic mapping of city metaphor influence and tool characteristics (incl. XR trend)
 - [CC053] Hasselbring et al. (Software Impacts 2020) — ExplorViz application-level city metaphor + collaboration/VR context
 - [CC025] Wettel & Lanza (ICSE 2011) — controlled experiment evaluating CodeCity vs. IDE+spreadsheet baseline
+- [CC045] Mortara et al. (JSS 2024 preprint) — VariCity/VariMetrics: configurable city metaphor for variability and quality overlays
 - [CC035] Wettel PhD thesis — habitable city metaphor + tool support + controlled experiment
 - [CC009] Romano et al. (2019) — Code2City/Code2CityVR tool description and controlled experiment on affect/thinking
 - [CC015] Jeffery survey — later comparison of multiple city-metaphor implementations

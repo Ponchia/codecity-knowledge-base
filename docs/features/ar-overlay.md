@@ -3,24 +3,31 @@ id: F012
 title: AR Overlay
 category: platform
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC015
 implementations: [SkyscrapAR, SynchroVis / ExplorViz, IslandViz]
 related_features: [F001, F015]
+supersedes: []
 taxonomy:
   granularity: [class, module, package]
   visual_element: [building, district, island]
   metric_category: [size, behavior, evolution]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC015, CC018, CC071, CC077, CC070]
 ---
 
 # AR Overlay
 
+## Problem & Motivation
+
+This capability helps connect analysis findings to structural and spatial context so they are explainable and actionable. An augmented reality variant of the software city where the 3D city is overlaid onto the physical world (e.g., projected onto a marker card or viewed through AR devices). Without it, findings stay detached from structure, making prioritization and communication harder.
+
 ## Definition
 
 An augmented reality variant of the software city where the 3D city is overlaid onto the physical world (e.g., projected onto a marker card or viewed through AR devices).
 
-## Mechanism
+## Mechanism (Solution)
 
 **Input**: A city model + an AR anchoring/tracking mechanism (e.g., marker tracking or device-based spatial tracking).
 
@@ -31,7 +38,14 @@ An augmented reality variant of the software city where the 3D city is overlaid 
 
 **Output**: A manipulable city overlayed on a physical surface.
 
-## Evidence (from CC015)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Expands interaction bandwidth (e.g., immersion). | Hardware/software requirements reduce accessibility. |
+| Can improve engagement and spatial understanding. | Comfort/safety and performance constraints apply. |
+
+## Evidence
 
 CC015 describes SkyscrapAR projecting the city onto a physical marker card for direct manipulation; it also notes follow-on exploration on HoloLens.
 

@@ -3,24 +3,53 @@ id: F011
 title: VR Immersion
 category: platform
 status: canonical
+maturity: established
+bounded_context: [universal]
 introduced_by: CC015
 implementations: [Software World, SynchroVis / ExplorViz, CityVR, VR City, Code2CityVR, SecCityVR, Getaviz, IslandViz]
 related_features: [F001, F013]
+supersedes: []
 taxonomy:
   granularity: [class, function]
   visual_element: [building]
   metric_category: [size, behavior]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC009, CC015, CC018, CC053, CC106, CC080, CC069, CC077, CC096, CC131, CC055, CC057, CC064, CC070, CC084]
 ---
 
 # VR Immersion
 
+## Problem & Motivation
+
+Several implementations extend software cities into VR to leverage embodied navigation and large-scale spatial perception. CC009 reports higher positive affect for a VR city compared to Eclipse, and CC053 explores collaborative VR in ExplorViz for shared comprehension tasks.
+
 ## Definition
 
 Rendering and interacting with a software city inside virtual reality (e.g., Oculus Rift, HTC Vive), enabling immersive exploration and natural-scale navigation.
 
-## Mechanism
+## Context & Applicability
+
+**Use when:**
+- Tasks benefit from spatial understanding and navigation (overview vs local inspection), or you want collaborative walkthroughs (CC053, CC009).
+- The analysis is primarily structural/visual (low textual density) where immersion can help engagement (CC009).
+
+**Avoid when:**
+- Users must read/edit code or long text in the environment; current HMDs are poor for dense text workflows (CC009).
+- Sessions are long or users are sensitive to motion sickness/visual strain (CC009).
+
+**Prerequisites:** VR-capable rendering and interaction model (controllers/gaze/raycast selection), strong performance (frame rate), and accessibility/safety considerations (CC009, CC053).
+**Alternatives:** [[ar-overlay]] for mixed-reality views, or desktop/Web3D cities when text/UI density matters (e.g., CodeCharta/SoftVis3D).
+
+## Forces
+
+| Force | Pull |
+|-------|------|
+| Immersion vs. text legibility | VR supports embodied navigation, but dense text (code, long labels) remains hard to read in HMDs. |
+| Comfort vs. navigation fidelity | Free movement can increase sickness; teleportation improves comfort but reduces realism and spatial continuity. |
+| Hardware constraints vs. accessibility | Immersion requires specialized hardware and strong performance, limiting who can use it. |
+| Collaboration vs. cognitive overhead | Multi-user VR can aid shared comprehension, but adds awareness/coordination demands (avatars, pointers, synchronization). |
+
+## Mechanism (Solution)
 
 **Input**: A city model and an interactive camera/controller model.
 
@@ -31,7 +60,30 @@ Rendering and interacting with a software city inside virtual reality (e.g., Ocu
 
 **Output**: Immersive, interactive software city exploration.
 
-## Notes (from CC015)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Can improve engagement and support embodied spatial reasoning for large structures. | VR side effects and comfort constraints can limit session length and user adoption. |
+| Enables natural-scale walkthroughs and collaborative exploration in a shared space. | Travel time and interaction friction can make some tasks slower than 2D dashboards/IDEs. |
+
+**Complexity**: High
+**Performance**: Rendering and input constraints can be significant (VR/AR).
+**Cognitive Load**: Medium–High (new interaction paradigms).
+
+## Variations
+
+| Implementation style | Example | Notes |
+|----------------------|---------|------|
+| In-city immersion | SecCityVR | User is “inside” the city; locomotion includes flying and ground teleportation (CC069). |
+| World-in-miniature / tabletop | IslandViz | A virtual-table setup for exploring an artifact as a manipulable object (CC070). |
+| Room-scale walking + teleport | VR City | Uses room-scale where possible plus teleportation for long distances (CC106). |
+| CAVE / room VR | Imsovision | Targets a CAVE-style immersive environment for stereopsis and physical navigation (CC057). |
+| Web-based VR mode | BabiaXR-CodeCity / ExplorViz | Browser/WebXR or WebVR-based VR access paths (CC096, CC077, CC080). |
+
+## Implementation Notes
+
+### Notes (from CC015)
 
 CC015 highlights a practical constraint: current head-mounted displays remain limited for large quantities of text, contributing to a split between “high-text desktop” and “low-text VR” cities.
 
@@ -59,13 +111,32 @@ CC070 describes IslandViz on Oculus Rift / HTC Vive, using a virtual-table setup
 
 CC084 describes an early gesture-controlled ExplorViz VR approach using an Oculus Rift DK1 and Microsoft Kinect v2, enabling translation/rotation/scale interactions beyond mouse/keyboard.
 
-## Notes (from CC080)
+### Notes (from CC080)
 
 CC080’s archived ExplorViz web client includes a WebVR mode that integrates Oculus rendering with Leap Motion hand tracking (VRControls/VREffect + Leap libraries), and the README highlights experiments with Kinect v2 and Oculus Rift.
 
-## Notes (from CC106)
+### Notes (from CC106)
 
 CC106 describes VR City on HTC Vive, leveraging room-scale tracking for natural navigation by walking and using teleportation to reach distant parts of a city when the physical play area is insufficient. Object interaction is performed with handheld controllers via pointing (selection), triggering actions, and grabbing/moving elements.
+
+## Known Limitations
+
+- Motion/visual side effects (headache, nausea, visual annoyance) are common for some users (CC009).
+- Text legibility and data entry are constrained; many workflows still require an IDE on a 2D screen (CC009).
+- Rendering large cities at VR frame rates may require aggressive LOD/culling, reducing detail.
+
+## Evidence
+
+- CC009 reports significantly higher positive affect for a VR city compared to Eclipse, but also reports frequent VR side effects.
+- CC064 reports both on-screen and VR city conditions improving correctness versus Eclipse, and reports the VR condition being faster than the on-screen city while also noting VR side effects.
+- CC096 reports two controlled experiments comparing on-screen vs VR for the same web-based city, finding VR users completed tasks faster with comparable correctness.
+- CC069 reports a user study comparing SecCityVR to a dashboard baseline: higher usability and lower temporal demand/frustration in VR, but longer task times attributed largely to travel time in the city.
+
+## Open Questions
+
+- What interaction patterns best support “text-heavy” workflows (code reading, search, editing) without breaking VR comfort constraints?
+- How can VR cities reduce travel time while preserving the locality benefits that motivate the city metaphor?
+- What are effective multi-user awareness cues (pointers, view frustums, annotations) that improve collaboration without cluttering the scene?
 
 ## Sources
 

@@ -1,0 +1,28 @@
+id: CC155
+url: https://arxiv.org/abs/2508.05799
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Presents a hybrid system combining deterministic reverse engineering with LLM-guided
+  visual exploration for large-scale codebase understanding. Proposes intent-aware
+  navigation, contextual grounding, and interactive adaptation techniques.
+key_contributions:
+  - First documented integration of LLM-guided navigation with structural visualization
+  - Intent-aware exploration that interprets developer queries to guide navigation
+  - Contextual grounding combining AI capabilities with deterministic structural views
+terms_introduced:
+  - intent-aware navigation: "LLM interprets developer queries to guide exploration paths"
+  - contextual grounding: "Combining AI capabilities with deterministic structural views"
+features_described:
+  - F075  # llm-guided-navigation (NEW)
+implementations_documented: []
+quality_notes: |
+  arXiv preprint (2025), Java prototype. Future work includes empirical evaluation.
+  Directly applicable to software city visualization as enhancement to navigation.
+statistics:
+  features_extracted: 1
+  terms_extracted: 2
+  implementations_documented: 0

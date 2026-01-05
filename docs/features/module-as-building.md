@@ -3,24 +3,31 @@ id: F044
 title: Module-as-Building Mapping
 category: mapping
 status: variant
+maturity: emerging
+bounded_context: [city-metaphor]
 introduced_by: CC094
 implementations: [JSCity]
 related_features: [F003, F017]
+supersedes: []
 taxonomy:
   granularity: [module]
   visual_element: [building]
   metric_category: [size]
-last_updated: 2026-01-02
+last_updated: 2026-01-05
 updated_from: [CC094]
 ---
 
 # Module-as-Building Mapping
 
+## Problem & Motivation
+
+This capability helps enable rapid ad-hoc exploration and creation of custom queries/views. A concept mapping where a software module (e.g., a JavaScript AMD/Angular module declaration) is represented as a dedicated building, making module structure visible in the same spatial metaphor as functions and districts. Without it, users are limited to built-in interactions and cannot quickly prototype task-specific analyses.
+
 ## Definition
 
 A concept mapping where a software module (e.g., a JavaScript AMD/Angular module declaration) is represented as a dedicated building, making module structure visible in the same spatial metaphor as functions and districts.
 
-## Mechanism (from CC094)
+## Mechanism (Solution)
 
 **Input**: A parsed program representation (AST) with module-declaration nodes and source locations.
 
@@ -30,6 +37,13 @@ A concept mapping where a software module (e.g., a JavaScript AMD/Angular module
 3. Render the module as a building (with its own color/style) and attach it into the building hierarchy for hover/inspection and nested content.
 
 **Output**: “Module” buildings that appear alongside function buildings within file/district context.
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Adds an at-a-glance quantitative cue. | Outliers can dominate perception without scaling/binning. |
+| Supports quick comparison across many entities. | Multiple encodings can increase visual clutter. |
 
 ## Variations
 

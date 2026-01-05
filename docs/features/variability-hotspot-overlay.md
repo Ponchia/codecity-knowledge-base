@@ -3,24 +3,31 @@ id: F065
 title: Variability Hotspot Overlay (OO Variability)
 category: analysis
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC045
 implementations: [VariCity / VariMetrics]
 related_features: [F001, F002, F035, F006, F016]
+supersedes: []
 taxonomy:
   granularity: [class]
   visual_element: [building, street, district]
   metric_category: [variability, quality]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC045]
 ---
 
 # Variability Hotspot Overlay (OO Variability)
 
+## Problem & Motivation
+
+This capability helps connect analysis findings to structural and spatial context so they are explainable and actionable. An analysis overlay that adapts the software-city metaphor to reveal **zones of high density of implemented object-oriented (OO) variability**, by encoding variability-related implementation metrics on class buildings and emphasizing neighborhoods of interacting classes. Without it, findings stay detached from structure, making prioritization and communication harder.
+
 ## Definition
 
 An analysis overlay that adapts the software-city metaphor to reveal **zones of high density of implemented object-oriented (OO) variability**, by encoding variability-related implementation metrics on class buildings and emphasizing neighborhoods of interacting classes.
 
-## Mechanism (from CC045)
+## Mechanism (Solution)
 
 **Input**: Class-level variability metrics computed from an OO codebase (symfinder/symfinder-2), usage relationships between classes, inheritance relationships, and optional software-quality metrics (from SonarCloud/SonarQube).
 
@@ -33,7 +40,14 @@ An analysis overlay that adapts the software-city metaphor to reveal **zones of 
 
 **Output**: A city view that highlights variability-implementation hotspots and (optionally) which hotspots are also quality/technical-debt-critical.
 
-## Evidence (from CC045)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Surfaces quality/evolution signals in context. | Overlays can overwhelm the base metaphor. |
+| Supports prioritization (hotspots, anomalies). | Signals may be noisy or metric-dependent. |
+
+## Evidence
 
 CC045 reports applying VariCity/VariMetrics to multiple variability-rich Java systems (RQ1/RQ3) and a controlled experiment comparing VariCity to an IDE + CSV baseline (24 vs 25 subjects). The experiment reports statistically higher correctness on 6/11 tasks and faster completion time on tasks focused on complex variability structures (including hotspots/design patterns), with perceived difficulty also favoring VariCity on several of those tasks.
 

@@ -3,24 +3,31 @@ id: F047
 title: Dependency Path Expansion
 category: analysis
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC043
 implementations: [SoftViz3D, SoftVis3D]
 related_features: [F030, F048]
+supersedes: []
 taxonomy:
   granularity: [file, package]
   visual_element: [edge, building]
   metric_category: [coupling]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC043, CC129]
 ---
 
 # Dependency Path Expansion
 
+## Problem & Motivation
+
+This capability helps connect analysis results to the system’s structural and spatial context. A hierarchy-aware transformation that converts “flat” dependencies between leaf nodes into a set of dependency edges that follow the containment hierarchy, optionally introducing boundary/interface nodes so dependencies can be rendered with less clutter at multiple abstraction levels. Without it, findings stay detached from structural context, reducing explainability and prioritization.
+
 ## Definition
 
 A hierarchy-aware transformation that converts “flat” dependencies between leaf nodes into a set of dependency edges that follow the containment hierarchy, optionally introducing boundary/interface nodes so dependencies can be rendered with less clutter at multiple abstraction levels.
 
-## Mechanism (from CC043, CC129)
+## Mechanism (Solution)
 
 **Input**: A containment hierarchy (tree) plus dependency edges between leaf elements.
 
@@ -31,6 +38,13 @@ A hierarchy-aware transformation that converts “flat” dependencies between l
 4. Aggregate multiple original dependencies that map onto the same path edge by incrementing a counter on that path edge.
 
 **Output**: A set of “path” dependency edges (and interface nodes) that can be visualized per hierarchy layer, supporting both detailed and aggregated dependency views.
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Surfaces quality/evolution signals in context. | Overlays can overwhelm the base metaphor. |
+| Supports prioritization (hotspots, anomalies). | Signals may be noisy or metric-dependent. |
 
 ## Variations
 

@@ -3,24 +3,31 @@ id: F066
 title: Trend Maps (Natural-Phenomena Trend Encoding)
 category: analysis
 status: variant
+maturity: emerging
+bounded_context: [universal]
 introduced_by: CC054
 implementations: [Trend Maps (UE4 prototype)]
 related_features: [F015, F016, F018, F062]
+supersedes: []
 taxonomy:
   granularity: [file]
   visual_element: [building, district]
   metric_category: [evolution, size, complexity, quality]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC054]
 ---
 
 # Trend Maps (Natural-Phenomena Trend Encoding)
 
+## Problem & Motivation
+
+This capability helps connect analysis results to the system’s structural and spatial context. An evolution-visualization technique that extends a software map (2.5D treemap) of a selected revision by encoding **metric trends** over a revision range using natural-phenomena-inspired visual effects (surface materials and particle systems), enabling a single-view overview of changes without animation. Without it, findings stay detached from structural context, reducing explainability and prioritization.
+
 ## Definition
 
 An evolution-visualization technique that extends a software map (2.5D treemap) of a selected revision by encoding **metric trends** over a revision range using natural-phenomena-inspired visual effects (surface materials and particle systems), enabling a single-view overview of changes without animation.
 
-## Mechanism (from CC054)
+## Mechanism (Solution)
 
 **Input**: Version-control history over a revision range, per-entity metric time series, and a selected “reference” revision within the range.
 
@@ -34,7 +41,14 @@ An evolution-visualization technique that extends a software map (2.5D treemap) 
 
 **Output**: A software map augmented with visually distinctive trend encodings for quick hotspot overview.
 
-## Notes / Limitations (from CC054)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Surfaces quality/evolution signals in context. | Overlays can overwhelm the base metaphor. |
+| Supports prioritization (hotspots, anomalies). | Signals may be noisy or metric-dependent. |
+
+## Implementation Notes
 
 - Trend maps show trends only for entities present at the chosen revision within the range; added/removed entities are not fully represented.
 - Strong visual effects (e.g., emissive glow) can interfere with other encodings such as color mapping.

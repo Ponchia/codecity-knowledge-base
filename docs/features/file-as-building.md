@@ -3,24 +3,31 @@ id: F038
 title: File-as-Building Mapping
 category: mapping
 status: variant
+maturity: emerging
+bounded_context: [city-metaphor]
 introduced_by: CC091
 implementations: [CodeCharta, GoCity, SoftVis3D, BabiaXR-CodeCity]
 related_features: [F001, F017, F005, F007, F006]
+supersedes: []
 taxonomy:
   granularity: [file]
   visual_element: [building, district]
   metric_category: [size, complexity, quality]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC014, CC038, CC040, CC091, CC093, CC104, CC096]
 ---
 
 # File-as-Building Mapping
 
+## Problem & Motivation
+
+This capability helps make important properties visible at a glance without relying on separate numeric views. A concept mapping where each **file** is rendered as a building and folders form spatial districts, enabling city-like visualization at file granularity (useful for language-agnostic analysis and large codebases). Without it, metric signals remain harder to perceive and often require separate tables or charts.
+
 ## Definition
 
 A concept mapping where each **file** is rendered as a building and folders form spatial districts, enabling city-like visualization at file granularity (useful for language-agnostic analysis and large codebases).
 
-## Mechanism (from CC091)
+## Mechanism (Solution)
 
 **Input**: File/folder hierarchy + per-file metrics (e.g., LOC, complexity, churn, issues).
 
@@ -31,6 +38,13 @@ A concept mapping where each **file** is rendered as a building and folders form
 4. Map chosen metrics to building footprint/height/color.
 
 **Output**: A city where files are the primary “buildings” and folders provide districts.
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Language-agnostic “city” granularity that scales well to large and mixed-language repositories. | Can hide class-level structure and OO design concepts unless complemented by drill-down or other mappings. |
+| Aligns with common tool pipelines (files/folders + SCM/quality metrics) and supports practical adoption. | Large generated or vendor files can dominate views unless filtered; path-based identity can be noisy in monorepos. |
 
 ## Variations
 
@@ -48,3 +62,10 @@ A concept mapping where each **file** is rendered as a building and folders form
 - [CC093] GoCity repository — files rendered as buildings in the GoCity mapping
 - [CC104] GoCity SANER 2019 — files represented as buildings (structs stacked on top)
 - [CC096] Moreno-Lumbreras et al. (2022) — BabiaXR-CodeCity maps files to buildings and directories to districts (web + VR)
+
+## See Also
+
+- [[city-metaphor]] — file buildings are one instantiation of the city paradigm
+- [[package-as-district]] — folders/packages as containment regions
+- [[class-as-building]] — alternative OO-centric building granularity
+- [[function-as-building]] — alternative granularity for functional languages or JS-like systems

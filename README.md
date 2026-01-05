@@ -15,14 +15,14 @@ This repository contains a comprehensive extraction of the domain's vocabulary, 
 
 ```
 docs/
-├── glossary.md              # Domain vocabulary (70+ terms)
+├── glossary.md              # Domain vocabulary (157 terms)
 ├── taxonomy.md              # Classification dimensions
-├── features/                # 40+ atomic feature cards
+├── features/                # 74 atomic feature cards (pattern-language format)
 │   ├── _index.md
 │   ├── height-mapping.md
 │   ├── treemap-layout.md
 │   └── ...
-├── implementations/         # 20+ tool profiles
+├── implementations/         # 38 tool profiles
 │   ├── _index.md
 │   ├── codecity.md
 │   ├── codecharta.md

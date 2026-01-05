@@ -1,0 +1,38 @@
+id: CC161
+url: https://link.springer.com/article/10.1007/s10055-023-00903-y
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Comprehensive survey of eye-tracking technology in VR applications.
+  Covers commercial and research systems, applications in medical, educational,
+  and design domains. Provides foundation for gaze-based interaction in VR cities.
+key_contributions:
+  - Survey of eye-tracking hardware and software for VR
+  - Applications: medical diagnostics, neuroscience, education, architecture
+  - Integration patterns for gaze-based interaction
+terms_introduced:
+  - gaze-guided navigation: "Using eye-tracking to infer user intent and guide navigation in VR"
+  - attention mapping: "Tracking where users look to understand cognitive focus and optimize visualization"
+features_described:
+  - F011  # vr-immersion - ENHANCED with eye tracking
+  - F080  # gaze-based-interaction (NEW)
+implementations_documented: []
+secondary_study:
+  study_type: survey
+  corpus_size: null
+  included_studies: null
+  key_findings:
+    - "Eye-tracking augments immersion and provides insight into user behavior"
+    - "Gaze direction enables hands-free interaction in VR"
+    - "Privacy concerns when combined with stimulus information"
+  data_availability: null
+quality_notes: |
+  Springer Virtual Reality journal, February 2024. Comprehensive survey but
+  not specific to software visualization. Applicable techniques need adaptation.
+statistics:
+  features_extracted: 1
+  terms_extracted: 2
+  implementations_documented: 0

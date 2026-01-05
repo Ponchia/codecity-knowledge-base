@@ -1,0 +1,36 @@
+id: CC164
+url: https://arxiv.org/abs/2510.00003
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Hansen et al. address visual scalability in 3D software cities through semantic zoom
+  (camera-distance-responsive representations) and mini-map augmentation (2D top-view
+  projection for navigation). Implemented in ExplorViz, evaluated with user studies
+  showing utility for large landscapes and collaborative exploration.
+key_contributions:
+  - Semantic zoom mechanism where visual representation changes based on camera distance
+  - Mini-map augmentation providing 2D top-view projection for navigation context
+  - User study demonstrating utility for large software landscapes
+  - Integration with live trace visualization in ExplorViz
+terms_introduced:
+  - semantic zoom: "Camera-distance-responsive mechanism where graphical representation changes based on virtual camera distance from objects"
+  - mini-map: "Miniature two-dimensional top-view projection providing navigational context"
+features_described:
+  - F082  # semantic-zoom (NEW)
+  - F083  # mini-map-navigation (NEW)
+implementations_documented:
+  - ExplorViz
+quality_notes: |
+  VISSOFT 2025 paper with user study evaluation. Implemented in production
+  open-source tool (ExplorViz). Addresses critical scalability gap.
+empirical_evidence:
+  method: user study
+  participants: not specified in abstract
+  findings: "Both features demonstrated utility; especially useful for large software landscapes and collaborative exploration"
+statistics:
+  features_extracted: 2
+  terms_extracted: 2
+  implementations_documented: 1

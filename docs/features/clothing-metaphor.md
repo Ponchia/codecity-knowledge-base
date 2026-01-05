@@ -3,9 +3,12 @@ id: F072
 title: Clothing Metaphor
 category: metaphor
 status: variant
+maturity: emerging
+bounded_context: [clothing-metaphor]
 introduced_by: CC041
 implementations: [CodeVestimenta]
 related_features: [F001, F073, F074]
+supersedes: []
 taxonomy:
   granularity: [class]
   visual_element: [clothing]
@@ -16,11 +19,15 @@ updated_from: [CC041]
 
 # Clothing Metaphor
 
+## Problem & Motivation
+
+This capability helps provide a familiar mental model that supports orientation and discussion. A visualization metaphor that represents software classes as **garments** in a wardrobe, using familiar clothing shapes to make class-level metrics easier to interpret during program comprehension. Without it, users lose a consistent metaphor for reasoning about structure and scale.
+
 ## Definition
 
 A visualization metaphor that represents software classes as **garments** in a wardrobe, using familiar clothing shapes to make class-level metrics easier to interpret during program comprehension.
 
-## Mechanism (from CC041)
+## Mechanism (Solution)
 
 **Input**: Object-oriented classes plus software quality metrics (e.g., LOC, NOC, RFC, DIT, CBO).
 
@@ -30,6 +37,13 @@ A visualization metaphor that represents software classes as **garments** in a w
 3. Present a legend to map garment icons back to class names.
 
 **Output**: A wardrobe-style visualization that highlights classes with unusual metric profiles for quick inspection.
+
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Provides an intuitive mental model for structure. | Metaphor can oversimplify or mislead. |
+| Supports orientation via spatial cues. | Different users may interpret metaphors differently. |
 
 ## Variations
 
@@ -47,6 +61,6 @@ CC041 reports a controlled study (41 completed participants) where the clothing 
 
 ## See Also
 
-- [[F073]] class-as-clothing-item — class-to-garment mapping.
-- [[F074]] clothing-attribute-mapping — metric encodings on garments.
-- [[F001]] city-metaphor — alternative spatial metaphor.
+- [[class-as-clothing-item]] — class-to-garment mapping.
+- [[clothing-attribute-mapping]] — metric encodings on garments.
+- [[city-metaphor]] — alternative spatial metaphor.

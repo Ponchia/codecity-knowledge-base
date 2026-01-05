@@ -1,0 +1,30 @@
+id: CC157
+url: https://dl.acm.org/doi/10.1145/3481549.3481573
+type: website
+status: ok
+extraction_status: complete
+processor: gpt
+processed_date: 2026-01-05
+summary: |
+  Introduces Software Galaxies, a 3D visualization using a galaxy/astronomy metaphor.
+  Layout based on Latent Dirichlet Allocation (LDA) on source code for semantic similarity.
+  Files/clusters rendered as stars/nebulae rather than buildings/districts.
+key_contributions:
+  - Novel galaxy metaphor as alternative to city metaphor
+  - LDA-based semantic similarity layout (NLP on source code)
+  - Captures semantic relatedness rather than structural hierarchy
+terms_introduced:
+  - galaxy metaphor: "Visualization metaphor depicting software as a galaxy with files as stars and clusters as nebulae, arranged by semantic similarity"
+  - semantic layout: "Layout algorithm based on NLP/LDA similarity extracted from source code identifiers and comments"
+features_described:
+  - F076  # galaxy-metaphor (NEW)
+  - F077  # semantic-similarity-layout (NEW)
+implementations_documented: []
+quality_notes: |
+  VINCI 2021 paper by Atzberger et al. (HPI Potsdam). First experiments show
+  potential for program comprehension. Differentiator: uses semantic similarity
+  from NLP rather than structural hierarchy for layout.
+statistics:
+  features_extracted: 2
+  terms_extracted: 2
+  implementations_documented: 0

@@ -3,24 +3,31 @@ id: F068
 title: Island Metaphor (Module Islands)
 category: metaphor
 status: variant
+maturity: emerging
+bounded_context: [island-metaphor]
 introduced_by: CC070
 implementations: [IslandViz, SoftVis3D]
 related_features: [F001, F017, F002]
+supersedes: []
 taxonomy:
   granularity: [module, package, class]
   visual_element: [island, district, building]
   metric_category: [coupling, size]
-last_updated: 2026-01-04
+last_updated: 2026-01-05
 updated_from: [CC070, CC076, CC078, CC114]
 ---
 
 # Island Metaphor (Module Islands)
 
+## Problem & Motivation
+
+This capability helps provide a familiar mental model that supports orientation and discussion. A visualization metaphor that represents a modular software system as an **archipelago**: modules/bundles become islands, packages become regions on each island, and classes become buildings. Without it, users lose a consistent metaphor for reasoning about structure and scale.
+
 ## Definition
 
 A visualization metaphor that represents a modular software system as an **archipelago**: modules/bundles become islands, packages become regions on each island, and classes become buildings. The metaphor emphasizes decoupling between modules (separate islands) while keeping internal structure readable through nested regions and buildings.
 
-## Mechanism (from CC070)
+## Mechanism (Solution)
 
 **Input**: Module/package/class structure plus dependency relationships (e.g., imports/exports and service connections).
 
@@ -32,7 +39,14 @@ A visualization metaphor that represents a modular software system as an **archi
 
 **Output**: A navigable archipelago that supports module-level overview and package/class drill-down.
 
-## Variations (from CC114)
+## Consequences & Trade-offs
+
+| ✅ Benefits | ❌ Liabilities |
+|-------------|----------------|
+| Provides an intuitive mental model for structure. | Metaphor can oversimplify or mislead. |
+| Supports orientation via spatial cues. | Different users may interpret metaphors differently. |
+
+## Variations
 
 CC114 adapts the island metaphor to architectural modules defined by a reflexion model: each architecture module becomes an island, with nested package platforms and class/file buildings within each island. Inter-module dependencies are rendered as arrows between islands and can be filtered to show only architectural violations.
 

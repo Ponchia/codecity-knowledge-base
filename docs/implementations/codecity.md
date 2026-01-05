@@ -101,6 +101,7 @@ CC098 reports applying CodeCity to 9 systems totaling over 900 kLOC across Java/
 ## Sources
 
 - [CC023] Wettel & Lanza (VISSOFT 2007) — foundational description of the approach + tool details
+- [CC085] Wettel & Lanza (ICPC 2007) — habitability/locality framing, building archetypes, and mapper tradeoffs
 - [CC025] Wettel & Lanza (ICSE 2011) — controlled experiment design + results for CodeCity vs. Eclipse+Excel baseline
 - [CC035] Wettel PhD thesis — full approach (evolution + design quality), tool architecture/configuration, and controlled experiment
 - [CC015] Jeffery survey — later overview and comparison table entry
